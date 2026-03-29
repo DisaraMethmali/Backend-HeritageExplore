@@ -1,0 +1,6194 @@
+{
+  "rag_performance": [
+    {
+      "timestamp": "2026-02-22T06:40:37.232141",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.8951504230499268,
+      "avg_similarity": 0.7135255575180054,
+      "max_similarity": 0.7296274304389954,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-02-22T06:46:09.317064",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.0599367618560791,
+      "avg_similarity": 0.698937714099884,
+      "max_similarity": 0.7281259298324585,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-02-22T06:58:19.699089",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.03319716453552246,
+      "avg_similarity": 0.7135255575180054,
+      "max_similarity": 0.7296274304389954,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-02-26T16:23:54.126889",
+      "query": "What was Dutch rule like in Ceylon?",
+      "retrieval_time": 0.056536197662353516,
+      "avg_similarity": 0.41309648752212524,
+      "max_similarity": 0.4390316605567932,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-02-26T16:26:13.153668",
+      "query": "Hello, who are you?",
+      "retrieval_time": 0.015432357788085938,
+      "avg_similarity": 0.20236815214157106,
+      "max_similarity": 0.2406606674194336,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-02-26T16:46:01.093529",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.0592045783996582,
+      "avg_similarity": 0.7135255575180054,
+      "max_similarity": 0.7296274304389954,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-02-26T16:48:07.044519",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.032750606536865234,
+      "avg_similarity": 0.7135255575180054,
+      "max_similarity": 0.7296274304389954,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T10:59:14.535791",
+      "query": "hello hello",
+      "retrieval_time": 1.6444973945617676,
+      "avg_similarity": 0.17937765121459961,
+      "max_similarity": 0.20214998722076416,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T10:59:23.124566",
+      "query": "hi",
+      "retrieval_time": 0.033007144927978516,
+      "avg_similarity": 0.17347034215927123,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T11:14:07.428115",
+      "query": "hi",
+      "retrieval_time": 0.5538625717163086,
+      "avg_similarity": 0.17347034215927123,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T11:16:00.313575",
+      "query": "hi\n",
+      "retrieval_time": 0.14971709251403809,
+      "avg_similarity": 0.17347034215927123,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T11:16:05.288949",
+      "query": "hiiii\n",
+      "retrieval_time": 0.03240680694580078,
+      "avg_similarity": 0.1625893831253052,
+      "max_similarity": 0.1859731674194336,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T12:18:29.654456",
+      "query": "hi\n",
+      "retrieval_time": 0.4943833351135254,
+      "avg_similarity": 0.17347034215927123,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T14:12:50.729409",
+      "query": "hi\n",
+      "retrieval_time": 0.11407327651977539,
+      "avg_similarity": 0.1762260913848877,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-01T14:18:34.078098",
+      "query": "what is tooth relic",
+      "retrieval_time": 0.5492410659790039,
+      "avg_similarity": 0.6812430024147034,
+      "max_similarity": 0.7431116104125977,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T14:18:46.407275",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.05070853233337402,
+      "avg_similarity": 0.698937714099884,
+      "max_similarity": 0.7281259298324585,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T14:36:09.497977",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.11767148971557617,
+      "avg_similarity": 0.698937714099884,
+      "max_similarity": 0.7281259298324585,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T14:40:34.162814",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.13527941703796387,
+      "avg_similarity": 0.698937714099884,
+      "max_similarity": 0.7281259298324585,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T14:42:12.775487",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.23529863357543945,
+      "avg_similarity": 0.698937714099884,
+      "max_similarity": 0.7281259298324585,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T15:18:54.639549",
+      "query": "what is tooth relic",
+      "retrieval_time": 0.8417057991027832,
+      "avg_similarity": 0.6812430024147034,
+      "max_similarity": 0.7431116104125977,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T15:59:56.066471",
+      "query": "what is tooth relic",
+      "retrieval_time": 0.8734917640686035,
+      "avg_similarity": 0.6812430024147034,
+      "max_similarity": 0.7431116104125977,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T16:05:33.181164",
+      "query": "What is the tooth relic",
+      "retrieval_time": 0.12457084655761719,
+      "avg_similarity": 0.7258576631546021,
+      "max_similarity": 0.7820914387702942,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-01T16:16:11.266095",
+      "query": "what is the importance of tooth relic",
+      "retrieval_time": 0.210723876953125,
+      "avg_similarity": 0.7208566665649414,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T16:40:44.535580",
+      "query": "what are the surroundingd in the temple of tooth relic",
+      "retrieval_time": 0.11579346656799316,
+      "avg_similarity": 0.7163491487503052,
+      "max_similarity": 0.7326133251190186,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:03:41.279520",
+      "query": "what are the surroundingd in the temple of tooth relic",
+      "retrieval_time": 1.635404348373413,
+      "avg_similarity": 0.7163491487503052,
+      "max_similarity": 0.7326133251190186,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:05:49.362214",
+      "query": "Who s the last Indian ruler to possess the Tooth Relic",
+      "retrieval_time": 0.39012956619262695,
+      "avg_similarity": 0.7467624068260192,
+      "max_similarity": 0.8264839053153992,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:07:15.040244",
+      "query": "What is eslaa perahara",
+      "retrieval_time": 0.0854496955871582,
+      "avg_similarity": 0.444763720035553,
+      "max_similarity": 0.48020052909851074,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:07:39.214142",
+      "query": "what is eslaa perahara\n",
+      "retrieval_time": 0.145308256149292,
+      "avg_similarity": 0.444763720035553,
+      "max_similarity": 0.48020052909851074,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:10:03.064871",
+      "query": "what is esla perahara",
+      "retrieval_time": 0.17798233032226562,
+      "avg_similarity": 0.46285674571990965,
+      "max_similarity": 0.4987027645111084,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:11:38.686529",
+      "query": "Why did Kandy remain independent?",
+      "retrieval_time": 0.05291271209716797,
+      "avg_similarity": 0.5089128017425537,
+      "max_similarity": 0.5385242104530334,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:12:01.667811",
+      "query": "what is dalada morning",
+      "retrieval_time": 0.15603113174438477,
+      "avg_similarity": 0.47708468437194823,
+      "max_similarity": 0.5089476704597473,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:15:07.965186",
+      "query": "what is temple of 2-3923",
+      "retrieval_time": 0.05753970146179199,
+      "avg_similarity": 0.44081003665924073,
+      "max_similarity": 0.4537842869758606,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:27:45.215545",
+      "query": "Why did Kandy remain independent?",
+      "retrieval_time": 0.4660360813140869,
+      "avg_similarity": 0.5089128017425537,
+      "max_similarity": 0.5385242104530334,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-04T18:29:14.369794",
+      "query": "Why did Kandy remain independent?",
+      "retrieval_time": 0.1330568790435791,
+      "avg_similarity": 0.5089128017425537,
+      "max_similarity": 0.5385242104530334,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T16:58:02.081651",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.08550429344177246,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T17:15:38.975051",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.08458304405212402,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T17:23:16.006751",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.1051642894744873,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T17:24:49.745112",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.021050214767456055,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T17:27:07.750681",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.024302005767822266,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T17:28:20.001320",
+      "query": "Why did Kandy remain independent?",
+      "retrieval_time": 0.029673099517822266,
+      "avg_similarity": 0.5089128017425537,
+      "max_similarity": 0.5385242104530334,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T17:33:31.760100",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.038207292556762695,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:02:19.976217",
+      "query": "boil relic means\n",
+      "retrieval_time": 0.3200674057006836,
+      "avg_similarity": 0.3735509991645813,
+      "max_similarity": 0.4161948561668396,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:04:07.948541",
+      "query": "what is bowl relic",
+      "retrieval_time": 0.036627769470214844,
+      "avg_similarity": 0.47428456544876096,
+      "max_similarity": 0.7258757948875427,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:08:57.005098",
+      "query": "what is srivardhanapura\n",
+      "retrieval_time": 0.07385110855102539,
+      "avg_similarity": 0.4990776777267456,
+      "max_similarity": 0.7405514717102051,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:12:06.809503",
+      "query": "explain more\n",
+      "retrieval_time": 0.028798818588256836,
+      "avg_similarity": 0.22499850988388062,
+      "max_similarity": 0.2569440007209778,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-05T18:13:03.672838",
+      "query": "how many prelates in the 1847 comitte\n",
+      "retrieval_time": 0.03219890594482422,
+      "avg_similarity": 0.3133261203765869,
+      "max_similarity": 0.47822892665863037,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-05T18:14:47.387353",
+      "query": "how many days the kubal perahara proceed\n",
+      "retrieval_time": 0.02331995964050293,
+      "avg_similarity": 0.40401933193206785,
+      "max_similarity": 0.4443453550338745,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:18:58.226155",
+      "query": "how many days the kubal perahara proceed",
+      "retrieval_time": 0.02357006072998047,
+      "avg_similarity": 0.40401933193206785,
+      "max_similarity": 0.4443453550338745,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:25:48.848603",
+      "query": "who\n",
+      "retrieval_time": 0.032045841217041016,
+      "avg_similarity": 0.26087509393692015,
+      "max_similarity": 0.30089837312698364,
+      "num_docs": 1
+    },
+    {
+      "timestamp": "2026-03-05T18:26:38.201168",
+      "query": "what fronts two story inner shin\n",
+      "retrieval_time": 0.037198781967163086,
+      "avg_similarity": 0.33162258863449096,
+      "max_similarity": 0.5047781467437744,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-05T18:27:54.430442",
+      "query": "what fronts two story inner shine\n",
+      "retrieval_time": 0.0728909969329834,
+      "avg_similarity": 0.3392929434776306,
+      "max_similarity": 0.46443819999694824,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-05T18:30:17.294867",
+      "query": "what fronts two story inner shine",
+      "retrieval_time": 0.03617548942565918,
+      "avg_similarity": 0.3392929434776306,
+      "max_similarity": 0.46443819999694824,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-05T18:31:13.733973",
+      "query": "what was rebuild after the 1998",
+      "retrieval_time": 0.03694343566894531,
+      "avg_similarity": 0.4958670973777771,
+      "max_similarity": 0.652930736541748,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:31:57.763155",
+      "query": "what fronts two story inner shine",
+      "retrieval_time": 0.0959479808807373,
+      "avg_similarity": 0.3392929434776306,
+      "max_similarity": 0.46443819999694824,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-05T18:34:19.981296",
+      "query": "what was rebuild after the 1998",
+      "retrieval_time": 0.08607316017150879,
+      "avg_similarity": 0.4958670973777771,
+      "max_similarity": 0.652930736541748,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:37:54.529363",
+      "query": "give information acooring to above question\n",
+      "retrieval_time": 0.12001943588256836,
+      "avg_similarity": 0.2552368402481079,
+      "max_similarity": 0.2935623526573181,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-05T18:38:12.621522",
+      "query": "what was rebuild after the 1998 in tooth relic\n",
+      "retrieval_time": 0.09737348556518555,
+      "avg_similarity": 0.648801326751709,
+      "max_similarity": 0.6831957101821899,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-05T18:40:53.807001",
+      "query": "what was rebuild after the 1998 bomb in tooth relic",
+      "retrieval_time": 0.10909199714660645,
+      "avg_similarity": 0.5868223071098327,
+      "max_similarity": 0.6309376955032349,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T06:34:41.654375",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.841160774230957,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T09:37:06.319466",
+      "query": "what is the importance of temple of tooth relic",
+      "retrieval_time": 0.18290019035339355,
+      "avg_similarity": 0.697354257106781,
+      "max_similarity": 0.8061849474906921,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T13:28:22.528466",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.08878755569458008,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T14:03:17.003402",
+      "query": "Tell me about the Tooth Relic",
+      "retrieval_time": 0.4155914783477783,
+      "avg_similarity": 0.7148291945457459,
+      "max_similarity": 0.7576054334640503,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T14:07:21.670180",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.15129542350769043,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T14:13:34.319663",
+      "query": "Tell me about the Tooth Relic",
+      "retrieval_time": 0.03699684143066406,
+      "avg_similarity": 0.7148291945457459,
+      "max_similarity": 0.7576054334640503,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T14:26:18.756374",
+      "query": "Tell me about the Tooth Relic",
+      "retrieval_time": 0.11704587936401367,
+      "avg_similarity": 0.7148291945457459,
+      "max_similarity": 0.7576054334640503,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T15:39:12.836927",
+      "query": "Tell me about the Tooth Relic",
+      "retrieval_time": 0.09253883361816406,
+      "avg_similarity": 0.7148291945457459,
+      "max_similarity": 0.7576054334640503,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T15:42:44.374682",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.16040372848510742,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T15:44:04.161366",
+      "query": "What is esala perahara",
+      "retrieval_time": 0.2360398769378662,
+      "avg_similarity": 0.5595839738845825,
+      "max_similarity": 0.6112313866615295,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T15:53:39.716567",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.3188507556915283,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T15:58:57.394997",
+      "query": "Tell me about the Tooth Relic",
+      "retrieval_time": 0.19039392471313477,
+      "avg_similarity": 0.7148291945457459,
+      "max_similarity": 0.7576054334640503,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T16:01:13.187398",
+      "query": "What is galle fort",
+      "retrieval_time": 0.2006542682647705,
+      "avg_similarity": 0.2394648790359497,
+      "max_similarity": 0.2523003816604614,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-07T16:04:52.857244",
+      "query": "what is galle fort\n",
+      "retrieval_time": 0.041105031967163086,
+      "avg_similarity": 0.2394648790359497,
+      "max_similarity": 0.2523003816604614,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-07T16:17:46.540821",
+      "query": "what is galle port",
+      "retrieval_time": 0.08355903625488281,
+      "avg_similarity": 0.2718227505683899,
+      "max_similarity": 0.34911513328552246,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-07T16:23:05.329879",
+      "query": "what is galle fort",
+      "retrieval_time": 0.19141006469726562,
+      "avg_similarity": 0.2394648790359497,
+      "max_similarity": 0.2523003816604614,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-07T16:23:44.614258",
+      "query": "Who was Lan\u00e7arote de Seixas?",
+      "retrieval_time": 0.03623628616333008,
+      "avg_similarity": 0.3538506031036377,
+      "max_similarity": 0.37231963872909546,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-07T16:24:16.147653",
+      "query": "What is galle fort",
+      "retrieval_time": 0.10331511497497559,
+      "avg_similarity": 0.2394648790359497,
+      "max_similarity": 0.2523003816604614,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-07T17:14:05.489468",
+      "query": "Where is the port city of Galle located?",
+      "retrieval_time": 0.34090423583984375,
+      "avg_similarity": 0.38867185115814207,
+      "max_similarity": 0.45150840282440186,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T03:09:23.504356",
+      "query": "What was Dutch rule like in Ceylon?",
+      "retrieval_time": 0.08326244354248047,
+      "avg_similarity": 0.5654411435127258,
+      "max_similarity": 0.5710262060165405,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T04:41:06.874834",
+      "query": "What was the first temple of tooth relic in polonnawruwa",
+      "retrieval_time": 0.456956148147583,
+      "avg_similarity": 0.6652716755867004,
+      "max_similarity": 0.7470839619636536,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T04:58:47.124509",
+      "query": "srivardhnapura means?\n",
+      "retrieval_time": 0.32056403160095215,
+      "avg_similarity": 0.477504825592041,
+      "max_similarity": 0.5748053789138794,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T05:01:28.602839",
+      "query": "What is srivardhanapura? give more",
+      "retrieval_time": 0.0669856071472168,
+      "avg_similarity": 0.5298201322555542,
+      "max_similarity": 0.7575045824050903,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T05:06:05.482501",
+      "query": "how was long the tooth relic in sri lanka\n",
+      "retrieval_time": 0.03417611122131348,
+      "avg_similarity": 0.8222951292991638,
+      "max_similarity": 0.8434170484542847,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T05:14:30.291764",
+      "query": "how long is been tooth relic in sri lanka",
+      "retrieval_time": 0.021574735641479492,
+      "avg_similarity": 0.8493212461471558,
+      "max_similarity": 0.8659636974334717,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T05:14:36.803736",
+      "query": "how long is been tooth relic in sri lanka",
+      "retrieval_time": 0.02202606201171875,
+      "avg_similarity": 0.8493212461471558,
+      "max_similarity": 0.8659636974334717,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T05:14:44.816298",
+      "query": "how long is been tooth relic in sri lanka",
+      "retrieval_time": 0.014478921890258789,
+      "avg_similarity": 0.8493212461471558,
+      "max_similarity": 0.8659636974334717,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T05:15:04.456712",
+      "query": "how was long the tooth relic in sri lanka",
+      "retrieval_time": 0.0332188606262207,
+      "avg_similarity": 0.8222951292991638,
+      "max_similarity": 0.8434170484542847,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T06:39:46.822744",
+      "query": "how was long the tooth relic in sri lanka",
+      "retrieval_time": 0.023283720016479492,
+      "avg_similarity": 0.8222951292991638,
+      "max_similarity": 0.8434170484542847,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T06:40:30.004022",
+      "query": "what fonts the two story inner shine\n",
+      "retrieval_time": 0.04451870918273926,
+      "avg_similarity": 0.29323372840881345,
+      "max_similarity": 0.37387025356292725,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-08T12:22:08.121677",
+      "query": "Why did Kandy remain independent?",
+      "retrieval_time": 0.09793901443481445,
+      "avg_similarity": 0.5179936766624451,
+      "max_similarity": 0.5385242104530334,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T12:25:08.205058",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.019508838653564453,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T12:42:45.971064",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "retrieval_time": 0.021320104598999023,
+      "avg_similarity": 0.6989376425743103,
+      "max_similarity": 0.7281258702278137,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T13:03:31.583416",
+      "query": "Welcome to the sacred heart of Lanka. Look around you, traveler, at these stone pillars and towering stupas. They were not built by mere men, but by the sheer will of our ancestors and the blessings of the gods. For centuries, our kingdom has stood strong against the tides of time, protecting the ancient relics within. Step forward with respect, and you shall hear the true history of our people.",
+      "retrieval_time": 0.05214715003967285,
+      "avg_similarity": 0.5519325137138367,
+      "max_similarity": 0.5745923519134521,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T13:08:52.469238",
+      "query": "Welcome to the sacred heart of Lanka. Look around you, traveler, at these stone pillars and towering stupas. They were not built by mere men, but by the sheer will of our ancestors and the blessings of the gods. For centuries, our kingdom has stood strong against the tides of time, protecting the ancient relics within. Step forward with respect, and you shall hear the true history of our people.",
+      "retrieval_time": 0.0756216049194336,
+      "avg_similarity": 0.5519325137138367,
+      "max_similarity": 0.5745923519134521,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-08T13:38:31.269011",
+      "query": "Hello",
+      "retrieval_time": 0.0663754940032959,
+      "avg_similarity": 0.18542287349700928,
+      "max_similarity": 0.2193278670310974,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:41:54.429700",
+      "query": "Hi?",
+      "retrieval_time": 0.013870000839233398,
+      "avg_similarity": 0.19057575464248658,
+      "max_similarity": 0.22608762979507446,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:42:09.024507",
+      "query": "Hi?",
+      "retrieval_time": 0.014516353607177734,
+      "avg_similarity": 0.19057575464248658,
+      "max_similarity": 0.22608762979507446,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:42:32.961713",
+      "query": "who are you",
+      "retrieval_time": 0.013964414596557617,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:42:56.556041",
+      "query": "who are you",
+      "retrieval_time": 0.01195979118347168,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:43:09.155620",
+      "query": "who are you",
+      "retrieval_time": 0.0176546573638916,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:43:17.294615",
+      "query": "who are you",
+      "retrieval_time": 0.014569997787475586,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T13:47:31.888931",
+      "query": "who are you",
+      "retrieval_time": 0.013296127319335938,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:18:40.615370",
+      "query": "who are you",
+      "retrieval_time": 0.047078847885131836,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:18:45.923128",
+      "query": "who are you",
+      "retrieval_time": 0.011979341506958008,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:19:03.891455",
+      "query": "hi",
+      "retrieval_time": 0.010293960571289062,
+      "avg_similarity": 0.17683887481689453,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:19:14.603783",
+      "query": "hi",
+      "retrieval_time": 0.01390528678894043,
+      "avg_similarity": 0.17683887481689453,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:19:52.620334",
+      "query": "hi",
+      "retrieval_time": 0.01153874397277832,
+      "avg_similarity": 0.17683887481689453,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:19:58.687490",
+      "query": "hello",
+      "retrieval_time": 0.01755213737487793,
+      "avg_similarity": 0.18542287349700928,
+      "max_similarity": 0.2193278670310974,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:20:03.432233",
+      "query": "Hello, who are you?",
+      "retrieval_time": 0.013584136962890625,
+      "avg_similarity": 0.20236810445785522,
+      "max_similarity": 0.24066054821014404,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:21:23.397064",
+      "query": "Hello, who are you?",
+      "retrieval_time": 0.009848833084106445,
+      "avg_similarity": 0.20236810445785522,
+      "max_similarity": 0.24066054821014404,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:24:12.404502",
+      "query": "who are you",
+      "retrieval_time": 0.020990848541259766,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:29:55.534683",
+      "query": "who are you",
+      "retrieval_time": 0.024654150009155273,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:30:46.705547",
+      "query": "HI",
+      "retrieval_time": 0.015791893005371094,
+      "avg_similarity": 0.17683887481689453,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:35:03.637230",
+      "query": "HI",
+      "retrieval_time": 0.6825039386749268,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:35:06.708201",
+      "query": "HI",
+      "retrieval_time": 0.08092141151428223,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:35:15.897319",
+      "query": "Hi",
+      "retrieval_time": 1.1233744621276855,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:35:19.281271",
+      "query": "Hi",
+      "retrieval_time": 0.8628981113433838,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:35:31.352188",
+      "query": "Hi",
+      "retrieval_time": 0.4259812831878662,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:35:34.641422",
+      "query": "Hi",
+      "retrieval_time": 0.5840432643890381,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:45:22.258480",
+      "query": "Hi",
+      "retrieval_time": 0.07476663589477539,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:45:24.474494",
+      "query": "Hi",
+      "retrieval_time": 0.014008760452270508,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:45:27.111511",
+      "query": "Hi",
+      "retrieval_time": 0.011959314346313477,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:45:28.580126",
+      "query": "Hi",
+      "retrieval_time": 0.01147913932800293,
+      "avg_similarity": 0.17920820713043212,
+      "max_similarity": 0.22762107849121094,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-08T14:45:41.725736",
+      "query": "who are you",
+      "retrieval_time": 0.014026880264282227,
+      "avg_similarity": 0.190445613861084,
+      "max_similarity": 0.20316845178604126,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-09T02:42:03.311190",
+      "query": "wht is esla perahara",
+      "retrieval_time": 0.08169913291931152,
+      "avg_similarity": 0.44153896570205686,
+      "max_similarity": 0.4490399956703186,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:08:27.419719",
+      "query": "what is niyamgampaya",
+      "retrieval_time": 0.053529977798461914,
+      "avg_similarity": 0.444395112991333,
+      "max_similarity": 0.6083483099937439,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:12:46.249709",
+      "query": "who was sri parakkrama narendrasingha",
+      "retrieval_time": 0.2739837169647217,
+      "avg_similarity": 0.4535888433456421,
+      "max_similarity": 0.5346825122833252,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:15:24.342974",
+      "query": "who was sri parakkrama narendrasingha",
+      "retrieval_time": 0.018670320510864258,
+      "avg_similarity": 0.4535888433456421,
+      "max_similarity": 0.5346825122833252,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:25:15.562764",
+      "query": "How many caskets did King parakrama VI create",
+      "retrieval_time": 0.03657793998718262,
+      "avg_similarity": 0.5624585509300232,
+      "max_similarity": 0.6646279096603394,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:26:22.991430",
+      "query": "How many caskets did King parakrama VI create",
+      "retrieval_time": 0.02582859992980957,
+      "avg_similarity": 0.5624585509300232,
+      "max_similarity": 0.6646279096603394,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:31:38.114199",
+      "query": "How many caskets did King parakrama VI create",
+      "retrieval_time": 0.0154876708984375,
+      "avg_similarity": 0.5624585509300232,
+      "max_similarity": 0.6646279096603394,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:32:58.326359",
+      "query": "where was the tooth enrich in kalinga\n",
+      "retrieval_time": 0.0325322151184082,
+      "avg_similarity": 0.6542743682861328,
+      "max_similarity": 0.6946449279785156,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:34:18.536496",
+      "query": "where was the tooth enrich in kalinga",
+      "retrieval_time": 0.02115345001220703,
+      "avg_similarity": 0.6542743682861328,
+      "max_similarity": 0.6946449279785156,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:45:29.399492",
+      "query": "who transport the tooth relic to sri lanka",
+      "retrieval_time": 0.0639183521270752,
+      "avg_similarity": 0.8250670552253723,
+      "max_similarity": 0.8497001528739929,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:45:52.668234",
+      "query": "who transport the tooth relic to sri lanka",
+      "retrieval_time": 0.0171201229095459,
+      "avg_similarity": 0.8250670552253723,
+      "max_similarity": 0.8497001528739929,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:45:55.875777",
+      "query": "who transport the tooth relic to sri lanka",
+      "retrieval_time": 0.012169361114501953,
+      "avg_similarity": 0.8250670552253723,
+      "max_similarity": 0.8497001528739929,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:45:59.321767",
+      "query": "who transport the tooth relic to sri lanka",
+      "retrieval_time": 0.013527393341064453,
+      "avg_similarity": 0.8250670552253723,
+      "max_similarity": 0.8497001528739929,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:02.194092",
+      "query": "who transport the tooth relic to sri lanka",
+      "retrieval_time": 0.016519546508789062,
+      "avg_similarity": 0.8250670552253723,
+      "max_similarity": 0.8497001528739929,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:07.676719",
+      "query": "who transport the tooth relic to sri lanka from india\n",
+      "retrieval_time": 0.02141118049621582,
+      "avg_similarity": 0.8291702985763549,
+      "max_similarity": 0.8419570922851562,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:16.242465",
+      "query": "who transport the tooth relic to sri lanka from india\n",
+      "retrieval_time": 0.02703714370727539,
+      "avg_similarity": 0.8291702985763549,
+      "max_similarity": 0.8419570922851562,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:20.986760",
+      "query": "wrong\n",
+      "retrieval_time": 0.020688533782958984,
+      "avg_similarity": 0.13542985916137695,
+      "max_similarity": 0.15678715705871582,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-09T04:46:25.291823",
+      "query": "who transport the tooth relic to sri lanka from india",
+      "retrieval_time": 0.017308950424194336,
+      "avg_similarity": 0.8291702985763549,
+      "max_similarity": 0.8419570922851562,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:31.210878",
+      "query": "who transport the tooth relic to sri lanka from india",
+      "retrieval_time": 0.012040376663208008,
+      "avg_similarity": 0.8291702985763549,
+      "max_similarity": 0.8419570922851562,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:49.000527",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "retrieval_time": 0.016613245010375977,
+      "avg_similarity": 0.8445348501205444,
+      "max_similarity": 0.8680965900421143,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:46:58.984426",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "retrieval_time": 0.026520967483520508,
+      "avg_similarity": 0.8445348501205444,
+      "max_similarity": 0.8680965900421143,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:48:17.877288",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "retrieval_time": 0.022156715393066406,
+      "avg_similarity": 0.8445348501205444,
+      "max_similarity": 0.8680965900421143,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:48:23.917077",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "retrieval_time": 0.017366886138916016,
+      "avg_similarity": 0.8445348501205444,
+      "max_similarity": 0.8680965900421143,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:51:29.701103",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "retrieval_time": 0.0379483699798584,
+      "avg_similarity": 0.8445348501205444,
+      "max_similarity": 0.8680965900421143,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T04:55:22.466409",
+      "query": "who retrived the tooth from budda's funeral pyre\n",
+      "retrieval_time": 0.015568733215332031,
+      "avg_similarity": 0.5448818206787109,
+      "max_similarity": 0.7035735845565796,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:03:50.956058",
+      "query": "who retrived the tooth frpm buddha's funaerla pyre",
+      "retrieval_time": 0.019204378128051758,
+      "avg_similarity": 0.5731851816177368,
+      "max_similarity": 0.6466315984725952,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:08:05.893042",
+      "query": "who retrived the tooth frpm buddha's funaerla pyre\n",
+      "retrieval_time": 0.02361464500427246,
+      "avg_similarity": 0.5731851816177368,
+      "max_similarity": 0.6466315984725952,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:11:55.542419",
+      "query": "people belive the portugrese  destroy the tooth relic?",
+      "retrieval_time": 0.01616358757019043,
+      "avg_similarity": 0.6122009754180908,
+      "max_similarity": 0.6396544575691223,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:12:26.201638",
+      "query": "people belive the portugrese  destroy the tooth relic?",
+      "retrieval_time": 0.016652584075927734,
+      "avg_similarity": 0.6122009754180908,
+      "max_similarity": 0.6396544575691223,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:20:21.092778",
+      "query": "Sporting gold disc",
+      "retrieval_time": 0.017174482345581055,
+      "avg_similarity": 0.1745892882347107,
+      "max_similarity": 0.18468600511550903,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-09T05:35:50.168277",
+      "query": "Golf",
+      "retrieval_time": 0.014975786209106445,
+      "avg_similarity": 0.17739192247390748,
+      "max_similarity": 0.1984490156173706,
+      "num_docs": 0
+    },
+    {
+      "timestamp": "2026-03-09T05:51:37.189816",
+      "query": "Where is Galle Port located in Sri Lanka?",
+      "retrieval_time": 0.048699140548706055,
+      "avg_similarity": 0.7400075554847717,
+      "max_similarity": 0.8761074542999268,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:52:17.411344",
+      "query": "Why was Galle Port important in ancient maritime trade?",
+      "retrieval_time": 0.01499629020690918,
+      "avg_similarity": 0.704066252708435,
+      "max_similarity": 0.7782251834869385,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T05:59:31.419161",
+      "query": "Why did the importance of Galle Port decrease after the 19th century?",
+      "retrieval_time": 0.03430008888244629,
+      "avg_similarity": 0.6531704306602478,
+      "max_similarity": 0.717646062374115,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:00:42.957303",
+      "query": "What goods were commonly traded through Galle Port?",
+      "retrieval_time": 0.017809629440307617,
+      "avg_similarity": 0.678092873096466,
+      "max_similarity": 0.6880022287368774,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:06:37.097101",
+      "query": "Why did the importance of Galle Port decrease after the 19th century?",
+      "retrieval_time": 0.02704763412475586,
+      "avg_similarity": 0.6531704306602478,
+      "max_similarity": 0.717646062374115,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:07:53.292048",
+      "query": "One is the importance of God.",
+      "retrieval_time": 0.013045549392700195,
+      "avg_similarity": 0.3704862236976624,
+      "max_similarity": 0.414792537689209,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:11:34.775399",
+      "query": "what is  galle ",
+      "retrieval_time": 0.016537904739379883,
+      "avg_similarity": 0.6223610758781433,
+      "max_similarity": 0.6278607845306396,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:13:12.691624",
+      "query": "What is gold?",
+      "retrieval_time": 0.013510465621948242,
+      "avg_similarity": 0.34021835327148436,
+      "max_similarity": 0.36884641647338867,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:19:09.333488",
+      "query": "what is  gold ",
+      "retrieval_time": 0.018596410751342773,
+      "avg_similarity": 0.32526454925537107,
+      "max_similarity": 0.36645567417144775,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:28:29.629753",
+      "query": "What is the importance of Galle Fort?",
+      "retrieval_time": 0.014776468276977539,
+      "avg_similarity": 0.6813519597053528,
+      "max_similarity": 0.7148274183273315,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:30:38.668751",
+      "query": "what is  the importance of galle fort ",
+      "retrieval_time": 0.014561891555786133,
+      "avg_similarity": 0.6995012640953064,
+      "max_similarity": 0.7125898599624634,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:32:17.638812",
+      "query": "what is  the importance of galle fort ",
+      "retrieval_time": 0.012526273727416992,
+      "avg_similarity": 0.6995012640953064,
+      "max_similarity": 0.7125898599624634,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:36:26.053084",
+      "query": "what is  the importance of galle fort ",
+      "retrieval_time": 0.05275416374206543,
+      "avg_similarity": 0.7198246359825134,
+      "max_similarity": 0.7418437600135803,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:37:17.343317",
+      "query": "A conversation about Sri Lanka.",
+      "retrieval_time": 0.014877080917358398,
+      "avg_similarity": 0.5981262922286987,
+      "max_similarity": 0.6101972460746765,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:39:48.817073",
+      "query": "Tell me about Galle Fort.",
+      "retrieval_time": 0.012521743774414062,
+      "avg_similarity": 0.6848849058151245,
+      "max_similarity": 0.7053043246269226,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T06:48:54.071280",
+      "query": "Yeah, he is Galle Fort located in Sri Lanka.",
+      "retrieval_time": 0.05576825141906738,
+      "avg_similarity": 0.6182685732841492,
+      "max_similarity": 0.6304460763931274,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T07:02:24.792669",
+      "query": "What is Temple of Truth?",
+      "retrieval_time": 0.00973367691040039,
+      "avg_similarity": 0.47502710819244387,
+      "max_similarity": 0.48714977502822876,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:12:44.413305",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.052510976791381836,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:12:58.650005",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.013798952102661133,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:06.645025",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.013247966766357422,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:16.900856",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.013231992721557617,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:18.442850",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.013719320297241211,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:19.662536",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.01552438735961914,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:20.793085",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.014520645141601562,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:21.748512",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.012452840805053711,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:22.806317",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.014006376266479492,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:23.616612",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.01400303840637207,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:13:24.304156",
+      "query": "what is the importance of tooth relic ",
+      "retrieval_time": 0.014607906341552734,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T13:20:09.017964",
+      "query": "wwhat is the importance of the tooth relic? ",
+      "retrieval_time": 0.015514373779296875,
+      "avg_similarity": 0.6938412666320801,
+      "max_similarity": 0.7524834871292114,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T14:06:06.347822",
+      "query": "what is the importance of tooth relic",
+      "retrieval_time": 0.036644697189331055,
+      "avg_similarity": 0.7208566784858703,
+      "max_similarity": 0.8023024201393127,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:05:22.664039",
+      "query": "Why was Galle Fort important during colonial times? ",
+      "retrieval_time": 0.10798835754394531,
+      "avg_similarity": 0.710117781162262,
+      "max_similarity": 0.731950044631958,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:12:00.649319",
+      "query": "What activities can tourists do in Galle Fort?",
+      "retrieval_time": 0.07578325271606445,
+      "avg_similarity": 0.4961447358131409,
+      "max_similarity": 0.5083392858505249,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:13:27.924707",
+      "query": "Why was Galle Fort important during colonial times? ",
+      "retrieval_time": 0.01725482940673828,
+      "avg_similarity": 0.710117781162262,
+      "max_similarity": 0.731950044631958,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:18:48.722073",
+      "query": "What famous lighthouse is located in Galle Fort",
+      "retrieval_time": 0.02143692970275879,
+      "avg_similarity": 0.646997618675232,
+      "max_similarity": 0.7248858213424683,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:19:55.250733",
+      "query": "What type of shops and cafes are found inside the fort?",
+      "retrieval_time": 0.05811262130737305,
+      "avg_similarity": 0.3928947329521179,
+      "max_similarity": 0.4009278416633606,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:21:20.850489",
+      "query": "What cultures influenced the buildings inside the fort?",
+      "retrieval_time": 0.02799534797668457,
+      "avg_similarity": 0.4799696564674377,
+      "max_similarity": 0.5420162677764893,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:22:25.426706",
+      "query": "How does tourism impact the preservation of Galle Fort?",
+      "retrieval_time": 0.0420684814453125,
+      "avg_similarity": 0.6098340749740601,
+      "max_similarity": 0.6185298562049866,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:34:30.293814",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "retrieval_time": 0.0498349666595459,
+      "avg_similarity": 0.6785291790962219,
+      "max_similarity": 0.6850405931472778,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:34:55.223138",
+      "query": "Does  Galle Fort important during colonial times?",
+      "retrieval_time": 0.06248140335083008,
+      "avg_similarity": 0.69196697473526,
+      "max_similarity": 0.7157508134841919,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:44:20.976804",
+      "query": "Who would've killed it?",
+      "retrieval_time": 0.06253600120544434,
+      "avg_similarity": 0.30713897943496704,
+      "max_similarity": 0.3291499614715576,
+      "num_docs": 2
+    },
+    {
+      "timestamp": "2026-03-09T17:49:04.728484",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "retrieval_time": 0.01774907112121582,
+      "avg_similarity": 0.6785291790962219,
+      "max_similarity": 0.6850405931472778,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T17:50:11.151449",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "retrieval_time": 0.02577972412109375,
+      "avg_similarity": 0.6785291790962219,
+      "max_similarity": 0.6850405931472778,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:07:33.489735",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "retrieval_time": 0.021998167037963867,
+      "avg_similarity": 0.6785291790962219,
+      "max_similarity": 0.6850405931472778,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:12:32.531772",
+      "query": "Who retrieved the truth from Buddha's funeral?",
+      "retrieval_time": 0.103790283203125,
+      "avg_similarity": 0.574328601360321,
+      "max_similarity": 0.6240718364715576,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:13:44.435930",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "retrieval_time": 0.02778458595275879,
+      "avg_similarity": 0.6785291790962219,
+      "max_similarity": 0.6850405931472778,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:19:47.982482",
+      "query": "Do people with you, Portuguese, destroy the truth, elect?",
+      "retrieval_time": 0.06585907936096191,
+      "avg_similarity": 0.33027359247207644,
+      "max_similarity": 0.35534679889678955,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:20:43.831828",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "retrieval_time": 0.10392594337463379,
+      "avg_similarity": 0.7049506664276123,
+      "max_similarity": 0.7607564926147461,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:21:49.485529",
+      "query": "What cultures influenced the buildings inside the fort?",
+      "retrieval_time": 0.0504913330078125,
+      "avg_similarity": 0.4799696564674377,
+      "max_similarity": 0.5420162677764893,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:24:22.560343",
+      "query": "What cultures influenced the buildings inside the fort?",
+      "retrieval_time": 0.019649267196655273,
+      "avg_similarity": 0.4799696564674377,
+      "max_similarity": 0.5420162677764893,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:33:24.417092",
+      "query": "What makes Galle Fort unique compared to other forts",
+      "retrieval_time": 0.019711017608642578,
+      "avg_similarity": 0.6880283117294311,
+      "max_similarity": 0.7069784998893738,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:34:17.052605",
+      "query": "patrol did gold pot play during the Portuguese and Dutch periods.",
+      "retrieval_time": 0.06678199768066406,
+      "avg_similarity": 0.47388765811920164,
+      "max_similarity": 0.4784610867500305,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:35:00.593283",
+      "query": "Why is Galle Fort a popular tourist destination?",
+      "retrieval_time": 0.06365537643432617,
+      "avg_similarity": 0.6222764730453492,
+      "max_similarity": 0.6313388347625732,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-09T18:41:29.463483",
+      "query": "Why is Galle Fort a popular tourist destination?",
+      "retrieval_time": 0.017966270446777344,
+      "avg_similarity": 0.6222764730453492,
+      "max_similarity": 0.6313388347625732,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T04:14:46.344552",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "retrieval_time": 0.08698034286499023,
+      "avg_similarity": 0.7049506664276123,
+      "max_similarity": 0.7607564926147461,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T04:23:51.538526",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "retrieval_time": 0.030004501342773438,
+      "avg_similarity": 0.7049506664276123,
+      "max_similarity": 0.7607564926147461,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T04:32:00.205264",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "retrieval_time": 0.0821225643157959,
+      "avg_similarity": 0.7049506664276123,
+      "max_similarity": 0.7607564926147461,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T04:50:25.266077",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "retrieval_time": 0.10176849365234375,
+      "avg_similarity": 0.7049506664276123,
+      "max_similarity": 0.7607564926147461,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T04:52:24.426360",
+      "query": "What is the importance of tooth relic?",
+      "retrieval_time": 0.024849414825439453,
+      "avg_similarity": 0.6990838408470154,
+      "max_similarity": 0.7691017389297485,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T04:55:02.076136",
+      "query": "What is esala perahra?",
+      "retrieval_time": 0.01905059814453125,
+      "avg_similarity": 0.5745248556137085,
+      "max_similarity": 0.6220451593399048,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:02:31.667526",
+      "query": "What is esala perahra?",
+      "retrieval_time": 0.3188314437866211,
+      "avg_similarity": 0.5745248556137085,
+      "max_similarity": 0.6220451593399048,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:02:47.874767",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.4554450511932373,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:09:15.413330",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.022047996520996094,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:09:46.722767",
+      "query": "What is esala perahra?",
+      "retrieval_time": 0.06420183181762695,
+      "avg_similarity": 0.5745248556137085,
+      "max_similarity": 0.6220451593399048,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:10:51.197536",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.06401658058166504,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:11:21.504989",
+      "query": "What is esala perahra?",
+      "retrieval_time": 0.05600333213806152,
+      "avg_similarity": 0.5745248556137085,
+      "max_similarity": 0.6220451593399048,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:14:48.194524",
+      "query": "Why did Kandy remain independent?",
+      "retrieval_time": 0.036301612854003906,
+      "avg_similarity": 0.5179936766624451,
+      "max_similarity": 0.5385242104530334,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:17:13.526119",
+      "query": "kingdom made the Temple of the Tooth Relic famous?",
+      "retrieval_time": 0.02807331085205078,
+      "avg_similarity": 0.66455637216568,
+      "max_similarity": 0.6833606958389282,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:20:00.507059",
+      "query": " Where is the Sacred Tooth Relic kept today?",
+      "retrieval_time": 0.028488874435424805,
+      "avg_similarity": 0.713833498954773,
+      "max_similarity": 0.7230412364006042,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:29:40.391627",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "retrieval_time": 0.02704477310180664,
+      "avg_similarity": 0.6736483097076416,
+      "max_similarity": 0.6995448470115662,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:34:43.412624",
+      "query": "What festival is associated with the Temple of the Tooth Relic?",
+      "retrieval_time": 0.019528865814208984,
+      "avg_similarity": 0.6582818746566772,
+      "max_similarity": 0.6632310152053833,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T05:49:41.439515",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "retrieval_time": 0.017715930938720703,
+      "avg_similarity": 0.6736483097076416,
+      "max_similarity": 0.6995448470115662,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T06:52:58.678711",
+      "query": "What is the Esala Perahera festival?",
+      "retrieval_time": 0.03850555419921875,
+      "avg_similarity": 0.7135255694389343,
+      "max_similarity": 0.7296274900436401,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-10T07:36:18.118176",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "retrieval_time": 0.07242417335510254,
+      "avg_similarity": 0.6736483097076416,
+      "max_similarity": 0.6995448470115662,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-14T07:26:04.253557",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "retrieval_time": 0.08816647529602051,
+      "avg_similarity": 0.6736483097076416,
+      "max_similarity": 0.6995448470115662,
+      "num_docs": 5
+    },
+    {
+      "timestamp": "2026-03-14T07:29:37.953327",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "retrieval_time": 0.057299137115478516,
+      "avg_similarity": 0.6736483097076416,
+      "max_similarity": 0.6995448470115662,
+      "num_docs": 5
+    }
+  ],
+  "rl_rewards": [
+    {
+      "timestamp": "2026-02-26T16:48:45.778105",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.0
+    },
+    {
+      "timestamp": "2026-03-01T11:45:18.686757",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.0
+    },
+    {
+      "timestamp": "2026-03-01T12:02:28.445134",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.0
+    },
+    {
+      "timestamp": "2026-03-01T12:02:29.574206",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.0
+    },
+    {
+      "timestamp": "2026-03-01T12:02:30.429342",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.0
+    },
+    {
+      "timestamp": "2026-03-01T12:02:35.495602",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 1.0
+    },
+    {
+      "timestamp": "2026-03-01T12:02:36.252713",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 1.0
+    },
+    {
+      "timestamp": "2026-03-01T12:02:37.040586",
+      "user_id": "user_1",
+      "character": "king",
+      "topic": "general",
+      "reward": 1.0
+    },
+    {
+      "timestamp": "2026-03-01T14:19:05.771131",
+      "user_id": "feedback_1772374745192",
+      "character": "king",
+      "topic": "general",
+      "reward": 1.0
+    },
+    {
+      "timestamp": "2026-03-01T15:26:03.280164",
+      "user_id": "feedback_1772378762957",
+      "character": "king",
+      "topic": "general",
+      "reward": 1.0
+    },
+    {
+      "timestamp": "2026-03-05T18:57:07.290457",
+      "user_id": "feedback_1772737026719",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.5
+    },
+    {
+      "timestamp": "2026-03-07T09:51:40.523687",
+      "user_id": "feedback_1772877101092",
+      "character": "king",
+      "topic": "general",
+      "reward": 0.5
+    },
+    {
+      "timestamp": "2026-03-09T14:07:34.425224",
+      "user_id": "feedback_1773065254291",
+      "character": "king",
+      "topic": "temple",
+      "reward": 1.0
+    }
+  ],
+  "query_times": [
+    {
+      "timestamp": "2026-02-22T05:49:47.457443",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.0018944740295410156
+    },
+    {
+      "timestamp": "2026-02-22T06:38:10.086167",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.001589059829711914
+    },
+    {
+      "timestamp": "2026-02-22T06:47:36.222616",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 86.96958303451538
+    },
+    {
+      "timestamp": "2026-02-22T06:56:40.291717",
+      "query": "what is paththirippuwa\n",
+      "character": "king",
+      "time": 0.002466440200805664
+    },
+    {
+      "timestamp": "2026-02-22T06:57:16.461309",
+      "query": "Where is Buddha's first canine tooth?",
+      "character": "king",
+      "time": 0.0039823055267333984
+    },
+    {
+      "timestamp": "2026-02-22T06:57:53.925419",
+      "query": "Who was Fa-Hsien?",
+      "character": "king",
+      "time": 0.002097606658935547
+    },
+    {
+      "timestamp": "2026-02-22T06:59:43.251593",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 83.5940330028534
+    },
+    {
+      "timestamp": "2026-02-26T16:22:58.623686",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.0032503604888916016
+    },
+    {
+      "timestamp": "2026-02-26T16:25:13.865602",
+      "query": "What was Dutch rule like in Ceylon?",
+      "character": "king",
+      "time": 79.80567455291748
+    },
+    {
+      "timestamp": "2026-02-26T16:26:13.154509",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.022098779678344727
+    },
+    {
+      "timestamp": "2026-02-26T16:42:15.617678",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.005811214447021484
+    },
+    {
+      "timestamp": "2026-02-26T16:45:18.769504",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.005777835845947266
+    },
+    {
+      "timestamp": "2026-02-26T16:47:12.766835",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 71.73773217201233
+    },
+    {
+      "timestamp": "2026-02-26T16:48:42.580893",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 35.57358956336975
+    },
+    {
+      "timestamp": "2026-02-28T14:50:41.341641",
+      "query": "hi\n",
+      "character": "king",
+      "time": 0.007225990295410156
+    },
+    {
+      "timestamp": "2026-02-28T15:31:29.374959",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.004959821701049805
+    },
+    {
+      "timestamp": "2026-03-01T09:36:05.233761",
+      "query": "hi",
+      "character": "king",
+      "time": 0.02021193504333496
+    },
+    {
+      "timestamp": "2026-03-01T10:34:24.386262",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.023872852325439453
+    },
+    {
+      "timestamp": "2026-03-01T10:59:12.472811",
+      "query": "hello hello",
+      "character": "king",
+      "time": 0.017592668533325195
+    },
+    {
+      "timestamp": "2026-03-01T10:59:14.545232",
+      "query": "hello hello",
+      "character": "king",
+      "time": 1.7223076820373535
+    },
+    {
+      "timestamp": "2026-03-01T10:59:23.127579",
+      "query": "hi",
+      "character": "king",
+      "time": 0.04499459266662598
+    },
+    {
+      "timestamp": "2026-03-01T11:13:58.053147",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.01918625831604004
+    },
+    {
+      "timestamp": "2026-03-01T11:14:07.432900",
+      "query": "hi",
+      "character": "king",
+      "time": 0.5761749744415283
+    },
+    {
+      "timestamp": "2026-03-01T11:16:00.316270",
+      "query": "hi\n",
+      "character": "king",
+      "time": 0.1611626148223877
+    },
+    {
+      "timestamp": "2026-03-01T11:16:05.291157",
+      "query": "hiiii\n",
+      "character": "king",
+      "time": 0.04296374320983887
+    },
+    {
+      "timestamp": "2026-03-01T12:18:22.698068",
+      "query": "hi\n",
+      "character": "nilame",
+      "time": 0.018162012100219727
+    },
+    {
+      "timestamp": "2026-03-01T12:18:29.658699",
+      "query": "hi\n",
+      "character": "nilame",
+      "time": 0.5155200958251953
+    },
+    {
+      "timestamp": "2026-03-01T14:12:45.904141",
+      "query": "hi",
+      "character": "king",
+      "time": 0.007767677307128906
+    },
+    {
+      "timestamp": "2026-03-01T14:12:50.733782",
+      "query": "hi\n",
+      "character": "king",
+      "time": 0.13434457778930664
+    },
+    {
+      "timestamp": "2026-03-01T14:18:25.734888",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.017290830612182617
+    },
+    {
+      "timestamp": "2026-03-01T14:36:06.874716",
+      "query": "hi\n",
+      "character": "king",
+      "time": 0.013854265213012695
+    },
+    {
+      "timestamp": "2026-03-01T14:40:46.953328",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 12.955732583999634
+    },
+    {
+      "timestamp": "2026-03-01T15:24:23.250198",
+      "query": "what is temple of tooth relic",
+      "character": "king",
+      "time": 0.009496212005615234
+    },
+    {
+      "timestamp": "2026-03-01T15:25:01.380074",
+      "query": "hi",
+      "character": "king",
+      "time": 0.014642953872680664
+    },
+    {
+      "timestamp": "2026-03-01T15:25:15.564729",
+      "query": "what is temple of tooth relic",
+      "character": "king",
+      "time": 0.010567903518676758
+    },
+    {
+      "timestamp": "2026-03-01T16:05:20.212769",
+      "query": "What is temple of tooth relic",
+      "character": "king",
+      "time": 0.009280920028686523
+    },
+    {
+      "timestamp": "2026-03-01T16:15:50.890542",
+      "query": "What is the importance of temple of tooth",
+      "character": "king",
+      "time": 0.011617422103881836
+    },
+    {
+      "timestamp": "2026-03-01T16:16:11.270124",
+      "query": "what is the importance of tooth relic",
+      "character": "king",
+      "time": 0.22411704063415527
+    },
+    {
+      "timestamp": "2026-03-04T16:35:21.481729",
+      "query": "What surrounds the Sri Dalada Maligawa temple?",
+      "character": "king",
+      "time": 0.013010740280151367
+    },
+    {
+      "timestamp": "2026-03-04T16:35:47.325021",
+      "query": "How did the Tooth Relic survive destruction attempts?",
+      "character": "king",
+      "time": 0.012003183364868164
+    },
+    {
+      "timestamp": "2026-03-04T16:42:13.970495",
+      "query": "what are the surroundingd in the temple of tooth relic",
+      "character": "king",
+      "time": 89.56174373626709
+    },
+    {
+      "timestamp": "2026-03-04T18:05:28.627549",
+      "query": "Who was the last Indian ruler to possess the Tooth Relic",
+      "character": "king",
+      "time": 0.04552626609802246
+    },
+    {
+      "timestamp": "2026-03-04T18:05:39.365824",
+      "query": "Who the last Indian ruler to possess the Tooth Relic",
+      "character": "king",
+      "time": 0.044229984283447266
+    },
+    {
+      "timestamp": "2026-03-04T18:05:48.566909",
+      "query": "what are the surroundingd in the temple of tooth relic",
+      "character": "king",
+      "time": 128.97583627700806
+    },
+    {
+      "timestamp": "2026-03-04T18:05:49.259552",
+      "query": "Who last Indian ruler to possess the Tooth Relic",
+      "character": "king",
+      "time": 0.027242660522460938
+    },
+    {
+      "timestamp": "2026-03-04T18:05:49.370216",
+      "query": "Who s the last Indian ruler to possess the Tooth Relic",
+      "character": "king",
+      "time": 0.41751670837402344
+    },
+    {
+      "timestamp": "2026-03-04T18:06:36.437202",
+      "query": "How tooth displayed?",
+      "character": "king",
+      "time": 0.012459993362426758
+    },
+    {
+      "timestamp": "2026-03-04T18:10:02.473631",
+      "query": "What is eslaa perahara",
+      "character": "king",
+      "time": 167.52980041503906
+    },
+    {
+      "timestamp": "2026-03-04T18:10:15.727776",
+      "query": "what is eslaa perahara\n",
+      "character": "king",
+      "time": 156.70402121543884
+    },
+    {
+      "timestamp": "2026-03-04T18:11:37.529179",
+      "query": "what is esla perahara",
+      "character": "king",
+      "time": 94.67725706100464
+    },
+    {
+      "timestamp": "2026-03-04T18:11:37.881859",
+      "query": "hello what is",
+      "character": "king",
+      "time": 0.010634183883666992
+    },
+    {
+      "timestamp": "2026-03-04T18:14:55.706734",
+      "query": "Why did Kandy remain independent?",
+      "character": "king",
+      "time": 197.0980031490326
+    },
+    {
+      "timestamp": "2026-03-04T18:15:07.533257",
+      "query": "what is dalada morning",
+      "character": "king",
+      "time": 186.065025806427
+    },
+    {
+      "timestamp": "2026-03-04T18:16:42.325724",
+      "query": "what is temple of 2-3923",
+      "character": "king",
+      "time": 94.44303178787231
+    },
+    {
+      "timestamp": "2026-03-04T18:27:33.017776",
+      "query": "hi",
+      "character": "king",
+      "time": 0.013006210327148438
+    },
+    {
+      "timestamp": "2026-03-04T18:29:52.258735",
+      "query": "Why did Kandy remain independent?",
+      "character": "king",
+      "time": 127.53822159767151
+    },
+    {
+      "timestamp": "2026-03-04T18:30:23.236293",
+      "query": "Why did Kandy remain independent?",
+      "character": "king",
+      "time": 69.04696893692017
+    },
+    {
+      "timestamp": "2026-03-05T16:59:31.833062",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 89.85071682929993
+    },
+    {
+      "timestamp": "2026-03-05T17:24:26.906072",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 71.01423335075378
+    },
+    {
+      "timestamp": "2026-03-05T17:26:58.760204",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 129.04736328125
+    },
+    {
+      "timestamp": "2026-03-05T17:28:00.190771",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 52.47799587249756
+    },
+    {
+      "timestamp": "2026-03-05T17:28:54.878160",
+      "query": "Why did Kandy remain independent?",
+      "character": "king",
+      "time": 34.92901015281677
+    },
+    {
+      "timestamp": "2026-03-05T17:30:41.228685",
+      "query": "hi",
+      "character": "king",
+      "time": 0.015971660614013672
+    },
+    {
+      "timestamp": "2026-03-05T17:36:46.189247",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 194.48496437072754
+    },
+    {
+      "timestamp": "2026-03-05T18:01:43.862152",
+      "query": "Where did Fa-Hsien stay in Anuradhapura?\n",
+      "character": "king",
+      "time": 0.01002192497253418
+    },
+    {
+      "timestamp": "2026-03-05T18:03:37.101737",
+      "query": "boil relic means\n",
+      "character": "king",
+      "time": 77.46349954605103
+    },
+    {
+      "timestamp": "2026-03-05T18:05:20.401364",
+      "query": "what is bowl relic",
+      "character": "king",
+      "time": 72.49896430969238
+    },
+    {
+      "timestamp": "2026-03-05T18:05:52.132816",
+      "query": "What is the Bowl Relic?",
+      "character": "king",
+      "time": 0.023651838302612305
+    },
+    {
+      "timestamp": "2026-03-05T18:07:05.244559",
+      "query": "Who recovered the Relic from Kotmale?",
+      "character": "king",
+      "time": 0.010755538940429688
+    },
+    {
+      "timestamp": "2026-03-05T18:10:03.111736",
+      "query": "what is srivardhanapura\n",
+      "character": "king",
+      "time": 66.19972777366638
+    },
+    {
+      "timestamp": "2026-03-05T18:11:58.344589",
+      "query": "who given the responsibility in tooth relic in kurunegala",
+      "character": "king",
+      "time": 0.0
+    },
+    {
+      "timestamp": "2026-03-05T18:12:06.813510",
+      "query": "explain more\n",
+      "character": "king",
+      "time": 0.04083728790283203
+    },
+    {
+      "timestamp": "2026-03-05T18:13:30.629511",
+      "query": "how many prelates in the 1847 comitte\n",
+      "character": "king",
+      "time": 26.988871574401855
+    },
+    {
+      "timestamp": "2026-03-05T18:13:38.902831",
+      "query": "hi",
+      "character": "king",
+      "time": 0.013012170791625977
+    },
+    {
+      "timestamp": "2026-03-05T18:16:01.855167",
+      "query": "how many days the kubal perahara proceed\n",
+      "character": "king",
+      "time": 74.50016260147095
+    },
+    {
+      "timestamp": "2026-03-05T18:20:30.885867",
+      "query": "how many days the kubal perahara proceed",
+      "character": "king",
+      "time": 92.69919657707214
+    },
+    {
+      "timestamp": "2026-03-05T18:25:38.996638",
+      "query": "hi",
+      "character": "king",
+      "time": 0.01803302764892578
+    },
+    {
+      "timestamp": "2026-03-05T18:26:07.122985",
+      "query": "who\n",
+      "character": "king",
+      "time": 18.316978216171265
+    },
+    {
+      "timestamp": "2026-03-05T18:27:16.727105",
+      "query": "what fronts two story inner shin\n",
+      "character": "king",
+      "time": 38.582335472106934
+    },
+    {
+      "timestamp": "2026-03-05T18:29:23.238369",
+      "query": "what fronts two story inner shine\n",
+      "character": "king",
+      "time": 88.91971468925476
+    },
+    {
+      "timestamp": "2026-03-05T18:30:11.227028",
+      "query": "what fronts two story inner shine",
+      "character": "king",
+      "time": 0.015058755874633789
+    },
+    {
+      "timestamp": "2026-03-05T18:31:09.837753",
+      "query": "what fronts two story inner shine",
+      "character": "king",
+      "time": 52.59491777420044
+    },
+    {
+      "timestamp": "2026-03-05T18:33:58.906215",
+      "query": "what was rebuild after the 1998",
+      "character": "king",
+      "time": 165.22411727905273
+    },
+    {
+      "timestamp": "2026-03-05T18:37:05.025858",
+      "query": "what was rebuild after the 1998",
+      "character": "king",
+      "time": 165.1647400856018
+    },
+    {
+      "timestamp": "2026-03-05T18:37:54.543667",
+      "query": "give information acooring to above question\n",
+      "character": "king",
+      "time": 0.16837000846862793
+    },
+    {
+      "timestamp": "2026-03-05T18:40:28.299429",
+      "query": "what was rebuild after the 1998 in tooth relic\n",
+      "character": "king",
+      "time": 135.81192183494568
+    },
+    {
+      "timestamp": "2026-03-05T18:43:12.074659",
+      "query": "what was rebuild after the 1998 bomb in tooth relic",
+      "character": "king",
+      "time": 138.42013001441956
+    },
+    {
+      "timestamp": "2026-03-05T18:47:01.637842",
+      "query": "What began immediately after the 1998 bombing?",
+      "character": "king",
+      "time": 0.04541635513305664
+    },
+    {
+      "timestamp": "2026-03-05T18:53:18.151057",
+      "query": "what fronts two story inner shine",
+      "character": "king",
+      "time": 1280.5179662704468
+    },
+    {
+      "timestamp": "2026-03-05T18:59:30.274954",
+      "query": "Who built the golden canopy and fence?",
+      "character": "king",
+      "time": 0.03679084777832031
+    },
+    {
+      "timestamp": "2026-03-05T19:00:38.523085",
+      "query": "Who built the golden canopy and fence?",
+      "character": "king",
+      "time": 0.01669478416442871
+    },
+    {
+      "timestamp": "2026-03-07T06:40:26.187062",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 345.4407477378845
+    },
+    {
+      "timestamp": "2026-03-07T07:25:38.462837",
+      "query": "what is temple of tooth",
+      "character": "king",
+      "time": 0.023164033889770508
+    },
+    {
+      "timestamp": "2026-03-07T09:37:06.325465",
+      "query": "what is the importance of temple of tooth relic",
+      "character": "king",
+      "time": 0.20890021324157715
+    },
+    {
+      "timestamp": "2026-03-07T13:04:42.330660",
+      "query": "what is the temple of tooth relic",
+      "character": "king",
+      "time": 0.013732671737670898
+    },
+    {
+      "timestamp": "2026-03-07T13:36:20.924656",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 478.5011260509491
+    },
+    {
+      "timestamp": "2026-03-07T14:07:42.117803",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 20.660310983657837
+    },
+    {
+      "timestamp": "2026-03-07T14:12:20.283342",
+      "query": "Tell me about the Tooth Relic",
+      "character": "king",
+      "time": 543.7526230812073
+    },
+    {
+      "timestamp": "2026-03-07T14:26:18.441625",
+      "query": "Tell me about the Tooth Relic",
+      "character": "king",
+      "time": 764.1803426742554
+    },
+    {
+      "timestamp": "2026-03-07T15:43:04.039949",
+      "query": "Tell me about the Tooth Relic",
+      "character": "king",
+      "time": 231.31799697875977
+    },
+    {
+      "timestamp": "2026-03-07T15:44:32.987918",
+      "query": "What is esala perahara",
+      "character": "king",
+      "time": 29.159149169921875
+    },
+    {
+      "timestamp": "2026-03-07T15:50:19.148951",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 455.0222282409668
+    },
+    {
+      "timestamp": "2026-03-07T15:51:49.328890",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.01800370216369629
+    },
+    {
+      "timestamp": "2026-03-07T16:00:08.899490",
+      "query": "Tell me about the Tooth Relic",
+      "character": "king",
+      "time": 71.76444029808044
+    },
+    {
+      "timestamp": "2026-03-07T16:01:13.215099",
+      "query": "What is galle fort",
+      "character": "king",
+      "time": 0.28491830825805664
+    },
+    {
+      "timestamp": "2026-03-07T16:04:52.574504",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 673.2048118114471
+    },
+    {
+      "timestamp": "2026-03-07T16:04:52.866245",
+      "query": "what is galle fort\n",
+      "character": "king",
+      "time": 0.07508611679077148
+    },
+    {
+      "timestamp": "2026-03-07T16:22:39.856328",
+      "query": "what is galle port",
+      "character": "dutch",
+      "time": 293.4313268661499
+    },
+    {
+      "timestamp": "2026-03-07T16:23:05.342894",
+      "query": "what is galle fort",
+      "character": "dutch",
+      "time": 0.22494029998779297
+    },
+    {
+      "timestamp": "2026-03-07T16:24:16.167187",
+      "query": "What is galle fort",
+      "character": "king",
+      "time": 0.18405413627624512
+    },
+    {
+      "timestamp": "2026-03-07T16:26:38.356953",
+      "query": "Who was Lan\u00e7arote de Seixas?",
+      "character": "dutch",
+      "time": 173.79842138290405
+    },
+    {
+      "timestamp": "2026-03-07T17:20:05.872617",
+      "query": "Where is the port city of Galle located?",
+      "character": "dutch",
+      "time": 360.75615787506104
+    },
+    {
+      "timestamp": "2026-03-08T03:11:18.942435",
+      "query": "What was Dutch rule like in Ceylon?",
+      "character": "king",
+      "time": 115.5455412864685
+    },
+    {
+      "timestamp": "2026-03-08T03:12:50.039461",
+      "query": "What is galle fort",
+      "character": "king",
+      "time": 0.022262096405029297
+    },
+    {
+      "timestamp": "2026-03-08T03:13:42.225399",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.016085147857666016
+    },
+    {
+      "timestamp": "2026-03-08T03:13:52.249559",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "dutch",
+      "time": 0.01015615463256836
+    },
+    {
+      "timestamp": "2026-03-08T03:14:00.188868",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "dutch",
+      "time": 0.02046942710876465
+    },
+    {
+      "timestamp": "2026-03-08T04:02:46.686562",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.03332805633544922
+    },
+    {
+      "timestamp": "2026-03-08T04:44:44.485721",
+      "query": "What was the first temple of tooth relic in polonnawruwa",
+      "character": "king",
+      "time": 218.11759161949158
+    },
+    {
+      "timestamp": "2026-03-08T04:48:33.611373",
+      "query": "What is the bowl relic?\n",
+      "character": "king",
+      "time": 0.018048763275146484
+    },
+    {
+      "timestamp": "2026-03-08T04:49:49.864442",
+      "query": "Who recovered the relic from the kotmalee?\n",
+      "character": "king",
+      "time": 0.024512529373168945
+    },
+    {
+      "timestamp": "2026-03-08T04:58:15.670296",
+      "query": "What is srivardhanapura?\n",
+      "character": "king",
+      "time": 0.028115034103393555
+    },
+    {
+      "timestamp": "2026-03-08T04:59:30.193291",
+      "query": "srivardhnapura means?\n",
+      "character": "king",
+      "time": 43.41673922538757
+    },
+    {
+      "timestamp": "2026-03-08T05:01:21.311693",
+      "query": "What is srivardhanapura?",
+      "character": "king",
+      "time": 0.025591611862182617
+    },
+    {
+      "timestamp": "2026-03-08T05:03:15.305918",
+      "query": "What is srivardhanapura? give more",
+      "character": "king",
+      "time": 106.81202006340027
+    },
+    {
+      "timestamp": "2026-03-08T05:06:05.493030",
+      "query": "how was long the tooth relic in sri lanka\n",
+      "character": "king",
+      "time": 0.07129812240600586
+    },
+    {
+      "timestamp": "2026-03-08T05:14:30.299288",
+      "query": "how long is been tooth relic in sri lanka",
+      "character": "king",
+      "time": 0.060242652893066406
+    },
+    {
+      "timestamp": "2026-03-08T05:14:36.810753",
+      "query": "how long is been tooth relic in sri lanka",
+      "character": "king",
+      "time": 0.06026601791381836
+    },
+    {
+      "timestamp": "2026-03-08T05:14:44.823294",
+      "query": "how long is been tooth relic in sri lanka",
+      "character": "king",
+      "time": 0.04455089569091797
+    },
+    {
+      "timestamp": "2026-03-08T05:15:04.465718",
+      "query": "how was long the tooth relic in sri lanka",
+      "character": "king",
+      "time": 0.07233810424804688
+    },
+    {
+      "timestamp": "2026-03-08T06:39:46.830255",
+      "query": "how was long the tooth relic in sri lanka",
+      "character": "king",
+      "time": 0.051381826400756836
+    },
+    {
+      "timestamp": "2026-03-08T06:41:26.173521",
+      "query": "what fonts the two story inner shine\n",
+      "character": "king",
+      "time": 56.22985053062439
+    },
+    {
+      "timestamp": "2026-03-08T11:24:42.079853",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.010530471801757812
+    },
+    {
+      "timestamp": "2026-03-08T11:25:12.476928",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "dutch",
+      "time": 0.011635780334472656
+    },
+    {
+      "timestamp": "2026-03-08T11:25:40.060547",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "citizen",
+      "time": 0.013102054595947266
+    },
+    {
+      "timestamp": "2026-03-08T11:26:15.476561",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.012117862701416016
+    },
+    {
+      "timestamp": "2026-03-08T11:33:50.860327",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.019361495971679688
+    },
+    {
+      "timestamp": "2026-03-08T11:34:00.611938",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.01574993133544922
+    },
+    {
+      "timestamp": "2026-03-08T11:34:05.684261",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.017507076263427734
+    },
+    {
+      "timestamp": "2026-03-08T11:34:08.053518",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.01620960235595703
+    },
+    {
+      "timestamp": "2026-03-08T11:39:42.758309",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.019181013107299805
+    },
+    {
+      "timestamp": "2026-03-08T11:57:12.434757",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "nilame",
+      "time": 0.016093969345092773
+    },
+    {
+      "timestamp": "2026-03-08T12:23:56.889936",
+      "query": "Why did Kandy remain independent?",
+      "character": "king",
+      "time": 108.88233494758606
+    },
+    {
+      "timestamp": "2026-03-08T12:27:13.601442",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.07661724090576172
+    },
+    {
+      "timestamp": "2026-03-08T12:31:04.154629",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.06179666519165039
+    },
+    {
+      "timestamp": "2026-03-08T12:33:00.900751",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 472.73366379737854
+    },
+    {
+      "timestamp": "2026-03-08T12:47:30.426201",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.01104116439819336
+    },
+    {
+      "timestamp": "2026-03-08T12:51:24.339176",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.01862168312072754
+    },
+    {
+      "timestamp": "2026-03-08T13:08:52.313739",
+      "query": "Welcome to the sacred heart of Lanka. Look around you, traveler, at these stone pillars and towering stupas. They were not built by mere men, but by the sheer will of our ancestors and the blessings of the gods. For centuries, our kingdom has stood strong against the tides of time, protecting the ancient relics within. Step forward with respect, and you shall hear the true history of our people.",
+      "character": "king",
+      "time": 320.8077778816223
+    },
+    {
+      "timestamp": "2026-03-08T13:30:31.893424",
+      "query": "Welcome to the sacred heart of Lanka. Look around you, traveler, at these stone pillars and towering stupas. They were not built by mere men, but by the sheer will of our ancestors and the blessings of the gods. For centuries, our kingdom has stood strong against the tides of time, protecting the ancient relics within. Step forward with respect, and you shall hear the true history of our people.",
+      "character": "king",
+      "time": 1299.5566699504852
+    },
+    {
+      "timestamp": "2026-03-08T13:35:18.045842",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.016048431396484375
+    },
+    {
+      "timestamp": "2026-03-08T13:35:24.579633",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.01913285255432129
+    },
+    {
+      "timestamp": "2026-03-08T13:38:31.275252",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.0726165771484375
+    },
+    {
+      "timestamp": "2026-03-08T13:41:19.426509",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.01858687400817871
+    },
+    {
+      "timestamp": "2026-03-08T13:41:34.983539",
+      "query": "What was the significance of Galle's fortification by the Portuguese for the subsequent history of the city?",
+      "character": "king",
+      "time": 0.020141124725341797
+    },
+    {
+      "timestamp": "2026-03-08T13:41:54.434710",
+      "query": "Hi?",
+      "character": "king",
+      "time": 0.03439068794250488
+    },
+    {
+      "timestamp": "2026-03-08T13:42:09.032105",
+      "query": "Hi?",
+      "character": "king",
+      "time": 0.03711867332458496
+    },
+    {
+      "timestamp": "2026-03-08T13:42:32.966712",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.03558754920959473
+    },
+    {
+      "timestamp": "2026-03-08T13:42:56.561042",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.03300666809082031
+    },
+    {
+      "timestamp": "2026-03-08T13:43:09.164623",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.04993629455566406
+    },
+    {
+      "timestamp": "2026-03-08T13:43:17.300920",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.039407968521118164
+    },
+    {
+      "timestamp": "2026-03-08T13:47:31.894925",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.03946399688720703
+    },
+    {
+      "timestamp": "2026-03-08T13:51:07.357617",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.023079633712768555
+    },
+    {
+      "timestamp": "2026-03-08T13:53:04.045116",
+      "query": "hi",
+      "character": "king",
+      "time": 0.01824641227722168
+    },
+    {
+      "timestamp": "2026-03-08T14:18:17.825450",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.019893407821655273
+    },
+    {
+      "timestamp": "2026-03-08T14:18:40.623368",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.07605171203613281
+    },
+    {
+      "timestamp": "2026-03-08T14:18:45.929126",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.03680753707885742
+    },
+    {
+      "timestamp": "2026-03-08T14:19:03.898928",
+      "query": "hi",
+      "character": "king",
+      "time": 0.03335452079772949
+    },
+    {
+      "timestamp": "2026-03-08T14:19:14.606710",
+      "query": "hi",
+      "character": "king",
+      "time": 0.03263664245605469
+    },
+    {
+      "timestamp": "2026-03-08T14:19:52.627553",
+      "query": "hi",
+      "character": "king",
+      "time": 0.035054922103881836
+    },
+    {
+      "timestamp": "2026-03-08T14:19:58.700722",
+      "query": "hello",
+      "character": "king",
+      "time": 0.034653663635253906
+    },
+    {
+      "timestamp": "2026-03-08T14:20:03.434720",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.03393912315368652
+    },
+    {
+      "timestamp": "2026-03-08T14:21:23.400296",
+      "query": "Hello, who are you?",
+      "character": "king",
+      "time": 0.033490657806396484
+    },
+    {
+      "timestamp": "2026-03-08T14:24:12.415522",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.050736188888549805
+    },
+    {
+      "timestamp": "2026-03-08T14:29:55.542947",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.05416584014892578
+    },
+    {
+      "timestamp": "2026-03-08T14:30:24.738405",
+      "query": "what is temple of tooth relic",
+      "character": "king",
+      "time": 0.022273778915405273
+    },
+    {
+      "timestamp": "2026-03-08T14:30:46.712130",
+      "query": "HI",
+      "character": "king",
+      "time": 0.04345440864562988
+    },
+    {
+      "timestamp": "2026-03-08T14:33:16.489222",
+      "query": "HI",
+      "character": "king",
+      "time": 0.01580357551574707
+    },
+    {
+      "timestamp": "2026-03-08T14:35:03.661757",
+      "query": "HI",
+      "character": "king",
+      "time": 0.7741856575012207
+    },
+    {
+      "timestamp": "2026-03-08T14:35:06.726740",
+      "query": "HI",
+      "character": "king",
+      "time": 0.16921257972717285
+    },
+    {
+      "timestamp": "2026-03-08T14:35:15.918335",
+      "query": "Hi",
+      "character": "king",
+      "time": 1.2367925643920898
+    },
+    {
+      "timestamp": "2026-03-08T14:35:19.302161",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.9550576210021973
+    },
+    {
+      "timestamp": "2026-03-08T14:35:31.376029",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.5223128795623779
+    },
+    {
+      "timestamp": "2026-03-08T14:35:34.665180",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.6789858341217041
+    },
+    {
+      "timestamp": "2026-03-08T14:40:52.437824",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.024992704391479492
+    },
+    {
+      "timestamp": "2026-03-08T14:45:22.265660",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.1032724380493164
+    },
+    {
+      "timestamp": "2026-03-08T14:45:24.481035",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.040741682052612305
+    },
+    {
+      "timestamp": "2026-03-08T14:45:27.117699",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.038931846618652344
+    },
+    {
+      "timestamp": "2026-03-08T14:45:28.587125",
+      "query": "Hi",
+      "character": "king",
+      "time": 0.03956770896911621
+    },
+    {
+      "timestamp": "2026-03-08T14:45:41.731253",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.03916168212890625
+    },
+    {
+      "timestamp": "2026-03-08T14:50:45.896845",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.014037132263183594
+    },
+    {
+      "timestamp": "2026-03-08T14:51:13.050061",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.038973093032836914
+    },
+    {
+      "timestamp": "2026-03-08T14:56:17.214233",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.025455713272094727
+    },
+    {
+      "timestamp": "2026-03-08T14:57:57.538060",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.01621699333190918
+    },
+    {
+      "timestamp": "2026-03-08T15:03:05.582505",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.015106439590454102
+    },
+    {
+      "timestamp": "2026-03-09T02:41:05.209768",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.03287458419799805
+    },
+    {
+      "timestamp": "2026-03-09T02:41:27.520206",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.024946212768554688
+    },
+    {
+      "timestamp": "2026-03-09T02:41:29.437606",
+      "query": "who are you",
+      "character": "king",
+      "time": 0.018456220626831055
+    },
+    {
+      "timestamp": "2026-03-09T02:41:43.975211",
+      "query": "wht is temple of tooth relic",
+      "character": "king",
+      "time": 0.01690840721130371
+    },
+    {
+      "timestamp": "2026-03-09T02:43:01.768992",
+      "query": "wht is esla perahara",
+      "character": "king",
+      "time": 58.5627019405365
+    },
+    {
+      "timestamp": "2026-03-09T03:25:05.307691",
+      "query": "wht is temple of tooth relic",
+      "character": "king",
+      "time": 0.016590595245361328
+    },
+    {
+      "timestamp": "2026-03-09T03:29:30.203420",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.01566910743713379
+    },
+    {
+      "timestamp": "2026-03-09T03:32:31.430377",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.016841888427734375
+    },
+    {
+      "timestamp": "2026-03-09T03:38:25.938043",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.06011533737182617
+    },
+    {
+      "timestamp": "2026-03-09T03:42:56.014934",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.01604461669921875
+    },
+    {
+      "timestamp": "2026-03-09T03:47:21.138519",
+      "query": "wht is temple of tooth relic",
+      "character": "citizen",
+      "time": 0.015469789505004883
+    },
+    {
+      "timestamp": "2026-03-09T03:49:41.273966",
+      "query": "wht is temple of tooth relic",
+      "character": "nilame",
+      "time": 0.017002344131469727
+    },
+    {
+      "timestamp": "2026-03-09T03:50:15.051792",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.018167495727539062
+    },
+    {
+      "timestamp": "2026-03-09T03:50:27.101440",
+      "query": "hi",
+      "character": "citizen",
+      "time": 0.016004562377929688
+    },
+    {
+      "timestamp": "2026-03-09T03:51:01.243268",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.01518392562866211
+    },
+    {
+      "timestamp": "2026-03-09T03:53:11.838727",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.015314102172851562
+    },
+    {
+      "timestamp": "2026-03-09T03:53:17.602281",
+      "query": "hi",
+      "character": "citizen",
+      "time": 0.016402721405029297
+    },
+    {
+      "timestamp": "2026-03-09T03:55:39.957363",
+      "query": "hi",
+      "character": "king",
+      "time": 0.018586397171020508
+    },
+    {
+      "timestamp": "2026-03-09T03:55:53.354946",
+      "query": "hi",
+      "character": "king",
+      "time": 0.01710033416748047
+    },
+    {
+      "timestamp": "2026-03-09T03:56:02.644036",
+      "query": "hi",
+      "character": "king",
+      "time": 0.01643991470336914
+    },
+    {
+      "timestamp": "2026-03-09T03:56:08.149901",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.015622138977050781
+    },
+    {
+      "timestamp": "2026-03-09T03:58:39.609900",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.018351078033447266
+    },
+    {
+      "timestamp": "2026-03-09T03:59:30.990774",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.01495218276977539
+    },
+    {
+      "timestamp": "2026-03-09T04:04:43.452777",
+      "query": "hiiiiiiiiiii\n",
+      "character": "citizen",
+      "time": 0.01566457748413086
+    },
+    {
+      "timestamp": "2026-03-09T04:09:34.667351",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.06572175025939941
+    },
+    {
+      "timestamp": "2026-03-09T04:10:24.634662",
+      "query": "what is niyamgampaya",
+      "character": "citizen",
+      "time": 117.29059076309204
+    },
+    {
+      "timestamp": "2026-03-09T04:10:40.151550",
+      "query": "hi",
+      "character": "citizen",
+      "time": 0.019930601119995117
+    },
+    {
+      "timestamp": "2026-03-09T04:11:23.780425",
+      "query": "Hello",
+      "character": "king",
+      "time": 0.01878190040588379
+    },
+    {
+      "timestamp": "2026-03-09T04:14:39.077605",
+      "query": "who was sri parakkrama narendrasingha",
+      "character": "citizen",
+      "time": 113.12489867210388
+    },
+    {
+      "timestamp": "2026-03-09T04:14:59.078702",
+      "query": "hi",
+      "character": "king",
+      "time": 0.028005123138427734
+    },
+    {
+      "timestamp": "2026-03-09T04:19:24.296108",
+      "query": "who was sri parakkrama narendrasingha",
+      "character": "king",
+      "time": 240.00323390960693
+    },
+    {
+      "timestamp": "2026-03-09T04:19:32.038703",
+      "query": "Who was the last Sinhalese king?",
+      "character": "king",
+      "time": 0.017839908599853516
+    },
+    {
+      "timestamp": "2026-03-09T04:20:28.760675",
+      "query": "Hello",
+      "character": "citizen",
+      "time": 0.022577762603759766
+    },
+    {
+      "timestamp": "2026-03-09T04:26:16.041200",
+      "query": "How many caskets did King parakrama VI create",
+      "character": "king",
+      "time": 60.53650379180908
+    },
+    {
+      "timestamp": "2026-03-09T04:28:49.850210",
+      "query": "How many caskets did King parakrama VI create",
+      "character": "king",
+      "time": 146.89994049072266
+    },
+    {
+      "timestamp": "2026-03-09T04:31:57.460669",
+      "query": "How many caskets did King parakrama VI create",
+      "character": "king",
+      "time": 19.383830785751343
+    },
+    {
+      "timestamp": "2026-03-09T04:33:33.957892",
+      "query": "where was the tooth enrich in kalinga\n",
+      "character": "king",
+      "time": 35.68525528907776
+    },
+    {
+      "timestamp": "2026-03-09T04:35:10.999159",
+      "query": "where was the tooth enrich in kalinga",
+      "character": "king",
+      "time": 52.50813412666321
+    },
+    {
+      "timestamp": "2026-03-09T04:43:35.779840",
+      "query": "hi",
+      "character": "king",
+      "time": 0.020061731338500977
+    },
+    {
+      "timestamp": "2026-03-09T04:43:44.114009",
+      "query": "Hello",
+      "character": "citizen",
+      "time": 0.022594928741455078
+    },
+    {
+      "timestamp": "2026-03-09T04:45:29.402351",
+      "query": "who transport the tooth relic to sri lanka",
+      "character": "king",
+      "time": 0.08265566825866699
+    },
+    {
+      "timestamp": "2026-03-09T04:45:52.680290",
+      "query": "who transport the tooth relic to sri lanka",
+      "character": "king",
+      "time": 0.04619288444519043
+    },
+    {
+      "timestamp": "2026-03-09T04:45:55.882772",
+      "query": "who transport the tooth relic to sri lanka",
+      "character": "king",
+      "time": 0.043332576751708984
+    },
+    {
+      "timestamp": "2026-03-09T04:45:59.329401",
+      "query": "who transport the tooth relic to sri lanka",
+      "character": "king",
+      "time": 0.046967267990112305
+    },
+    {
+      "timestamp": "2026-03-09T04:46:02.210617",
+      "query": "who transport the tooth relic to sri lanka",
+      "character": "king",
+      "time": 0.05042409896850586
+    },
+    {
+      "timestamp": "2026-03-09T04:46:07.686572",
+      "query": "who transport the tooth relic to sri lanka from india\n",
+      "character": "king",
+      "time": 0.04847979545593262
+    },
+    {
+      "timestamp": "2026-03-09T04:46:16.262874",
+      "query": "who transport the tooth relic to sri lanka from india\n",
+      "character": "king",
+      "time": 0.0801851749420166
+    },
+    {
+      "timestamp": "2026-03-09T04:46:20.994985",
+      "query": "wrong\n",
+      "character": "king",
+      "time": 0.05086064338684082
+    },
+    {
+      "timestamp": "2026-03-09T04:46:25.309911",
+      "query": "who transport the tooth relic to sri lanka from india",
+      "character": "king",
+      "time": 0.05238628387451172
+    },
+    {
+      "timestamp": "2026-03-09T04:46:31.218072",
+      "query": "who transport the tooth relic to sri lanka from india",
+      "character": "king",
+      "time": 0.04786229133605957
+    },
+    {
+      "timestamp": "2026-03-09T04:46:49.003608",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "character": "king",
+      "time": 0.04730629920959473
+    },
+    {
+      "timestamp": "2026-03-09T04:46:58.994135",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "character": "king",
+      "time": 0.0637655258178711
+    },
+    {
+      "timestamp": "2026-03-09T04:48:17.892834",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "character": "king",
+      "time": 0.07017135620117188
+    },
+    {
+      "timestamp": "2026-03-09T04:48:23.928127",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "character": "king",
+      "time": 0.0701301097869873
+    },
+    {
+      "timestamp": "2026-03-09T04:51:29.712626",
+      "query": "who brought the tooth relic to sri lanka from india ",
+      "character": "king",
+      "time": 0.07714128494262695
+    },
+    {
+      "timestamp": "2026-03-09T04:56:54.089300",
+      "query": "who retrived the tooth from budda's funeral pyre\n",
+      "character": "king",
+      "time": 91.66336917877197
+    },
+    {
+      "timestamp": "2026-03-09T04:59:23.479096",
+      "query": "when did the tooth arrive kandy permanantly",
+      "character": "king",
+      "time": 0.020255565643310547
+    },
+    {
+      "timestamp": "2026-03-09T05:07:14.106518",
+      "query": "who retrived the tooth frpm buddha's funaerla pyre",
+      "character": "king",
+      "time": 203.19366550445557
+    },
+    {
+      "timestamp": "2026-03-09T05:09:15.532148",
+      "query": "who retrived the tooth frpm buddha's funaerla pyre\n",
+      "character": "king",
+      "time": 69.68105244636536
+    },
+    {
+      "timestamp": "2026-03-09T05:11:13.319929",
+      "query": "do buddhist belive the portugrese  destroy the tooth relic\n",
+      "character": "king",
+      "time": 0.021740198135375977
+    },
+    {
+      "timestamp": "2026-03-09T05:11:23.617963",
+      "query": "buddhist belive the portugrese  destroy the tooth relic",
+      "character": "king",
+      "time": 0.023274898529052734
+    },
+    {
+      "timestamp": "2026-03-09T05:11:40.222551",
+      "query": "are the buddhist belive the portugrese  destroy the tooth relic",
+      "character": "king",
+      "time": 0.019507884979248047
+    },
+    {
+      "timestamp": "2026-03-09T05:12:11.439870",
+      "query": "people belive the portugrese  destroy the tooth relic?",
+      "character": "king",
+      "time": 15.938044548034668
+    },
+    {
+      "timestamp": "2026-03-09T05:14:03.775224",
+      "query": "people belive the portugrese  destroy the tooth relic?",
+      "character": "king",
+      "time": 97.6183533668518
+    },
+    {
+      "timestamp": "2026-03-09T05:16:55.322969",
+      "query": "Hello train about",
+      "character": "citizen",
+      "time": 0.025033235549926758
+    },
+    {
+      "timestamp": "2026-03-09T05:20:21.099288",
+      "query": "Sporting gold disc",
+      "character": "citizen",
+      "time": 0.046797990798950195
+    },
+    {
+      "timestamp": "2026-03-09T05:22:25.018312",
+      "query": "What is the importance of world",
+      "character": "citizen",
+      "time": 0.018895626068115234
+    },
+    {
+      "timestamp": "2026-03-09T05:27:11.521313",
+      "query": "how many teeth mentioned in buddhist text\n",
+      "character": "king",
+      "time": 0.021131515502929688
+    },
+    {
+      "timestamp": "2026-03-09T05:27:43.712799",
+      "query": "teeth  mentioned in buddhist text\n",
+      "character": "king",
+      "time": 0.0191495418548584
+    },
+    {
+      "timestamp": "2026-03-09T05:27:52.276642",
+      "query": "how many teeth mentioned in buddhist text",
+      "character": "king",
+      "time": 0.023750782012939453
+    },
+    {
+      "timestamp": "2026-03-09T05:27:55.623238",
+      "query": "how many teeth mentioned in buddhist text",
+      "character": "king",
+      "time": 0.01906752586364746
+    },
+    {
+      "timestamp": "2026-03-09T05:29:44.866077",
+      "query": "how many teeth mentioned in buddhist text",
+      "character": "king",
+      "time": 0.02129077911376953
+    },
+    {
+      "timestamp": "2026-03-09T05:29:48.028874",
+      "query": "how many teeth mentioned in buddhist text",
+      "character": "king",
+      "time": 0.016237258911132812
+    },
+    {
+      "timestamp": "2026-03-09T05:31:10.165963",
+      "query": "how many teeth mentioned in buddhist text",
+      "character": "king",
+      "time": 0.018726348876953125
+    },
+    {
+      "timestamp": "2026-03-09T05:31:28.383129",
+      "query": "How many canine teeth did Buddha have that were separately enshrined?",
+      "character": "king",
+      "time": 0.019006729125976562
+    },
+    {
+      "timestamp": "2026-03-09T05:31:38.889843",
+      "query": " canine teeth did Buddha have that were separately enshrined?",
+      "character": "king",
+      "time": 0.019125938415527344
+    },
+    {
+      "timestamp": "2026-03-09T05:31:50.527558",
+      "query": "teeth did Buddha have that were separately enshrined?",
+      "character": "king",
+      "time": 0.01829242706298828
+    },
+    {
+      "timestamp": "2026-03-09T05:33:43.711008",
+      "query": "Who was the Collector of Revenue that compiled the 1614 tombo?",
+      "character": "king",
+      "time": 0.025030851364135742
+    },
+    {
+      "timestamp": "2026-03-09T05:33:54.775271",
+      "query": "Who was the Collector of Revenue that compiled the 1614 tombo?",
+      "character": "dutch",
+      "time": 0.025915145874023438
+    },
+    {
+      "timestamp": "2026-03-09T05:35:50.175353",
+      "query": "Golf",
+      "character": "citizen",
+      "time": 0.04649972915649414
+    },
+    {
+      "timestamp": "2026-03-09T05:38:45.150655",
+      "query": "what is the importance of galle",
+      "character": "king",
+      "time": 0.021376848220825195
+    },
+    {
+      "timestamp": "2026-03-09T05:38:52.196764",
+      "query": "what is the importance of galle port",
+      "character": "king",
+      "time": 0.022006988525390625
+    },
+    {
+      "timestamp": "2026-03-09T05:39:13.001642",
+      "query": "what is the importance of galle port",
+      "character": "citizen",
+      "time": 0.022266149520874023
+    },
+    {
+      "timestamp": "2026-03-09T05:39:54.954354",
+      "query": "what is the importance of galle ",
+      "character": "citizen",
+      "time": 0.021601438522338867
+    },
+    {
+      "timestamp": "2026-03-09T05:40:55.362442",
+      "query": "what is the importance of galle ",
+      "character": "citizen",
+      "time": 0.028525829315185547
+    },
+    {
+      "timestamp": "2026-03-09T05:44:34.015277",
+      "query": "what is the importance of galle ",
+      "character": "citizen",
+      "time": 0.03430938720703125
+    },
+    {
+      "timestamp": "2026-03-09T05:46:33.760752",
+      "query": "what is the importance of galle",
+      "character": "dutch",
+      "time": 0.030722856521606445
+    },
+    {
+      "timestamp": "2026-03-09T05:47:24.142148",
+      "query": "hi",
+      "character": "dutch",
+      "time": 0.024166107177734375
+    },
+    {
+      "timestamp": "2026-03-09T05:51:37.197477",
+      "query": "Where is Galle Port located in Sri Lanka?",
+      "character": "dutch",
+      "time": 0.08317995071411133
+    },
+    {
+      "timestamp": "2026-03-09T05:55:20.543463",
+      "query": "Why was Galle Port important in ancient maritime trade?",
+      "character": "dutch",
+      "time": 183.1805078983307
+    },
+    {
+      "timestamp": "2026-03-09T05:57:04.445730",
+      "query": "Which foreign traders frequently visited Galle Port in ancient times?",
+      "character": "dutch",
+      "time": 0.022103548049926758
+    },
+    {
+      "timestamp": "2026-03-09T05:57:13.367999",
+      "query": "Which foreign traders frequently visited Galle Port in ancient times?\n",
+      "character": "dutch",
+      "time": 0.02162957191467285
+    },
+    {
+      "timestamp": "2026-03-09T05:57:32.775243",
+      "query": "Which foreign traders frequently visited Galle Port in ancient times?",
+      "character": "dutch",
+      "time": 0.0193789005279541
+    },
+    {
+      "timestamp": "2026-03-09T05:57:43.485049",
+      "query": "What natural feature made Galle Port a good harbor for ships?",
+      "character": "dutch",
+      "time": 0.024043798446655273
+    },
+    {
+      "timestamp": "2026-03-09T05:57:55.385150",
+      "query": "What natural feature made Galle Port a good harbor for ships?",
+      "character": "dutch",
+      "time": 0.0242612361907959
+    },
+    {
+      "timestamp": "2026-03-09T05:58:05.881693",
+      "query": "give natural feature made Galle Port a good harbor for ships?",
+      "character": "dutch",
+      "time": 0.020782470703125
+    },
+    {
+      "timestamp": "2026-03-09T05:58:14.947255",
+      "query": "give natural feature made Galle Port a good harbor for ships?",
+      "character": "dutch",
+      "time": 0.01996016502380371
+    },
+    {
+      "timestamp": "2026-03-09T05:58:23.885353",
+      "query": "give natural feature made Galle Port a  harbor for ships?",
+      "character": "dutch",
+      "time": 0.019443273544311523
+    },
+    {
+      "timestamp": "2026-03-09T05:58:33.891415",
+      "query": "Which famous fort was built near Galle Port?",
+      "character": "dutch",
+      "time": 0.026445627212524414
+    },
+    {
+      "timestamp": "2026-03-09T05:58:46.479985",
+      "query": "Which European nation first built a fort at Galle Port in the 16th century?",
+      "character": "dutch",
+      "time": 0.021144628524780273
+    },
+    {
+      "timestamp": "2026-03-09T05:59:01.882775",
+      "query": "Which European nation first built a fort at Galle Port in the 16th century?",
+      "character": "dutch",
+      "time": 0.02311420440673828
+    },
+    {
+      "timestamp": "2026-03-09T05:59:12.108805",
+      "query": "Which European nation first built a fort at Galle Port in the 16th century?",
+      "character": "citizen",
+      "time": 0.020736217498779297
+    },
+    {
+      "timestamp": "2026-03-09T05:59:15.701659",
+      "query": "Which European nation first built a fort at Galle Port in the 16th century?",
+      "character": "citizen",
+      "time": 0.028821945190429688
+    },
+    {
+      "timestamp": "2026-03-09T06:00:31.472384",
+      "query": "Why did the importance of Galle Port decrease after the 19th century?",
+      "character": "citizen",
+      "time": 60.11671781539917
+    },
+    {
+      "timestamp": "2026-03-09T06:01:30.403508",
+      "query": "What goods were commonly traded through Galle Port?",
+      "character": "citizen",
+      "time": 47.50474834442139
+    },
+    {
+      "timestamp": "2026-03-09T06:01:56.117673",
+      "query": "Which famous fort was built near Galle Port?",
+      "character": "citizen",
+      "time": 0.02192378044128418
+    },
+    {
+      "timestamp": "2026-03-09T06:06:05.029061",
+      "query": "I think I'm going to need a piece of wood for it.",
+      "character": "citizen",
+      "time": 0.020491361618041992
+    },
+    {
+      "timestamp": "2026-03-09T06:06:27.748882",
+      "query": "Which country later expanded the fort and controlled the port?",
+      "character": "citizen",
+      "time": 0.0213773250579834
+    },
+    {
+      "timestamp": "2026-03-09T06:07:30.191379",
+      "query": "what is the importance of galle ",
+      "character": "citizen",
+      "time": 0.0583643913269043
+    },
+    {
+      "timestamp": "2026-03-09T06:07:37.698716",
+      "query": "Why did the importance of Galle Port decrease after the 19th century?",
+      "character": "citizen",
+      "time": 60.65204334259033
+    },
+    {
+      "timestamp": "2026-03-09T06:08:33.064011",
+      "query": "One is the importance of God.",
+      "character": "citizen",
+      "time": 39.812878131866455
+    },
+    {
+      "timestamp": "2026-03-09T06:12:56.647249",
+      "query": "what is  galle ",
+      "character": "citizen",
+      "time": 81.91489005088806
+    },
+    {
+      "timestamp": "2026-03-09T06:14:09.341201",
+      "query": "What is gold?",
+      "character": "citizen",
+      "time": 56.688175439834595
+    },
+    {
+      "timestamp": "2026-03-09T06:20:44.438486",
+      "query": "what is  gold ",
+      "character": "citizen",
+      "time": 95.1481683254242
+    },
+    {
+      "timestamp": "2026-03-09T06:29:38.456619",
+      "query": "What is the importance of Galle Fort?",
+      "character": "citizen",
+      "time": 68.86572647094727
+    },
+    {
+      "timestamp": "2026-03-09T06:32:02.879556",
+      "query": "what is  the importance of galle fort ",
+      "character": "citizen",
+      "time": 84.25188088417053
+    },
+    {
+      "timestamp": "2026-03-09T06:33:44.729129",
+      "query": "what is  the importance of galle fort ",
+      "character": "citizen",
+      "time": 87.13215923309326
+    },
+    {
+      "timestamp": "2026-03-09T06:36:45.917268",
+      "query": "what is  the importance of galle fort ",
+      "character": "citizen",
+      "time": 19.949419736862183
+    },
+    {
+      "timestamp": "2026-03-09T06:37:52.174736",
+      "query": "A conversation about Sri Lanka.",
+      "character": "citizen",
+      "time": 34.872849464416504
+    },
+    {
+      "timestamp": "2026-03-09T06:40:57.622242",
+      "query": "Tell me about Galle Fort.",
+      "character": "citizen",
+      "time": 68.84450078010559
+    },
+    {
+      "timestamp": "2026-03-09T06:45:16.432660",
+      "query": "Tell me about galle fort ",
+      "character": "citizen",
+      "time": 0.031061172485351562
+    },
+    {
+      "timestamp": "2026-03-09T06:45:34.265902",
+      "query": "What is Galle Fort?",
+      "character": "citizen",
+      "time": 0.03204607963562012
+    },
+    {
+      "timestamp": "2026-03-09T06:47:46.518613",
+      "query": "Tell me about galle fort ",
+      "character": "citizen",
+      "time": 0.17469334602355957
+    },
+    {
+      "timestamp": "2026-03-09T06:47:48.720197",
+      "query": "Tell me about galle fort ",
+      "character": "citizen",
+      "time": 0.02964472770690918
+    },
+    {
+      "timestamp": "2026-03-09T06:47:50.269516",
+      "query": "Tell me about galle fort ",
+      "character": "citizen",
+      "time": 0.029949426651000977
+    },
+    {
+      "timestamp": "2026-03-09T06:49:51.816382",
+      "query": "Yeah, he is Galle Fort located in Sri Lanka.",
+      "character": "citizen",
+      "time": 57.835235595703125
+    },
+    {
+      "timestamp": "2026-03-09T06:49:51.938600",
+      "query": "Tell me about galle fort ",
+      "character": "citizen",
+      "time": 0.06741499900817871
+    },
+    {
+      "timestamp": "2026-03-09T07:01:44.239166",
+      "query": "What is temple of tooth relic ",
+      "character": "king",
+      "time": 0.04898428916931152
+    },
+    {
+      "timestamp": "2026-03-09T07:03:14.934661",
+      "query": "What is Temple of Truth?",
+      "character": "king",
+      "time": 50.17298769950867
+    },
+    {
+      "timestamp": "2026-03-09T09:03:36.640382",
+      "query": "Hello, who are you?",
+      "character": "dutch",
+      "time": 0.029982566833496094
+    },
+    {
+      "timestamp": "2026-03-09T09:03:53.590270",
+      "query": "Hello, who are you?",
+      "character": "nilame",
+      "time": 0.030171632766723633
+    },
+    {
+      "timestamp": "2026-03-09T09:10:03.876249",
+      "query": "What is temple of tooth relic ",
+      "character": "king",
+      "time": 0.025269746780395508
+    },
+    {
+      "timestamp": "2026-03-09T09:10:41.014893",
+      "query": "What is temple of tooth relic ",
+      "character": "citizen",
+      "time": 0.02855658531188965
+    },
+    {
+      "timestamp": "2026-03-09T09:21:27.038463",
+      "query": "hi",
+      "character": "dutch",
+      "time": 0.023055553436279297
+    },
+    {
+      "timestamp": "2026-03-09T09:42:35.518759",
+      "query": "Hello, who are you?",
+      "character": "citizen",
+      "time": 0.0198976993560791
+    },
+    {
+      "timestamp": "2026-03-09T09:50:14.892402",
+      "query": "What is temple of tooth relic ",
+      "character": "dutch",
+      "time": 0.06383752822875977
+    },
+    {
+      "timestamp": "2026-03-09T09:56:36.111665",
+      "query": "Hello, what's your name?",
+      "character": "dutch",
+      "time": 0.021254539489746094
+    },
+    {
+      "timestamp": "2026-03-09T10:14:03.464365",
+      "query": "Thank you for watching.",
+      "character": "dutch",
+      "time": 0.020404815673828125
+    },
+    {
+      "timestamp": "2026-03-09T10:45:56.064158",
+      "query": "Hello, I'm Dhruvani.",
+      "character": "nilame",
+      "time": 0.024624347686767578
+    },
+    {
+      "timestamp": "2026-03-09T10:48:52.160529",
+      "query": "Hello, can you say something about...",
+      "character": "nilame",
+      "time": 0.02451181411743164
+    },
+    {
+      "timestamp": "2026-03-09T11:50:23.589582",
+      "query": "hii",
+      "character": "king",
+      "time": 0.022220611572265625
+    },
+    {
+      "timestamp": "2026-03-09T12:29:22.476165",
+      "query": "What is temple of tooth relic ",
+      "character": "citizen",
+      "time": 0.03984975814819336
+    },
+    {
+      "timestamp": "2026-03-09T12:50:38.962632",
+      "query": "Can you explain about this place?",
+      "character": "nilame",
+      "time": 0.026703596115112305
+    },
+    {
+      "timestamp": "2026-03-09T12:51:23.412932",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.02185344696044922
+    },
+    {
+      "timestamp": "2026-03-09T12:55:26.338426",
+      "query": "Hello.",
+      "character": "nilame",
+      "time": 0.03571438789367676
+    },
+    {
+      "timestamp": "2026-03-09T13:07:57.164862",
+      "query": "What is temple of tooth relic ",
+      "character": "citizen",
+      "time": 0.032219886779785156
+    },
+    {
+      "timestamp": "2026-03-09T13:08:45.244717",
+      "query": "Thank you for watching.",
+      "character": "nilame",
+      "time": 0.09283065795898438
+    },
+    {
+      "timestamp": "2026-03-09T13:08:56.731158",
+      "query": "What is temple of tooth relic ",
+      "character": "king",
+      "time": 0.03330731391906738
+    },
+    {
+      "timestamp": "2026-03-09T13:09:42.330644",
+      "query": "What is temple of tooth relic ",
+      "character": "king",
+      "time": 0.022037982940673828
+    },
+    {
+      "timestamp": "2026-03-09T13:09:43.618300",
+      "query": "What is temple of tooth relic ",
+      "character": "king",
+      "time": 0.024022340774536133
+    },
+    {
+      "timestamp": "2026-03-09T13:10:05.797296",
+      "query": "Hello.",
+      "character": "nilame",
+      "time": 0.030076980590820312
+    },
+    {
+      "timestamp": "2026-03-09T13:10:08.391842",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.024930953979492188
+    },
+    {
+      "timestamp": "2026-03-09T13:10:09.596614",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.022475004196166992
+    },
+    {
+      "timestamp": "2026-03-09T13:10:10.787631",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.02724480628967285
+    },
+    {
+      "timestamp": "2026-03-09T13:10:11.925651",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.03895759582519531
+    },
+    {
+      "timestamp": "2026-03-09T13:10:12.799258",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.030472278594970703
+    },
+    {
+      "timestamp": "2026-03-09T13:10:13.382645",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.02866649627685547
+    },
+    {
+      "timestamp": "2026-03-09T13:11:12.372162",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.02960658073425293
+    },
+    {
+      "timestamp": "2026-03-09T13:11:13.828421",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.026044130325317383
+    },
+    {
+      "timestamp": "2026-03-09T13:11:17.777980",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.025065183639526367
+    },
+    {
+      "timestamp": "2026-03-09T13:11:18.868567",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.023072242736816406
+    },
+    {
+      "timestamp": "2026-03-09T13:11:19.970058",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.024347543716430664
+    },
+    {
+      "timestamp": "2026-03-09T13:11:27.355668",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.04613375663757324
+    },
+    {
+      "timestamp": "2026-03-09T13:11:29.586522",
+      "query": "Hello.",
+      "character": "nilame",
+      "time": 0.03366708755493164
+    },
+    {
+      "timestamp": "2026-03-09T13:12:32.830576",
+      "query": "hi ",
+      "character": "king",
+      "time": 0.03522539138793945
+    },
+    {
+      "timestamp": "2026-03-09T13:12:44.425320",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.09696674346923828
+    },
+    {
+      "timestamp": "2026-03-09T13:12:58.660006",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.05604076385498047
+    },
+    {
+      "timestamp": "2026-03-09T13:13:06.655541",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.053362131118774414
+    },
+    {
+      "timestamp": "2026-03-09T13:13:16.911362",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.055313825607299805
+    },
+    {
+      "timestamp": "2026-03-09T13:13:18.454117",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.059523582458496094
+    },
+    {
+      "timestamp": "2026-03-09T13:13:19.680810",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.06281018257141113
+    },
+    {
+      "timestamp": "2026-03-09T13:13:20.804599",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.056777238845825195
+    },
+    {
+      "timestamp": "2026-03-09T13:13:21.760517",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.060050249099731445
+    },
+    {
+      "timestamp": "2026-03-09T13:13:22.819318",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.05731773376464844
+    },
+    {
+      "timestamp": "2026-03-09T13:13:23.627617",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.0621333122253418
+    },
+    {
+      "timestamp": "2026-03-09T13:13:24.316159",
+      "query": "what is the importance of tooth relic ",
+      "character": "king",
+      "time": 0.06715726852416992
+    },
+    {
+      "timestamp": "2026-03-09T13:17:45.779594",
+      "query": "Where is Galle Port located in Sri Lanka? ",
+      "character": "dutch",
+      "time": 0.03286933898925781
+    },
+    {
+      "timestamp": "2026-03-09T13:19:35.894885",
+      "query": "what is srivardhanapura? ",
+      "character": "nilame",
+      "time": 0.027550697326660156
+    },
+    {
+      "timestamp": "2026-03-09T13:19:39.737722",
+      "query": "what is srivardhanapura? ",
+      "character": "nilame",
+      "time": 0.024631500244140625
+    },
+    {
+      "timestamp": "2026-03-09T13:21:21.268176",
+      "query": "wwhat is the importance of the tooth relic? ",
+      "character": "nilame",
+      "time": 72.3013653755188
+    },
+    {
+      "timestamp": "2026-03-09T13:26:39.303921",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.020011425018310547
+    },
+    {
+      "timestamp": "2026-03-09T13:29:29.184909",
+      "query": "wwhat is this place? ",
+      "character": "nilame",
+      "time": 0.02463078498840332
+    },
+    {
+      "timestamp": "2026-03-09T14:06:06.357826",
+      "query": "what is the importance of tooth relic",
+      "character": "king",
+      "time": 0.08331131935119629
+    },
+    {
+      "timestamp": "2026-03-09T14:06:24.137619",
+      "query": "what is the important of galle port",
+      "character": "dutch",
+      "time": 0.027006149291992188
+    },
+    {
+      "timestamp": "2026-03-09T16:44:01.400780",
+      "query": "hi",
+      "character": "king",
+      "time": 0.048872947692871094
+    },
+    {
+      "timestamp": "2026-03-09T16:44:08.858550",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.03156781196594238
+    },
+    {
+      "timestamp": "2026-03-09T16:47:05.851882",
+      "query": "wwhat is this place? ",
+      "character": "nilame",
+      "time": 0.03212332725524902
+    },
+    {
+      "timestamp": "2026-03-09T16:47:30.396423",
+      "query": "wwhat is this place? ",
+      "character": "king",
+      "time": 0.027426958084106445
+    },
+    {
+      "timestamp": "2026-03-09T16:51:05.718083",
+      "query": "wwhat is this place? ",
+      "character": "king",
+      "time": 0.025478124618530273
+    },
+    {
+      "timestamp": "2026-03-09T16:52:30.335453",
+      "query": "wwhat is this place? ",
+      "character": "citizen",
+      "time": 0.025586366653442383
+    },
+    {
+      "timestamp": "2026-03-09T17:01:32.626942",
+      "query": "Which foreign traders frequently visited Galle Port in ancient times? ",
+      "character": "citizen",
+      "time": 0.03655529022216797
+    },
+    {
+      "timestamp": "2026-03-09T17:01:39.666231",
+      "query": "Which foreign traders frequently visited Galle Port in ancient times? ",
+      "character": "citizen",
+      "time": 0.03339409828186035
+    },
+    {
+      "timestamp": "2026-03-09T17:01:51.082596",
+      "query": "Which foreign traders frequently visited Galle Port in ancient times?",
+      "character": "nilame",
+      "time": 0.026198148727416992
+    },
+    {
+      "timestamp": "2026-03-09T17:02:09.459395",
+      "query": "Why was Galle Port important in ancient maritime trade?",
+      "character": "nilame",
+      "time": 0.041304826736450195
+    },
+    {
+      "timestamp": "2026-03-09T17:02:29.428567",
+      "query": "What role did Galle Port play during the Portuguese and Dutch periods?",
+      "character": "nilame",
+      "time": 0.030930042266845703
+    },
+    {
+      "timestamp": "2026-03-09T17:02:41.512771",
+      "query": "What role did Galle Port play during the Portuguese and Dutch periods? ",
+      "character": "citizen",
+      "time": 0.0343480110168457
+    },
+    {
+      "timestamp": "2026-03-09T17:03:18.965547",
+      "query": "Why did the importance of Galle Port decrease after the 19th century? ",
+      "character": "citizen",
+      "time": 0.03609442710876465
+    },
+    {
+      "timestamp": "2026-03-09T17:04:47.743946",
+      "query": "Where is Galle Fort located? ",
+      "character": "citizen",
+      "time": 0.030555248260498047
+    },
+    {
+      "timestamp": "2026-03-09T17:05:08.466971",
+      "query": "Which colonial power later expanded Galle Fort? ",
+      "character": "citizen",
+      "time": 0.09625697135925293
+    },
+    {
+      "timestamp": "2026-03-09T17:07:20.529364",
+      "query": "Why was Galle Fort important during colonial times? ",
+      "character": "citizen",
+      "time": 118.01023054122925
+    },
+    {
+      "timestamp": "2026-03-09T17:13:02.985607",
+      "query": "What activities can tourists do in Galle Fort?",
+      "character": "king",
+      "time": 62.47283983230591
+    },
+    {
+      "timestamp": "2026-03-09T17:14:48.288246",
+      "query": "Why was Galle Fort important during colonial times? ",
+      "character": "dutch",
+      "time": 80.4215795993805
+    },
+    {
+      "timestamp": "2026-03-09T17:19:17.550566",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.11818146705627441
+    },
+    {
+      "timestamp": "2026-03-09T17:20:09.019008",
+      "query": "What famous lighthouse is located in Galle Fort",
+      "character": "dutch",
+      "time": 80.35904598236084
+    },
+    {
+      "timestamp": "2026-03-09T17:20:42.638802",
+      "query": "What type of shops and cafes are found inside the fort?",
+      "character": "nilame",
+      "time": 47.55344820022583
+    },
+    {
+      "timestamp": "2026-03-09T17:22:21.844228",
+      "query": "Thank you for watching.",
+      "character": "king",
+      "time": 0.09382915496826172
+    },
+    {
+      "timestamp": "2026-03-09T17:22:23.187148",
+      "query": "What cultures influenced the buildings inside the fort?",
+      "character": "citizen",
+      "time": 62.40301704406738
+    },
+    {
+      "timestamp": "2026-03-09T17:23:33.000685",
+      "query": "How does tourism impact the preservation of Galle Fort?",
+      "character": "dutch",
+      "time": 67.6707832813263
+    },
+    {
+      "timestamp": "2026-03-09T17:25:15.341652",
+      "query": "Thank you for watching.",
+      "character": "king",
+      "time": 0.032393693923950195
+    },
+    {
+      "timestamp": "2026-03-09T17:34:10.339891",
+      "query": "Which colonial power later expanded Galle Fort?",
+      "character": "citizen",
+      "time": 0.03940629959106445
+    },
+    {
+      "timestamp": "2026-03-09T17:36:16.587695",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "character": "dutch",
+      "time": 106.39503216743469
+    },
+    {
+      "timestamp": "2026-03-09T17:36:36.988864",
+      "query": "Does  Galle Fort important during colonial times?",
+      "character": "citizen",
+      "time": 101.9325475692749
+    },
+    {
+      "timestamp": "2026-03-09T17:44:44.628922",
+      "query": "Who would've killed it?",
+      "character": "king",
+      "time": 23.73689556121826
+    },
+    {
+      "timestamp": "2026-03-09T17:47:33.738600",
+      "query": "Who retrieved the tooth from Buddha's funeral?",
+      "character": "king",
+      "time": 0.019613265991210938
+    },
+    {
+      "timestamp": "2026-03-09T17:50:05.661861",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "character": "dutch",
+      "time": 60.98410511016846
+    },
+    {
+      "timestamp": "2026-03-09T17:50:44.783153",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "character": "dutch",
+      "time": 33.696533203125
+    },
+    {
+      "timestamp": "2026-03-09T18:08:26.796473",
+      "query": "hi",
+      "character": "citizen",
+      "time": 0.08105874061584473
+    },
+    {
+      "timestamp": "2026-03-09T18:08:41.064991",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "character": "dutch",
+      "time": 67.63560676574707
+    },
+    {
+      "timestamp": "2026-03-09T18:08:50.661125",
+      "query": "Hello.",
+      "character": "king",
+      "time": 0.027255535125732422
+    },
+    {
+      "timestamp": "2026-03-09T18:13:44.212749",
+      "query": "Who retrieved the truth from Buddha's funeral?",
+      "character": "king",
+      "time": 71.85643458366394
+    },
+    {
+      "timestamp": "2026-03-09T18:14:51.882892",
+      "query": "Does colonial power later expanded Galle Fort?",
+      "character": "dutch",
+      "time": 67.55108070373535
+    },
+    {
+      "timestamp": "2026-03-09T18:16:57.315173",
+      "query": "Who retrieved the tooth from Buddha's temple?",
+      "character": "king",
+      "time": 0.02859783172607422
+    },
+    {
+      "timestamp": "2026-03-09T18:20:31.669615",
+      "query": "What architectural style is found inside Galle Fort?",
+      "character": "citizen",
+      "time": 0.09869217872619629
+    },
+    {
+      "timestamp": "2026-03-09T18:20:43.517984",
+      "query": "Do people with you, Portuguese, destroy the truth, elect?",
+      "character": "king",
+      "time": 55.63171124458313
+    },
+    {
+      "timestamp": "2026-03-09T18:21:09.359265",
+      "query": "give architectural style is found inside Galle Fort?",
+      "character": "citizen",
+      "time": 0.08838558197021484
+    },
+    {
+      "timestamp": "2026-03-09T18:21:22.112343",
+      "query": "architectural style is found inside Galle Fort?\n\n\n",
+      "character": "citizen",
+      "time": 0.08273839950561523
+    },
+    {
+      "timestamp": "2026-03-09T18:21:31.064588",
+      "query": "give\narchitectural style is found inside Galle Fort?\n\n\n",
+      "character": "citizen",
+      "time": 0.08046150207519531
+    },
+    {
+      "timestamp": "2026-03-09T18:21:42.501139",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "character": "dutch",
+      "time": 58.91598629951477
+    },
+    {
+      "timestamp": "2026-03-09T18:22:50.688071",
+      "query": "What cultures influenced the buildings inside the fort?",
+      "character": "citizen",
+      "time": 61.285553216934204
+    },
+    {
+      "timestamp": "2026-03-09T18:24:49.671464",
+      "query": "Where was the tooth enriched in Kalinga?",
+      "character": "king",
+      "time": 0.07262921333312988
+    },
+    {
+      "timestamp": "2026-03-09T18:25:22.848585",
+      "query": "What cultures influenced the buildings inside the fort?",
+      "character": "citizen",
+      "time": 60.34790587425232
+    },
+    {
+      "timestamp": "2026-03-09T18:32:45.575881",
+      "query": "does Galle Fort reflect Sri Lanka\u2019s colonial history?",
+      "character": "citizen",
+      "time": 0.030963420867919922
+    },
+    {
+      "timestamp": "2026-03-09T18:32:55.878455",
+      "query": "how does Galle Fort reflect Sri Lanka\u2019s colonial history?",
+      "character": "citizen",
+      "time": 0.025358915328979492
+    },
+    {
+      "timestamp": "2026-03-09T18:34:27.081282",
+      "query": "What makes Galle Fort unique compared to other forts",
+      "character": "citizen",
+      "time": 62.717833280563354
+    },
+    {
+      "timestamp": "2026-03-09T18:35:40.041876",
+      "query": "patrol did gold pot play during the Portuguese and Dutch periods.",
+      "character": "citizen",
+      "time": 83.14471244812012
+    },
+    {
+      "timestamp": "2026-03-09T18:36:17.362648",
+      "query": "Why is Galle Fort a popular tourist destination?",
+      "character": "citizen",
+      "time": 76.93193674087524
+    },
+    {
+      "timestamp": "2026-03-09T18:39:35.084549",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.027164459228515625
+    },
+    {
+      "timestamp": "2026-03-09T18:41:14.537625",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.03211712837219238
+    },
+    {
+      "timestamp": "2026-03-09T18:42:05.417700",
+      "query": "Why is Galle Fort a popular tourist destination?",
+      "character": "citizen",
+      "time": 36.00556540489197
+    },
+    {
+      "timestamp": "2026-03-10T04:17:53.800486",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "character": "dutch",
+      "time": 187.59025835990906
+    },
+    {
+      "timestamp": "2026-03-10T04:33:16.599415",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "character": "dutch",
+      "time": 76.53687810897827
+    },
+    {
+      "timestamp": "2026-03-10T04:33:18.804846",
+      "query": "hi",
+      "character": "king",
+      "time": 0.07066082954406738
+    },
+    {
+      "timestamp": "2026-03-10T04:33:30.195766",
+      "query": "what is temple of tooth relic",
+      "character": "king",
+      "time": 0.03194689750671387
+    },
+    {
+      "timestamp": "2026-03-10T04:39:18.748493",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.06738662719726562
+    },
+    {
+      "timestamp": "2026-03-10T04:49:15.086445",
+      "query": "hi",
+      "character": "nilame",
+      "time": 0.042847633361816406
+    },
+    {
+      "timestamp": "2026-03-10T04:51:44.506413",
+      "query": "Why is Galle Fort considered a UNESCO World Heritage Site?",
+      "character": "nilame",
+      "time": 79.4857850074768
+    },
+    {
+      "timestamp": "2026-03-10T04:53:11.953331",
+      "query": "What is the importance of tooth relic?",
+      "character": "nilame",
+      "time": 47.59503173828125
+    },
+    {
+      "timestamp": "2026-03-10T04:53:50.492118",
+      "query": "Who is the last sinhalese king?",
+      "character": "nilame",
+      "time": 0.03334355354309082
+    },
+    {
+      "timestamp": "2026-03-10T04:53:52.387613",
+      "query": "Who is the last sinhalese king?",
+      "character": "nilame",
+      "time": 0.032041072845458984
+    },
+    {
+      "timestamp": "2026-03-10T04:53:53.709083",
+      "query": "Who is the last sinhalese king?",
+      "character": "nilame",
+      "time": 0.0355982780456543
+    },
+    {
+      "timestamp": "2026-03-10T04:53:55.464994",
+      "query": "Who is the last sinhalese king?",
+      "character": "nilame",
+      "time": 0.027592182159423828
+    },
+    {
+      "timestamp": "2026-03-10T04:53:56.721058",
+      "query": "Who is the last sinhalese king?",
+      "character": "nilame",
+      "time": 0.033957719802856445
+    },
+    {
+      "timestamp": "2026-03-10T04:56:28.633517",
+      "query": "What is esala perahra?",
+      "character": "nilame",
+      "time": 86.63198351860046
+    },
+    {
+      "timestamp": "2026-03-10T05:04:29.993601",
+      "query": "What is esala perahra?",
+      "character": "nilame",
+      "time": 118.71116900444031
+    },
+    {
+      "timestamp": "2026-03-10T05:04:34.069190",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 106.86267328262329
+    },
+    {
+      "timestamp": "2026-03-10T05:10:25.814572",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 70.45401883125305
+    },
+    {
+      "timestamp": "2026-03-10T05:11:08.686427",
+      "query": "What is esala perahra?",
+      "character": "nilame",
+      "time": 82.13448190689087
+    },
+    {
+      "timestamp": "2026-03-10T05:12:53.751891",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 122.71485209465027
+    },
+    {
+      "timestamp": "2026-03-10T05:13:13.890046",
+      "query": "What is esala perahra?",
+      "character": "nilame",
+      "time": 112.57990288734436
+    },
+    {
+      "timestamp": "2026-03-10T05:15:23.151028",
+      "query": "Which sacred relic is kept in the Temple of the Tooth",
+      "character": "nilame",
+      "time": 0.07696413993835449
+    },
+    {
+      "timestamp": "2026-03-10T05:15:25.514322",
+      "query": "Why did Kandy remain independent?",
+      "character": "king",
+      "time": 37.40199947357178
+    },
+    {
+      "timestamp": "2026-03-10T05:15:33.033334",
+      "query": " sacred relic is kept in the Temple of the Tooth",
+      "character": "nilame",
+      "time": 0.03711986541748047
+    },
+    {
+      "timestamp": "2026-03-10T05:15:51.637960",
+      "query": " brought the Sacred Tooth Relic to Sri Lanka?",
+      "character": "nilame",
+      "time": 0.028817176818847656
+    },
+    {
+      "timestamp": "2026-03-10T05:16:00.186845",
+      "query": "wjo brought the Sacred Tooth Relic to Sri Lanka?",
+      "character": "nilame",
+      "time": 0.03969454765319824
+    },
+    {
+      "timestamp": "2026-03-10T05:16:07.520834",
+      "query": "who brought the Sacred Tooth Relic to Sri Lanka?",
+      "character": "nilame",
+      "time": 0.03460264205932617
+    },
+    {
+      "timestamp": "2026-03-10T05:16:14.447826",
+      "query": "wjo brought the Sacred Tooth Relic to Sri Lanka?",
+      "character": "nilame",
+      "time": 0.036522626876831055
+    },
+    {
+      "timestamp": "2026-03-10T05:16:28.961184",
+      "query": "During which century was the Tooth Relic brought to Sri Lanka?",
+      "character": "nilame",
+      "time": 0.03337407112121582
+    },
+    {
+      "timestamp": "2026-03-10T05:16:35.972623",
+      "query": "During  century was the Tooth Relic brought to Sri Lanka?",
+      "character": "nilame",
+      "time": 0.04465484619140625
+    },
+    {
+      "timestamp": "2026-03-10T05:16:53.389777",
+      "query": "king first kept the Tooth Relic in Anuradhapura?",
+      "character": "nilame",
+      "time": 0.03346848487854004
+    },
+    {
+      "timestamp": "2026-03-10T05:18:17.503199",
+      "query": "kingdom made the Temple of the Tooth Relic famous?",
+      "character": "nilame",
+      "time": 64.0509262084961
+    },
+    {
+      "timestamp": "2026-03-10T05:19:02.432479",
+      "query": "Temple of the Tooth Relic located in which city",
+      "character": "nilame",
+      "time": 0.032779693603515625
+    },
+    {
+      "timestamp": "2026-03-10T05:19:04.301369",
+      "query": "Temple of the Tooth Relic located in which city",
+      "character": "nilame",
+      "time": 0.03368544578552246
+    },
+    {
+      "timestamp": "2026-03-10T05:19:15.109324",
+      "query": "Sacred relic kept in the Temple of the Tooth",
+      "character": "nilame",
+      "time": 0.03348493576049805
+    },
+    {
+      "timestamp": "2026-03-10T05:19:33.108319",
+      "query": "Why is the Temple of the Tooth Relic important in Sri Lankan history?",
+      "character": "nilame",
+      "time": 0.037567853927612305
+    },
+    {
+      "timestamp": "2026-03-10T05:19:40.908582",
+      "query": " is the Temple of the Tooth Relic important in Sri Lankan history?",
+      "character": "nilame",
+      "time": 0.031301021575927734
+    },
+    {
+      "timestamp": "2026-03-10T05:19:42.462535",
+      "query": " is the Temple of the Tooth Relic important in Sri Lankan history?",
+      "character": "nilame",
+      "time": 0.0391082763671875
+    },
+    {
+      "timestamp": "2026-03-10T05:21:05.618925",
+      "query": " Where is the Sacred Tooth Relic kept today?",
+      "character": "nilame",
+      "time": 65.18187308311462
+    },
+    {
+      "timestamp": "2026-03-10T05:30:32.432658",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "character": "nilame",
+      "time": 52.106162786483765
+    },
+    {
+      "timestamp": "2026-03-10T05:31:29.708443",
+      "query": "what is the temple of tooth relic",
+      "character": "king",
+      "time": 0.024706125259399414
+    },
+    {
+      "timestamp": "2026-03-10T05:33:32.659397",
+      "query": "hii",
+      "character": "king",
+      "time": 0.029048919677734375
+    },
+    {
+      "timestamp": "2026-03-10T05:33:47.143728",
+      "query": "what us temple of tooth relic",
+      "character": "king",
+      "time": 0.030830860137939453
+    },
+    {
+      "timestamp": "2026-03-10T05:35:39.284888",
+      "query": "What festival is associated with the Temple of the Tooth Relic?",
+      "character": "king",
+      "time": 55.93177652359009
+    },
+    {
+      "timestamp": "2026-03-10T05:50:42.384579",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "character": "nilame",
+      "time": 60.998836278915405
+    },
+    {
+      "timestamp": "2026-03-10T06:00:44.577962",
+      "query": "Hello.",
+      "character": "nilame",
+      "time": 0.03430795669555664
+    },
+    {
+      "timestamp": "2026-03-10T06:12:31.349410",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.04291224479675293
+    },
+    {
+      "timestamp": "2026-03-10T06:12:31.436391",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.0525667667388916
+    },
+    {
+      "timestamp": "2026-03-10T06:12:31.547511",
+      "query": "Thank you for watching.",
+      "character": "dutch",
+      "time": 0.06915950775146484
+    },
+    {
+      "timestamp": "2026-03-10T06:14:56.485940",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.026236295700073242
+    },
+    {
+      "timestamp": "2026-03-10T06:16:41.748836",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.026623249053955078
+    },
+    {
+      "timestamp": "2026-03-10T06:20:29.779892",
+      "query": "Thank you for watching.",
+      "character": "citizen",
+      "time": 0.036631107330322266
+    },
+    {
+      "timestamp": "2026-03-10T06:22:48.137847",
+      "query": "Thank you for watching.",
+      "character": "dutch",
+      "time": 0.026601552963256836
+    },
+    {
+      "timestamp": "2026-03-10T06:54:07.077787",
+      "query": "What is the Esala Perahera festival?",
+      "character": "king",
+      "time": 68.4837954044342
+    },
+    {
+      "timestamp": "2026-03-10T07:35:56.415967",
+      "query": "hi",
+      "character": "king",
+      "time": 0.06638360023498535
+    },
+    {
+      "timestamp": "2026-03-10T07:37:07.182169",
+      "query": "Tell me about the Sacred Tooth Relic",
+      "character": "king",
+      "time": 0.09009218215942383
+    },
+    {
+      "timestamp": "2026-03-10T07:37:19.773645",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "character": "nilame",
+      "time": 61.7694628238678
+    },
+    {
+      "timestamp": "2026-03-14T07:30:48.786070",
+      "query": "What traditional performances appear in the Esala Perahera procession?",
+      "character": "nilame",
+      "time": 70.93307590484619
+    }
+  ],
+  "user_ratings": [
+    {
+      "timestamp": "2026-02-26T16:48:45.777316",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 3.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T11:45:18.679802",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 3.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T12:02:28.440217",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 3.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T12:02:29.571326",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 3.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T12:02:30.425858",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 3.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T12:02:35.491326",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 5.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T12:02:36.249246",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 5.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T12:02:37.036444",
+      "user_id": "user_1",
+      "character": "king",
+      "rating": 5.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T14:19:05.768838",
+      "user_id": "feedback_1772374745192",
+      "character": "king",
+      "rating": 5.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-01T15:26:03.278021",
+      "user_id": "feedback_1772378762957",
+      "character": "king",
+      "rating": 5.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-05T18:57:07.284154",
+      "user_id": "feedback_1772737026719",
+      "character": "king",
+      "rating": 4.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-07T09:51:40.520313",
+      "user_id": "feedback_1772877101092",
+      "character": "king",
+      "rating": 4.0,
+      "topic": "general"
+    },
+    {
+      "timestamp": "2026-03-09T14:07:34.418181",
+      "user_id": "feedback_1773065254291",
+      "character": "king",
+      "rating": 5.0,
+      "topic": "temple"
+    }
+  ],
+  "intent_distribution": {
+    "greeting": 210,
+    "time": 36,
+    "person": 34,
+    "place": 10,
+    "general": 76,
+    "description": 94,
+    "process": 14,
+    "reason": 13,
+    "identity": 19
+  },
+  "topic_distribution": {
+    "general": 223,
+    "festival": 18,
+    "fort": 105,
+    "temple": 119,
+    "colonial": 4,
+    "king": 23,
+    "kingdom": 7,
+    "buddhism": 7
+  },
+  "character_distribution": {
+    "king": 310,
+    "nilame": 70,
+    "dutch": 45,
+    "citizen": 81
+  },
+  "retrieval_scores": [
+    0.7296274304389954,
+    0.7293741703033447,
+    0.7148236036300659,
+    0.7052174210548401,
+    0.6885851621627808,
+    0.7281259298324585,
+    0.7141866683959961,
+    0.6921308636665344,
+    0.6812182664871216,
+    0.6790268421173096,
+    0.7296274304389954,
+    0.7293741703033447,
+    0.7148236036300659,
+    0.7052174210548401,
+    0.6885851621627808,
+    0.4390316605567932,
+    0.41803568601608276,
+    0.4109809398651123,
+    0.40670067071914673,
+    0.3907334804534912,
+    0.2406606674194336,
+    0.21436536312103271,
+    0.1899406909942627,
+    0.18832963705062866,
+    0.17854440212249756,
+    0.7296274304389954,
+    0.7293741703033447,
+    0.7148236036300659,
+    0.7052174210548401,
+    0.6885851621627808,
+    0.7296274304389954,
+    0.7293741703033447,
+    0.7148236036300659,
+    0.7052174210548401,
+    0.6885851621627808,
+    0.20214998722076416,
+    0.18185007572174072,
+    0.17319178581237793,
+    0.16985630989074707,
+    0.16984009742736816,
+    0.22762107849121094,
+    0.16369318962097168,
+    0.16012370586395264,
+    0.1580890417098999,
+    0.15782469511032104,
+    0.22762107849121094,
+    0.16369318962097168,
+    0.16012370586395264,
+    0.1580890417098999,
+    0.15782469511032104,
+    0.22762107849121094,
+    0.16369318962097168,
+    0.16012370586395264,
+    0.1580890417098999,
+    0.15782469511032104,
+    0.1859731674194336,
+    0.1596308946609497,
+    0.15747898817062378,
+    0.1566762924194336,
+    0.1531875729560852,
+    0.22762107849121094,
+    0.16369318962097168,
+    0.16012370586395264,
+    0.1580890417098999,
+    0.15782469511032104,
+    0.22762107849121094,
+    0.17160344123840332,
+    0.16369318962097168,
+    0.16012370586395264,
+    0.1580890417098999,
+    0.7431116104125977,
+    0.6944214105606079,
+    0.6632146239280701,
+    0.6594974994659424,
+    0.6459698677062988,
+    0.7281259298324585,
+    0.7141866683959961,
+    0.6921308636665344,
+    0.6812182664871216,
+    0.6790268421173096,
+    0.7281259298324585,
+    0.7141866683959961,
+    0.6921308636665344,
+    0.6812182664871216,
+    0.6790268421173096,
+    0.7281259298324585,
+    0.7141866683959961,
+    0.6921308636665344,
+    0.6812182664871216,
+    0.6790268421173096,
+    0.7281259298324585,
+    0.7141866683959961,
+    0.6921308636665344,
+    0.6812182664871216,
+    0.6790268421173096,
+    0.7431116104125977,
+    0.6944214105606079,
+    0.6632146239280701,
+    0.6594974994659424,
+    0.6459698677062988,
+    0.7431116104125977,
+    0.6944214105606079,
+    0.6632146239280701,
+    0.6594974994659424,
+    0.6459698677062988,
+    0.7820914387702942,
+    0.7345650792121887,
+    0.7121228575706482,
+    0.7082045674324036,
+    0.6923043727874756,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.670605480670929,
+    0.7326133251190186,
+    0.7263832092285156,
+    0.7169368863105774,
+    0.7075548768043518,
+    0.6982574462890625,
+    0.7326133251190186,
+    0.7263832092285156,
+    0.7169368863105774,
+    0.7075548768043518,
+    0.6982574462890625,
+    0.8264839053153992,
+    0.7470101118087769,
+    0.7235760688781738,
+    0.722237765789032,
+    0.7145041823387146,
+    0.48020052909851074,
+    0.447510302066803,
+    0.43297308683395386,
+    0.4322725534439087,
+    0.4308621287345886,
+    0.48020052909851074,
+    0.447510302066803,
+    0.43297308683395386,
+    0.4322725534439087,
+    0.4308621287345886,
+    0.4987027645111084,
+    0.4721457362174988,
+    0.451379656791687,
+    0.4466492533683777,
+    0.44540631771087646,
+    0.5385242104530334,
+    0.5267161130905151,
+    0.5143396854400635,
+    0.49310964345932007,
+    0.4718743562698364,
+    0.5089476704597473,
+    0.4974902868270874,
+    0.48149073123931885,
+    0.4814428687095642,
+    0.41605186462402344,
+    0.4537842869758606,
+    0.44665563106536865,
+    0.44394737482070923,
+    0.44081616401672363,
+    0.4188467264175415,
+    0.5385242104530334,
+    0.5267161130905151,
+    0.5143396854400635,
+    0.49310964345932007,
+    0.4718743562698364,
+    0.5385242104530334,
+    0.5267161130905151,
+    0.5143396854400635,
+    0.49310964345932007,
+    0.4718743562698364,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.5385242104530334,
+    0.5267161130905151,
+    0.5143396854400635,
+    0.49310964345932007,
+    0.4718743562698364,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.4161948561668396,
+    0.4034591317176819,
+    0.37991565465927124,
+    0.34153175354003906,
+    0.3266535997390747,
+    0.7258757948875427,
+    0.4181191325187683,
+    0.4156426787376404,
+    0.4102773666381836,
+    0.4015078544616699,
+    0.7405514717102051,
+    0.4514533281326294,
+    0.44955217838287354,
+    0.4298628568649292,
+    0.4239685535430908,
+    0.2569440007209778,
+    0.2439691424369812,
+    0.23647522926330566,
+    0.20497655868530273,
+    0.1826276183128357,
+    0.47822892665863037,
+    0.3551420569419861,
+    0.2607043981552124,
+    0.24265605211257935,
+    0.22989916801452637,
+    0.4443453550338745,
+    0.4030032157897949,
+    0.40222442150115967,
+    0.38942158222198486,
+    0.3811020851135254,
+    0.4443453550338745,
+    0.4030032157897949,
+    0.40222442150115967,
+    0.38942158222198486,
+    0.3811020851135254,
+    0.30089837312698364,
+    0.2741931676864624,
+    0.25265586376190186,
+    0.2409961223602295,
+    0.23563194274902344,
+    0.5047781467437744,
+    0.30778753757476807,
+    0.2923736572265625,
+    0.2865530848503113,
+    0.2666205167770386,
+    0.46443819999694824,
+    0.3877120018005371,
+    0.29635435342788696,
+    0.2754249572753906,
+    0.27253520488739014,
+    0.46443819999694824,
+    0.3877120018005371,
+    0.29635435342788696,
+    0.2754249572753906,
+    0.27253520488739014,
+    0.652930736541748,
+    0.5546313524246216,
+    0.48835092782974243,
+    0.39476799964904785,
+    0.3886544704437256,
+    0.46443819999694824,
+    0.3877120018005371,
+    0.29635435342788696,
+    0.2754249572753906,
+    0.27253520488739014,
+    0.652930736541748,
+    0.5546313524246216,
+    0.48835092782974243,
+    0.39476799964904785,
+    0.3886544704437256,
+    0.2935623526573181,
+    0.2542111277580261,
+    0.24568021297454834,
+    0.24172067642211914,
+    0.24100983142852783,
+    0.6831957101821899,
+    0.6619611978530884,
+    0.6566866636276245,
+    0.6235072612762451,
+    0.618655800819397,
+    0.6309376955032349,
+    0.6231918334960938,
+    0.565012514591217,
+    0.5621399879455566,
+    0.5528295040130615,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.8061849474906921,
+    0.6786916851997375,
+    0.672755241394043,
+    0.668359637260437,
+    0.6607797741889954,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.7576054334640503,
+    0.7180532217025757,
+    0.7056362628936768,
+    0.7008812427520752,
+    0.6919698119163513,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.7576054334640503,
+    0.7180532217025757,
+    0.7056362628936768,
+    0.7008812427520752,
+    0.6919698119163513,
+    0.7576054334640503,
+    0.7180532217025757,
+    0.7056362628936768,
+    0.7008812427520752,
+    0.6919698119163513,
+    0.7576054334640503,
+    0.7180532217025757,
+    0.7056362628936768,
+    0.7008812427520752,
+    0.6919698119163513,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.6112313866615295,
+    0.5545473098754883,
+    0.550541877746582,
+    0.543217122554779,
+    0.5383821725845337,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.7576054334640503,
+    0.7180532217025757,
+    0.7056362628936768,
+    0.7008812427520752,
+    0.6919698119163513,
+    0.2523003816604614,
+    0.24440878629684448,
+    0.23433440923690796,
+    0.23343229293823242,
+    0.23284852504730225,
+    0.2523003816604614,
+    0.24440878629684448,
+    0.23433440923690796,
+    0.23343229293823242,
+    0.23284852504730225,
+    0.34911513328552246,
+    0.3351154923439026,
+    0.27658259868621826,
+    0.2043311595916748,
+    0.19396936893463135,
+    0.2523003816604614,
+    0.24440878629684448,
+    0.23433440923690796,
+    0.23343229293823242,
+    0.23284852504730225,
+    0.37231963872909546,
+    0.3678460121154785,
+    0.36050522327423096,
+    0.33516907691955566,
+    0.3334130644798279,
+    0.2523003816604614,
+    0.24440878629684448,
+    0.23433440923690796,
+    0.23343229293823242,
+    0.23284852504730225,
+    0.45150840282440186,
+    0.408406138420105,
+    0.3696441650390625,
+    0.36751407384872437,
+    0.34628647565841675,
+    0.5710262060165405,
+    0.5710262060165405,
+    0.5629767179489136,
+    0.5629767179489136,
+    0.559199869632721,
+    0.7470839619636536,
+    0.7088527679443359,
+    0.6289185285568237,
+    0.6210501194000244,
+    0.6204530000686646,
+    0.5748053789138794,
+    0.4829256534576416,
+    0.45303553342819214,
+    0.44800180196762085,
+    0.4287557601928711,
+    0.7575045824050903,
+    0.48788803815841675,
+    0.47026920318603516,
+    0.46806567907333374,
+    0.465373158454895,
+    0.8434170484542847,
+    0.8374965786933899,
+    0.8217499852180481,
+    0.8098117113113403,
+    0.7990003228187561,
+    0.8659636974334717,
+    0.8615987300872803,
+    0.8442039489746094,
+    0.8401024341583252,
+    0.8347374200820923,
+    0.8659636974334717,
+    0.8615987300872803,
+    0.8442039489746094,
+    0.8401024341583252,
+    0.8347374200820923,
+    0.8659636974334717,
+    0.8615987300872803,
+    0.8442039489746094,
+    0.8401024341583252,
+    0.8347374200820923,
+    0.8434170484542847,
+    0.8374965786933899,
+    0.8217499852180481,
+    0.8098117113113403,
+    0.7990003228187561,
+    0.8434170484542847,
+    0.8374965786933899,
+    0.8217499852180481,
+    0.8098117113113403,
+    0.7990003228187561,
+    0.37387025356292725,
+    0.3002328872680664,
+    0.2796417474746704,
+    0.2577517628669739,
+    0.25467199087142944,
+    0.5385242104530334,
+    0.5267161130905151,
+    0.5172787308692932,
+    0.5143396854400635,
+    0.49310964345932007,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.7281258702278137,
+    0.7141866087913513,
+    0.6921308040618896,
+    0.6812182068824768,
+    0.67902672290802,
+    0.5745923519134521,
+    0.5548306107521057,
+    0.5486899614334106,
+    0.5414960980415344,
+    0.5400535464286804,
+    0.5745923519134521,
+    0.5548306107521057,
+    0.5486899614334106,
+    0.5414960980415344,
+    0.5400535464286804,
+    0.2193278670310974,
+    0.1806941032409668,
+    0.17942416667938232,
+    0.17704951763153076,
+    0.1706187129020691,
+    0.22608762979507446,
+    0.19048082828521729,
+    0.18525636196136475,
+    0.17768609523773193,
+    0.17336785793304443,
+    0.22608762979507446,
+    0.19048082828521729,
+    0.18525636196136475,
+    0.17768609523773193,
+    0.17336785793304443,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.22762107849121094,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16115295886993408,
+    0.1601237654685974,
+    0.22762107849121094,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16115295886993408,
+    0.1601237654685974,
+    0.22762107849121094,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16115295886993408,
+    0.1601237654685974,
+    0.2193278670310974,
+    0.1806941032409668,
+    0.17942416667938232,
+    0.17704951763153076,
+    0.1706187129020691,
+    0.24066054821014404,
+    0.21436530351638794,
+    0.1899406909942627,
+    0.1883295774459839,
+    0.17854440212249756,
+    0.24066054821014404,
+    0.21436530351638794,
+    0.1899406909942627,
+    0.1883295774459839,
+    0.17854440212249756,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.22762107849121094,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16115295886993408,
+    0.1601237654685974,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.22762107849121094,
+    0.1717771291732788,
+    0.17160338163375854,
+    0.16369318962097168,
+    0.16134625673294067,
+    0.20316845178604126,
+    0.19984149932861328,
+    0.19164925813674927,
+    0.17952728271484375,
+    0.17804157733917236,
+    0.4490399956703186,
+    0.44844019412994385,
+    0.4405379295349121,
+    0.43873894214630127,
+    0.4309377670288086,
+    0.6083483099937439,
+    0.420421838760376,
+    0.40929776430130005,
+    0.4012347459793091,
+    0.38267290592193604,
+    0.5346825122833252,
+    0.4415097236633301,
+    0.4372652769088745,
+    0.4300650358200073,
+    0.42442166805267334,
+    0.5346825122833252,
+    0.4415097236633301,
+    0.4372652769088745,
+    0.4300650358200073,
+    0.42442166805267334,
+    0.6646279096603394,
+    0.5874331593513489,
+    0.5271387100219727,
+    0.5180248022079468,
+    0.5150681734085083,
+    0.6646279096603394,
+    0.5874331593513489,
+    0.5271387100219727,
+    0.5180248022079468,
+    0.5150681734085083,
+    0.6646279096603394,
+    0.5874331593513489,
+    0.5271387100219727,
+    0.5180248022079468,
+    0.5150681734085083,
+    0.6946449279785156,
+    0.683465838432312,
+    0.6536647081375122,
+    0.626487672328949,
+    0.6131086945533752,
+    0.6946449279785156,
+    0.683465838432312,
+    0.6536647081375122,
+    0.626487672328949,
+    0.6131086945533752,
+    0.8497001528739929,
+    0.8271108269691467,
+    0.8229971528053284,
+    0.8140086531639099,
+    0.8115184903144836,
+    0.8497001528739929,
+    0.8271108269691467,
+    0.8229971528053284,
+    0.8140086531639099,
+    0.8115184903144836,
+    0.8497001528739929,
+    0.8271108269691467,
+    0.8229971528053284,
+    0.8140086531639099,
+    0.8115184903144836,
+    0.8497001528739929,
+    0.8271108269691467,
+    0.8229971528053284,
+    0.8140086531639099,
+    0.8115184903144836,
+    0.8497001528739929,
+    0.8271108269691467,
+    0.8229971528053284,
+    0.8140086531639099,
+    0.8115184903144836,
+    0.8419570922851562,
+    0.8361095190048218,
+    0.8292063474655151,
+    0.824630618095398,
+    0.8139479160308838,
+    0.8419570922851562,
+    0.8361095190048218,
+    0.8292063474655151,
+    0.824630618095398,
+    0.8139479160308838,
+    0.15678715705871582,
+    0.1390896439552307,
+    0.13391566276550293,
+    0.12593597173690796,
+    0.12142086029052734,
+    0.8419570922851562,
+    0.8361095190048218,
+    0.8292063474655151,
+    0.824630618095398,
+    0.8139479160308838,
+    0.8419570922851562,
+    0.8361095190048218,
+    0.8292063474655151,
+    0.824630618095398,
+    0.8139479160308838,
+    0.8680965900421143,
+    0.8409000635147095,
+    0.8387652635574341,
+    0.8375434875488281,
+    0.8373688459396362,
+    0.8680965900421143,
+    0.8409000635147095,
+    0.8387652635574341,
+    0.8375434875488281,
+    0.8373688459396362,
+    0.8680965900421143,
+    0.8409000635147095,
+    0.8387652635574341,
+    0.8375434875488281,
+    0.8373688459396362,
+    0.8680965900421143,
+    0.8409000635147095,
+    0.8387652635574341,
+    0.8375434875488281,
+    0.8373688459396362,
+    0.8680965900421143,
+    0.8409000635147095,
+    0.8387652635574341,
+    0.8375434875488281,
+    0.8373688459396362,
+    0.7035735845565796,
+    0.5448379516601562,
+    0.4980396032333374,
+    0.4937560558319092,
+    0.48420190811157227,
+    0.6466315984725952,
+    0.5905814170837402,
+    0.5570715069770813,
+    0.5486558675765991,
+    0.5229855179786682,
+    0.6466315984725952,
+    0.5905814170837402,
+    0.5570715069770813,
+    0.5486558675765991,
+    0.5229855179786682,
+    0.6396544575691223,
+    0.6100901365280151,
+    0.6065957546234131,
+    0.6063278317451477,
+    0.5983366966247559,
+    0.6396544575691223,
+    0.6100901365280151,
+    0.6065957546234131,
+    0.6063278317451477,
+    0.5983366966247559,
+    0.18468600511550903,
+    0.17510193586349487,
+    0.1736946702003479,
+    0.1707674264907837,
+    0.16869640350341797,
+    0.1984490156173706,
+    0.17614400386810303,
+    0.17443633079528809,
+    0.17256474494934082,
+    0.16536551713943481,
+    0.8761074542999268,
+    0.8761074542999268,
+    0.6785873770713806,
+    0.6412864327430725,
+    0.627949059009552,
+    0.7782251834869385,
+    0.6904503107070923,
+    0.6858481168746948,
+    0.6858481168746948,
+    0.6799595355987549,
+    0.717646062374115,
+    0.6605198979377747,
+    0.6300773024559021,
+    0.6292840242385864,
+    0.6283248662948608,
+    0.6880022287368774,
+    0.6880022287368774,
+    0.6843056082725525,
+    0.6739463806152344,
+    0.6562079191207886,
+    0.717646062374115,
+    0.6605198979377747,
+    0.6300773024559021,
+    0.6292840242385864,
+    0.6283248662948608,
+    0.414792537689209,
+    0.3979761600494385,
+    0.35911327600479126,
+    0.34862780570983887,
+    0.3319213390350342,
+    0.6278607845306396,
+    0.6278607845306396,
+    0.6224414110183716,
+    0.6224414110183716,
+    0.6112009882926941,
+    0.36884641647338867,
+    0.3444596529006958,
+    0.33030182123184204,
+    0.3296625018119812,
+    0.32782137393951416,
+    0.36645567417144775,
+    0.32153451442718506,
+    0.3178824186325073,
+    0.3110775947570801,
+    0.30937254428863525,
+    0.7148274183273315,
+    0.6809304356575012,
+    0.679723858833313,
+    0.6656390428543091,
+    0.6656390428543091,
+    0.7125898599624634,
+    0.7020329236984253,
+    0.7008128762245178,
+    0.6910353302955627,
+    0.6910353302955627,
+    0.7125898599624634,
+    0.7020329236984253,
+    0.7008128762245178,
+    0.6910353302955627,
+    0.6910353302955627,
+    0.7418437600135803,
+    0.7418437600135803,
+    0.7125898599624634,
+    0.7020329236984253,
+    0.7008128762245178,
+    0.6101972460746765,
+    0.5988056659698486,
+    0.5988056659698486,
+    0.5959758758544922,
+    0.5868470072746277,
+    0.7053043246269226,
+    0.6815187335014343,
+    0.6794896125793457,
+    0.67905592918396,
+    0.67905592918396,
+    0.6304460763931274,
+    0.6304460763931274,
+    0.6197413802146912,
+    0.6053546667098999,
+    0.6053546667098999,
+    0.48714977502822876,
+    0.47837233543395996,
+    0.4730868339538574,
+    0.4723976254463196,
+    0.4641289710998535,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.7524834871292114,
+    0.7261961698532104,
+    0.6714212894439697,
+    0.6670185923576355,
+    0.6520867943763733,
+    0.8023024201393127,
+    0.7427504062652588,
+    0.6995266675949097,
+    0.6890983581542969,
+    0.6706055402755737,
+    0.731950044631958,
+    0.731950044631958,
+    0.7016392350196838,
+    0.692524790763855,
+    0.692524790763855,
+    0.5083392858505249,
+    0.5063453316688538,
+    0.490170419216156,
+    0.490170419216156,
+    0.48569822311401367,
+    0.731950044631958,
+    0.731950044631958,
+    0.7016392350196838,
+    0.692524790763855,
+    0.692524790763855,
+    0.7248858213424683,
+    0.7248858213424683,
+    0.6008492708206177,
+    0.6008492708206177,
+    0.5835179090499878,
+    0.4009278416633606,
+    0.4005849361419678,
+    0.4005849361419678,
+    0.384419322013855,
+    0.3779566287994385,
+    0.5420162677764893,
+    0.47845005989074707,
+    0.47054845094680786,
+    0.45453542470932007,
+    0.45429807901382446,
+    0.6185298562049866,
+    0.6166057586669922,
+    0.612119734287262,
+    0.61167311668396,
+    0.5902419090270996,
+    0.6850405931472778,
+    0.6850405931472778,
+    0.6773049235343933,
+    0.6726298928260803,
+    0.6726298928260803,
+    0.7157508134841919,
+    0.7157508134841919,
+    0.681021511554718,
+    0.6736558675765991,
+    0.6736558675765991,
+    0.3291499614715576,
+    0.3208944797515869,
+    0.2993399500846863,
+    0.2941741943359375,
+    0.2921363115310669,
+    0.6850405931472778,
+    0.6850405931472778,
+    0.6773049235343933,
+    0.6726298928260803,
+    0.6726298928260803,
+    0.6850405931472778,
+    0.6850405931472778,
+    0.6773049235343933,
+    0.6726298928260803,
+    0.6726298928260803,
+    0.6850405931472778,
+    0.6850405931472778,
+    0.6773049235343933,
+    0.6726298928260803,
+    0.6726298928260803,
+    0.6240718364715576,
+    0.5944793224334717,
+    0.5764273405075073,
+    0.5711746215820312,
+    0.5054898858070374,
+    0.6850405931472778,
+    0.6850405931472778,
+    0.6773049235343933,
+    0.6726298928260803,
+    0.6726298928260803,
+    0.35534679889678955,
+    0.3456099033355713,
+    0.34048551321029663,
+    0.3091684579849243,
+    0.3007572889328003,
+    0.7607564926147461,
+    0.7124242782592773,
+    0.6887562274932861,
+    0.6887562274932861,
+    0.6740601062774658,
+    0.5420162677764893,
+    0.47845005989074707,
+    0.47054845094680786,
+    0.45453542470932007,
+    0.45429807901382446,
+    0.5420162677764893,
+    0.47845005989074707,
+    0.47054845094680786,
+    0.45453542470932007,
+    0.45429807901382446,
+    0.7069784998893738,
+    0.7069784998893738,
+    0.6763888597488403,
+    0.6758050322532654,
+    0.6739906668663025,
+    0.4784610867500305,
+    0.47578293085098267,
+    0.4727094769477844,
+    0.4725210666656494,
+    0.4699637293815613,
+    0.6313388347625732,
+    0.621820867061615,
+    0.621820867061615,
+    0.6182008981704712,
+    0.6182008981704712,
+    0.6313388347625732,
+    0.621820867061615,
+    0.621820867061615,
+    0.6182008981704712,
+    0.6182008981704712,
+    0.7607564926147461,
+    0.7124242782592773,
+    0.6887562274932861,
+    0.6887562274932861,
+    0.6740601062774658,
+    0.7607564926147461,
+    0.7124242782592773,
+    0.6887562274932861,
+    0.6887562274932861,
+    0.6740601062774658,
+    0.7607564926147461,
+    0.7124242782592773,
+    0.6887562274932861,
+    0.6887562274932861,
+    0.6740601062774658,
+    0.7607564926147461,
+    0.7124242782592773,
+    0.6887562274932861,
+    0.6887562274932861,
+    0.6740601062774658,
+    0.7691017389297485,
+    0.7293072938919067,
+    0.6821581125259399,
+    0.6710326075553894,
+    0.6438194513320923,
+    0.6220451593399048,
+    0.5739257335662842,
+    0.5620566606521606,
+    0.5579240322113037,
+    0.5566726922988892,
+    0.6220451593399048,
+    0.5739257335662842,
+    0.5620566606521606,
+    0.5579240322113037,
+    0.5566726922988892,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.6220451593399048,
+    0.5739257335662842,
+    0.5620566606521606,
+    0.5579240322113037,
+    0.5566726922988892,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.6220451593399048,
+    0.5739257335662842,
+    0.5620566606521606,
+    0.5579240322113037,
+    0.5566726922988892,
+    0.5385242104530334,
+    0.5267161130905151,
+    0.5172787308692932,
+    0.5143396854400635,
+    0.49310964345932007,
+    0.6833606958389282,
+    0.6655994653701782,
+    0.6630251407623291,
+    0.6565164923667908,
+    0.6542800664901733,
+    0.7230412364006042,
+    0.7177255749702454,
+    0.709918200969696,
+    0.7094202041625977,
+    0.7090622782707214,
+    0.6995448470115662,
+    0.6926537156105042,
+    0.6826624274253845,
+    0.6531634330749512,
+    0.640217125415802,
+    0.6632310152053833,
+    0.6607045531272888,
+    0.6584125757217407,
+    0.6574400067329407,
+    0.6516212224960327,
+    0.6995448470115662,
+    0.6926537156105042,
+    0.6826624274253845,
+    0.6531634330749512,
+    0.640217125415802,
+    0.7296274900436401,
+    0.7293741106987,
+    0.7148237228393555,
+    0.7052174210548401,
+    0.688585102558136,
+    0.6995448470115662,
+    0.6926537156105042,
+    0.6826624274253845,
+    0.6531634330749512,
+    0.640217125415802,
+    0.6995448470115662,
+    0.6926537156105042,
+    0.6826624274253845,
+    0.6531634330749512,
+    0.640217125415802,
+    0.6995448470115662,
+    0.6926537156105042,
+    0.6826624274253845,
+    0.6531634330749512,
+    0.640217125415802
+  ],
+  "training_metrics": [
+    {
+      "step": 10,
+      "loss": 2.2025,
+      "epoch": 0.0784313725490196,
+      "timestamp": "2026-02-22T10:31:36.634637"
+    },
+    {
+      "step": 20,
+      "loss": 1.8969,
+      "epoch": 0.1568627450980392,
+      "timestamp": "2026-02-22T12:18:37.137769"
+    },
+    {
+      "step": 30,
+      "loss": 1.6687,
+      "epoch": 0.23529411764705882,
+      "timestamp": "2026-02-22T12:46:17.074769"
+    },
+    {
+      "step": 40,
+      "loss": 1.2486,
+      "epoch": 0.3137254901960784,
+      "timestamp": "2026-02-22T13:13:37.354983"
+    },
+    {
+      "step": 50,
+      "loss": 1.1323,
+      "epoch": 0.39215686274509803,
+      "timestamp": "2026-02-22T13:41:06.794671"
+    },
+    {
+      "step": 60,
+      "loss": 1.1256,
+      "epoch": 0.47058823529411764,
+      "timestamp": "2026-02-22T14:08:28.559573"
+    },
+    {
+      "step": 70,
+      "loss": 1.0742,
+      "epoch": 0.5490196078431373,
+      "timestamp": "2026-02-22T14:35:53.336784"
+    },
+    {
+      "step": 80,
+      "loss": 1.0872,
+      "epoch": 0.6274509803921569,
+      "timestamp": "2026-02-22T15:03:08.149231"
+    }
+  ]
+}

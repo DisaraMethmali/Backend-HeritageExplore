@@ -1,0 +1,46 @@
+{
+  "user_1": {
+    "created": "2026-02-26T23:03:37.690971",
+    "total": 1,
+    "rooms": {
+      "sacred_chamber": {
+        "name": "\ud83d\uded5 The Sacred Chamber",
+        "memories": [],
+        "unlocked": false
+      },
+      "fort_battlements": {
+        "name": "\ud83c\udff0 The Fort Battlements",
+        "memories": [],
+        "unlocked": false
+      },
+      "royal_hall": {
+        "name": "\ud83d\udc51 The Royal Throne Hall",
+        "memories": [],
+        "unlocked": false
+      },
+      "festival_square": {
+        "name": "\ud83c\udfad The Festival Square",
+        "memories": [],
+        "unlocked": false
+      },
+      "spice_market": {
+        "name": "\ud83c\udf3f The Spice Market",
+        "memories": [],
+        "unlocked": false
+      },
+      "ancient_ruins": {
+        "name": "\ud83c\udfdb\ufe0f The Ancient Ruins",
+        "memories": [
+          {
+            "id": 1,
+            "topic": "",
+            "content": "",
+            "character": "king",
+            "timestamp": "2026-02-26T23:03:37.691008"
+          }
+        ],
+        "unlocked": true
+      }
+    }
+  }
+}

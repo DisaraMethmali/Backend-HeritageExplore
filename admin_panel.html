@@ -1,0 +1,1917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel — Sri Lanka Historical Chatbot</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:         #F7F4EF;
+    --surface:    #FFFFFF;
+    --surface2:   #F0EDE6;
+    --border:     #E2DDD5;
+    --border-s:   #C9C1B4;
+    --text:       #1A1714;
+    --text-2:     #5C5349;
+    --text-3:     #9B9088;
+    --gold:       #B8860B;
+    --gold-l:     #D4A017;
+    --gold-bg:    #FDF8EC;
+    --blue:       #2563EB;
+    --blue-l:     #EFF6FF;
+    --green:      #15803D;
+    --green-l:    #F0FDF4;
+    --red:        #DC2626;
+    --red-l:      #FEF2F2;
+    --amber:      #D97706;
+    --amber-l:    #FFFBEB;
+    --purple:     #7C3AED;
+    --purple-l:   #F5F3FF;
+    --nav-w:      240px;
+    --radius:     10px;
+    --shadow:     0 1px 3px rgba(0,0,0,.07), 0 4px 16px rgba(0,0,0,.04);
+    --shadow-lg:  0 4px 24px rgba(0,0,0,.1);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .ic { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; flex-shrink: 0; }
+  .ic svg { width: 100%; height: 100%; }
+
+  /* ── Login ─────────────────────────────────────────────── */
+  #login-screen {
+    position: fixed; inset: 0;
+    background: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 9999;
+    background-image: radial-gradient(ellipse at 20% 50%, #e8dfc870 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 20%, #d4a01720 0%, transparent 55%);
+  }
+  .login-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+    padding: 48px; width: 380px; box-shadow: var(--shadow-lg);
+  }
+  .login-logo { text-align: center; margin-bottom: 32px; }
+  .login-logo .icon-wrap {
+    width: 56px; height: 56px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-l));
+    border-radius: 14px; display: inline-flex; align-items: center; justify-content: center;
+    margin-bottom: 12px; box-shadow: 0 4px 12px #d4a01740;
+  }
+  .login-logo h1 { font-family: 'Playfair Display', serif; font-size: 22px; color: var(--text); margin-bottom: 4px; }
+  .login-logo p  { color: var(--text-3); font-size: 13px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; font-weight: 500; margin-bottom: 6px; font-size: 13px; color: var(--text-2); }
+  .form-group input {
+    width: 100%; padding: 10px 14px; border: 1.5px solid var(--border); border-radius: var(--radius);
+    font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--text);
+    background: var(--bg); outline: none; transition: border-color .2s, box-shadow .2s;
+  }
+  .form-group input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px #d4a01720; }
+  .login-btn {
+    width: 100%; padding: 11px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-l));
+    color: #fff; border: none; border-radius: var(--radius);
+    font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 14px;
+    cursor: pointer; transition: opacity .2s, transform .15s;
+    box-shadow: 0 3px 10px #d4a01740;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .login-btn:hover { opacity: .92; transform: translateY(-1px); }
+  .login-error {
+    background: var(--red-l); border: 1px solid #fca5a5; color: var(--red);
+    padding: 9px 12px; border-radius: 8px; font-size: 13px; margin-bottom: 16px;
+    display: none; align-items: center; gap: 7px;
+  }
+
+  /* ── Sidebar ─────────────────────────────────────────────── */
+  #sidebar {
+    width: var(--nav-w); background: var(--surface); border-right: 1px solid var(--border);
+    display: flex; flex-direction: column;
+    position: fixed; top: 0; left: 0; bottom: 0; z-index: 100; transition: transform .3s;
+  }
+  .sidebar-header { padding: 20px 20px 16px; border-bottom: 1px solid var(--border); }
+  .sidebar-brand  { display: flex; align-items: center; gap: 10px; }
+  .brand-icon {
+    width: 34px; height: 34px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-l));
+    border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .brand-text h2  { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--text); line-height: 1.2; }
+  .brand-text span{ font-size: 11px; color: var(--text-3); }
+  .nav-section    { padding: 8px 12px 4px; }
+  .nav-label      { font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--text-3); padding: 0 8px; margin-bottom: 4px; }
+  .nav-item {
+    display: flex; align-items: center; gap: 9px; padding: 8px 10px; border-radius: 8px;
+    cursor: pointer; color: var(--text-2); font-weight: 500; font-size: 13.5px;
+    transition: background .15s, color .15s; user-select: none; text-decoration: none;
+  }
+  .nav-item:hover  { background: var(--surface2); color: var(--text); }
+  .nav-item.active { background: var(--gold-bg); color: var(--gold); }
+  .nav-icon { width: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .nav-badge {
+    margin-left: auto; background: var(--red); color: #fff;
+    font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 99px;
+  }
+  .sidebar-footer { margin-top: auto; padding: 16px 12px; border-top: 1px solid var(--border); }
+  .user-info { display: flex; align-items: center; gap: 9px; padding: 8px 10px; border-radius: 8px; }
+  .user-avatar {
+    width: 32px; height: 32px; background: var(--gold-bg); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px; font-weight: 700; color: var(--gold); flex-shrink: 0;
+  }
+  .user-meta p    { font-size: 13px; font-weight: 600; color: var(--text); }
+  .user-meta span { font-size: 11px; color: var(--text-3); }
+  .logout-btn {
+    width: 100%; margin-top: 8px; padding: 8px;
+    background: var(--red-l); color: var(--red); border: 1px solid #fca5a5; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: background .15s;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+  }
+  .logout-btn:hover { background: #fee2e2; }
+
+  /* ── Main ─────────────────────────────────────────────────── */
+  #main { margin-left: var(--nav-w); flex: 1; display: flex; flex-direction: column; min-height: 100vh; }
+
+  /* ── Topbar ────────────────────────────────────────────────── */
+  .topbar {
+    background: var(--surface); border-bottom: 1px solid var(--border);
+    padding: 0 28px; height: 56px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 50;
+  }
+  .topbar-left h2 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--text); }
+  .topbar-left p  { font-size: 12px; color: var(--text-3); }
+  .topbar-right   { display: flex; align-items: center; gap: 12px; }
+  .tb-badge {
+    padding: 5px 12px; border-radius: 99px; font-size: 12px; font-weight: 600;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .tb-badge.green { background: var(--green-l); color: var(--green); }
+  .tb-badge.amber { background: var(--amber-l); color: var(--amber); }
+  .refresh-btn {
+    padding: 6px 14px; border-radius: 8px;
+    background: var(--surface2); border: 1px solid var(--border);
+    font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500;
+    cursor: pointer; color: var(--text-2); display: flex; align-items: center; gap: 6px;
+    transition: background .15s;
+  }
+  .refresh-btn:hover { background: var(--border); }
+
+  /* ── Content ───────────────────────────────────────────────── */
+  .content { padding: 24px 28px; flex: 1; }
+
+  /* ── Pages ─────────────────────────────────────────────────── */
+  .page { display: none; }
+  .page.active { display: block; animation: fadein .3s ease; }
+  @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+  /* ── KPI Grid ──────────────────────────────────────────────── */
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .kpi {
+    background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+    padding: 18px 20px; box-shadow: var(--shadow); position: relative; overflow: hidden;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .kpi:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+  .kpi::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+  .kpi.c-gold::before   { background: linear-gradient(90deg, var(--gold), var(--gold-l)); }
+  .kpi.c-blue::before   { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+  .kpi.c-green::before  { background: linear-gradient(90deg, var(--green), #4ade80); }
+  .kpi.c-red::before    { background: linear-gradient(90deg, var(--red), #f87171); }
+  .kpi.c-purple::before { background: linear-gradient(90deg, var(--purple), #a78bfa); }
+  .kpi.c-amber::before  { background: linear-gradient(90deg, var(--amber), #fbbf24); }
+  .kpi.c-indigo::before { background: linear-gradient(90deg, #4f46e5, #818cf8); }
+  .kpi.c-pink::before   { background: linear-gradient(90deg, #db2777, #f472b6); }
+  .kpi-icon {
+    width: 34px; height: 34px; border-radius: 8px; margin-bottom: 12px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .kpi.c-gold   .kpi-icon { background: var(--gold-bg);   color: var(--gold); }
+  .kpi.c-blue   .kpi-icon { background: var(--blue-l);    color: var(--blue); }
+  .kpi.c-green  .kpi-icon { background: var(--green-l);   color: var(--green); }
+  .kpi.c-red    .kpi-icon { background: var(--red-l);     color: var(--red); }
+  .kpi.c-purple .kpi-icon { background: var(--purple-l);  color: var(--purple); }
+  .kpi.c-amber  .kpi-icon { background: var(--amber-l);   color: var(--amber); }
+  .kpi.c-indigo .kpi-icon { background: #eef2ff;          color: #4f46e5; }
+  .kpi.c-pink   .kpi-icon { background: #fdf2f8;          color: #db2777; }
+  .kpi-val   { font-size: 28px; font-weight: 700; color: var(--text); font-family: 'DM Mono', monospace; line-height: 1; margin-bottom: 4px; }
+  .kpi-label { font-size: 12px; color: var(--text-2); font-weight: 500; }
+  .kpi-sub   { font-size: 11px; color: var(--text-3); margin-top: 3px; }
+
+  /* ── Cards ─────────────────────────────────────────────────── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; margin-bottom: 20px; }
+  .card-header {
+    padding: 14px 20px; border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .card-header h3 { font-size: 14px; font-weight: 600; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .card-body { padding: 20px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+
+  /* ── Bar Charts ────────────────────────────────────────────── */
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .bar-label { width: 100px; font-size: 12px; color: var(--text-2); text-transform: capitalize; }
+  .bar-track { flex: 1; background: var(--surface2); border-radius: 99px; height: 8px; overflow: hidden; }
+  .bar-fill  { height: 100%; border-radius: 99px; transition: width 1s cubic-bezier(.4,0,.2,1); width: 0; }
+  .bar-val   { width: 32px; text-align: right; font-size: 12px; font-weight: 600; color: var(--text); font-family: 'DM Mono', monospace; }
+
+  /* ── Tables ────────────────────────────────────────────────── */
+  .tbl { width: 100%; border-collapse: collapse; }
+  .tbl th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text-3); padding: 0 12px 10px; text-align: left; white-space: nowrap; }
+  .tbl td { padding: 10px 12px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-2); vertical-align: middle; }
+  .tbl tr:hover td { background: var(--surface2); }
+  .tbl td.mono { font-family: 'DM Mono', monospace; font-size: 12px; }
+  .tbl td strong { color: var(--text); }
+  .tbl-wrap { overflow-x: auto; }
+
+  /* ── Badges ────────────────────────────────────────────────── */
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+  .badge.king    { background: #dbeafe; color: #1d4ed8; }
+  .badge.nilame  { background: #f3e8ff; color: #6d28d9; }
+  .badge.dutch   { background: #ffedd5; color: #c2410c; }
+  .badge.citizen { background: #dcfce7; color: #15803d; }
+  .badge.high    { background: var(--red-l);   color: var(--red); }
+  .badge.medium  { background: var(--amber-l); color: var(--amber); }
+  .badge.low     { background: var(--green-l); color: var(--green); }
+  .badge.ok      { background: var(--green-l); color: var(--green); }
+  .badge.warn    { background: var(--amber-l); color: var(--amber); }
+  .badge.err     { background: var(--red-l);   color: var(--red); }
+
+  /* ── Confidence bar ────────────────────────────────────────── */
+  .conf-bar { display: flex; align-items: center; gap: 4px; }
+  .conf-seg { width: 14px; height: 14px; border-radius: 3px; background: var(--surface2); }
+  .conf-seg.filled { background: var(--green); }
+  .conf-val { font-size: 12px; font-weight: 600; color: var(--text); margin-left: 4px; }
+
+  /* ── Stars ─────────────────────────────────────────────────── */
+  .stars { color: #f59e0b; font-size: 14px; }
+
+  /* ── Filters ───────────────────────────────────────────────── */
+  .filter-row { display: flex; gap: 10px; align-items: center; padding: 14px 20px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .filter-row input, .filter-row select {
+    padding: 7px 12px; border: 1.5px solid var(--border); border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--text);
+    background: var(--bg); outline: none; transition: border-color .2s;
+  }
+  .filter-row input:focus, .filter-row select:focus { border-color: var(--gold); }
+  .filter-row input { flex: 1; min-width: 160px; }
+  .filter-btn {
+    padding: 7px 14px; background: var(--gold); color: #fff; border: none; border-radius: 8px;
+    font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: opacity .2s; display: flex; align-items: center; gap: 6px;
+  }
+  .filter-btn:hover { opacity: .88; }
+
+  /* ── Pagination ────────────────────────────────────────────── */
+  .pagination { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-3); }
+  .page-btns { display: flex; gap: 4px; }
+  .page-btn { padding: 4px 10px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); cursor: pointer; font-size: 12px; transition: background .15s; }
+  .page-btn:hover  { background: var(--surface2); }
+  .page-btn.active { background: var(--gold); color: #fff; border-color: var(--gold); }
+
+  /* ── Status dot ────────────────────────────────────────────── */
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+  .dot.green { background: var(--green); box-shadow: 0 0 0 2px #dcfce7; }
+  .dot.red   { background: var(--red);   box-shadow: 0 0 0 2px #fee2e2; }
+  .dot.amber { background: var(--amber); box-shadow: 0 0 0 2px #fef3c7; }
+
+  /* ── Status Row ─────────────────────────────────────────────── */
+  .status-row { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); }
+  .status-row:last-child { border-bottom: none; }
+  .status-row .sl { font-size: 13px; color: var(--text-2); display: flex; align-items: center; gap: 8px; }
+  .status-row .sv { font-size: 13px; font-weight: 600; }
+
+  /* ── Empty State ────────────────────────────────────────────── */
+  .empty { text-align: center; padding: 40px 20px; color: var(--text-3); }
+  .empty .ei { font-size: 36px; margin-bottom: 8px; display: flex; justify-content: center; opacity: .35; }
+  .empty p { font-size: 13px; }
+
+  /* ── Toast ──────────────────────────────────────────────────── */
+  #toast {
+    position: fixed; bottom: 24px; right: 24px; z-index: 9999;
+    background: var(--text); color: #fff; padding: 12px 18px; border-radius: 10px;
+    font-size: 13px; font-weight: 500; box-shadow: var(--shadow-lg);
+    transform: translateY(80px); opacity: 0; transition: transform .3s, opacity .3s;
+    display: flex; align-items: center; gap: 8px;
+  }
+  #toast.show { transform: none; opacity: 1; }
+
+  /* ── API list ───────────────────────────────────────────────── */
+  .ep-list { display: flex; flex-direction: column; gap: 6px; }
+  .ep { display: flex; align-items: flex-start; gap: 10px; padding: 10px 14px; background: var(--bg); border-radius: 8px; border: 1px solid var(--border); }
+  .ep-method { font-size: 10px; font-weight: 700; letter-spacing: .05em; padding: 2px 7px; border-radius: 4px; flex-shrink: 0; margin-top: 1px; }
+  .ep-method.GET    { background: #dcfce7; color: #15803d; }
+  .ep-method.POST   { background: #fef3c7; color: #b45309; }
+  .ep-method.PUT    { background: #dbeafe; color: #1e40af; }
+  .ep-method.DELETE { background: #fee2e2; color: #b91c1c; }
+  .ep-path { font-family: 'DM Mono', monospace; font-size: 12.5px; color: var(--text); }
+  .ep-desc { font-size: 12px; color: var(--text-3); margin-top: 2px; }
+
+  /* ── Loader ─────────────────────────────────────────────────── */
+  .loader-wrap { display: flex; align-items: center; justify-content: center; padding: 40px; color: var(--text-3); gap: 10px; }
+  .spinner { width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--gold); border-radius: 50%; animation: spin .7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── NLP Page specific ──────────────────────────────────────── */
+  .nlp-explain-card {
+    background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--purple);
+    border-radius: var(--radius); padding: 20px; margin-bottom: 24px; box-shadow: var(--shadow);
+  }
+  .nlp-explain-card h3 { font-size: 14px; font-weight: 600; color: var(--purple); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .nlp-explain-card p  { font-size: 13px; color: var(--text-2); margin-bottom: 12px; line-height: 1.6; }
+  .nlp-metric-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+  .nlp-metric-info {
+    background: var(--bg); border-radius: 8px; padding: 12px; border: 1px solid var(--border);
+  }
+  .nlp-metric-info .mi-label { font-weight: 700; font-size: 12px; margin-bottom: 4px; }
+  .nlp-metric-info .mi-desc  { font-size: 11px; color: var(--text-3); margin-bottom: 4px; line-height: 1.4; }
+  .nlp-metric-info .mi-thres { font-size: 10px; color: var(--green); font-weight: 500; }
+  .nlp-trend-wrap {
+    display: flex; align-items: flex-end; gap: 4px; height: 120px;
+    border-bottom: 1px solid var(--border); padding-bottom: 8px; overflow-x: auto;
+  }
+  .nlp-bar-group { display: flex; flex-direction: column; align-items: center; gap: 2px; flex-shrink: 0; min-width: 28px; }
+  .nlp-bar-stack { width: 100%; display: flex; gap: 1px; align-items: flex-end; height: 100px; }
+  .nlp-bar-seg   { flex: 1; border-radius: 2px 2px 0 0; min-height: 2px; transition: height .6s ease; }
+  .nlp-score-badge {
+    display: inline-block; padding: 2px 8px; border-radius: 99px;
+    font-size: 12px; font-weight: 700; font-family: 'DM Mono', monospace;
+  }
+  .nlp-score-badge.excellent { background: #dcfce7; color: #15803d; }
+  .nlp-score-badge.good      { background: #fef3c7; color: #b45309; }
+  .nlp-score-badge.poor      { background: var(--red-l); color: var(--red); }
+  .nlp-char-row {
+    display: grid; grid-template-columns: 110px 55px 80px 80px 80px;
+    gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .nlp-char-row:last-child { border-bottom: none; }
+  .nlp-char-name { font-weight: 600; }
+  .nlp-char-cnt  { color: var(--text-3); font-size: 12px; }
+  .nlp-topic-row {
+    display: grid; grid-template-columns: 110px 40px 80px 80px;
+    gap: 8px; align-items: center; padding: 7px 0; border-bottom: 1px solid var(--border);
+    font-size: 12px;
+  }
+  .nlp-topic-row:last-child { border-bottom: none; }
+  .nlp-recent-tbl { width: 100%; border-collapse: collapse; }
+  .nlp-recent-tbl th { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text-3); padding: 0 12px 10px; text-align: left; white-space: nowrap; }
+  .nlp-recent-tbl td { padding: 10px 12px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-2); vertical-align: middle; }
+  .nlp-recent-tbl tr:hover td { background: var(--surface2); }
+
+  /* ── Mobile ─────────────────────────────────────────────────── */
+  .menu-toggle { display: none; padding: 7px; background: none; border: none; cursor: pointer; color: var(--text); align-items: center; justify-content: center; }
+  @media (max-width: 768px) {
+    .menu-toggle { display: flex; }
+    #sidebar { transform: translateX(-100%); }
+    #sidebar.open { transform: none; }
+    #main { margin-left: 0; }
+    .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .content { padding: 16px; }
+    .nlp-metric-grid { grid-template-columns: repeat(2, 1fr); }
+    .nlp-char-row { grid-template-columns: 90px 45px 70px 70px; }
+  }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border-s); border-radius: 99px; }
+</style>
+</head>
+<body>
+
+<!-- SVG SPRITE -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 21h18M3 7l9-4 9 4M4 7v14M20 7v14M8 10v4m0 4v.01M12 10v4m0 4v.01M16 10v4m0 4v.01"/>
+  </symbol>
+  <symbol id="i-bar-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+    <line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>
+  </symbol>
+  <symbol id="i-trending-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/>
+  </symbol>
+  <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+  </symbol>
+  <symbol id="i-message" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </symbol>
+  <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+  </symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/>
+    <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/>
+  </symbol>
+  <symbol id="i-alert-triangle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+    <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+  </symbol>
+  <symbol id="i-user-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/>
+    <path d="M7 20.662V19a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v1.662"/>
+  </symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22v-4m4-6h2a2 2 0 0 0 2-2V5l-3-3-3 3H9L6 2 3 5v5a2 2 0 0 0 2 2h2m5 4a2 2 0 0 1-2-2v-2h4v2a2 2 0 0 1-2 2z"/>
+  </symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="3"/>
+    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+  </symbol>
+  <symbol id="i-log-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+    <polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/>
+  </symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/>
+    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+  </symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+  </symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </symbol>
+  <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+  </symbol>
+  <symbol id="i-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+  </symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>
+  </symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+  </symbol>
+  <symbol id="i-alert-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
+  </symbol>
+  <symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+  </symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+  </symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+    <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+  </symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+    <path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/>
+    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/>
+    <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
+  </symbol>
+  <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+    <line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+  </symbol>
+  <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+  </symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+  </symbol>
+  <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+  </symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+  </symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+  </symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3v1m0 16v1M4.22 4.22l.7.7m13.86 13.86.7.7M3 12h1m16 0h1M4.22 19.78l.7-.7M18.36 5.64l.7-.7"/>
+    <circle cx="12" cy="12" r="4"/>
+  </symbol>
+</svg>
+
+<!-- ═══════════ LOGIN ═══════════ -->
+<div id="login-screen">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><use href="#i-building"/></svg>
+      </div>
+      <h1>Admin Panel</h1>
+      <p>Sri Lanka Historical Chatbot</p>
+    </div>
+    <div class="login-error" id="login-error">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-alert-circle"/></svg>
+      <span id="login-error-msg">Invalid credentials. Please try again.</span>
+    </div>
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" id="login-u" placeholder="admin" autocomplete="username">
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" id="login-p" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <button class="login-btn" id="login-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75"><use href="#i-lock"/></svg>
+      Sign In to Dashboard
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════ SIDEBAR ═══════════ -->
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-brand">
+      <div class="brand-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><use href="#i-building"/></svg>
+      </div>
+      <div class="brand-text">
+        <h2>AI Conversational System</h2>
+        <span>Admin Dashboard</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-section" style="margin-top:8px">
+    <div class="nav-label">Overview</div>
+    <div class="nav-item active" data-page="overview">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-bar-chart"/></svg></span> Overview
+    </div>
+    <div class="nav-item" data-page="analytics">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-trending-up"/></svg></span> Analytics
+    </div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Users &amp; Activity</div>
+    <div class="nav-item" data-page="users">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-users"/></svg></span> Users
+    </div>
+    <div class="nav-item" data-page="chats">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-message"/></svg></span> Chat Logs
+    </div>
+    <div class="nav-item" data-page="feedback">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-star"/></svg></span> Feedback &amp; RL
+    </div>
+    <div class="nav-item" data-page="nlp">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg></span> NLP Scores
+    </div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">AI Systems</div>
+    <div class="nav-item" data-page="metrics">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-cpu"/></svg></span> RAG Metrics
+    </div>
+    <div class="nav-item" data-page="anomalies">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-alert-triangle"/></svg></span> Anomalies
+      <span class="nav-badge" id="anomaly-badge">0</span>
+    </div>
+    <div class="nav-item" data-page="characters">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-user-circle"/></svg></span> Characters
+    </div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-label">Configuration</div>
+    <div class="nav-item" data-page="api">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-plug"/></svg></span> API Reference
+    </div>
+    <div class="nav-item" data-page="system">
+      <span class="nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-settings"/></svg></span> System Status
+    </div>
+  </div>
+
+  <div class="sidebar-footer">
+    <div class="user-info">
+      <div class="user-avatar" id="sidebar-avatar">A</div>
+      <div class="user-meta">
+        <p id="sidebar-user">Administrator</p>
+        <span>Super Admin</span>
+      </div>
+    </div>
+    <button class="logout-btn" id="logout-btn">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-log-out"/></svg>
+      Sign Out
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════ MAIN ═══════════ -->
+<div id="main">
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div style="display:flex;align-items:center;gap:12px">
+      <button class="menu-toggle" id="menu-toggle">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-menu"/></svg>
+      </button>
+      <div class="topbar-left">
+        <h2 id="page-title">Overview</h2>
+        <p id="page-sub">Dashboard summary</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="tb-badge green" id="model-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-check-circle"/></svg>
+        Model Online
+      </span>
+      <span class="tb-badge amber" id="timestamp-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-clock"/></svg>
+        —
+      </span>
+      <button class="refresh-btn" id="refresh-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-refresh"/></svg>
+        Refresh
+      </button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- ═══ OVERVIEW ═══ -->
+    <div class="page active" id="page-overview">
+      <div class="kpi-grid" id="kpi-grid">
+        <div class="kpi c-gold">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-users"/></svg></div>
+          <div class="kpi-val" id="kpi-users">—</div>
+          <div class="kpi-label">Total Users</div>
+          <div class="kpi-sub" id="kpi-sessions">— active sessions</div>
+        </div>
+        <div class="kpi c-blue">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-message"/></svg></div>
+          <div class="kpi-val" id="kpi-messages">—</div>
+          <div class="kpi-label">Total Messages</div>
+          <div class="kpi-sub" id="kpi-queries">— total queries</div>
+        </div>
+        <div class="kpi c-green">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-star"/></svg></div>
+          <div class="kpi-val" id="kpi-rating">—</div>
+          <div class="kpi-label">Avg Rating</div>
+          <div class="kpi-sub" id="kpi-ratings">— ratings</div>
+        </div>
+        <div class="kpi c-purple">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-target"/></svg></div>
+          <div class="kpi-val" id="kpi-confidence">—</div>
+          <div class="kpi-label">Avg Confidence</div>
+        </div>
+        <div class="kpi c-amber">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-zap"/></svg></div>
+          <div class="kpi-val" id="kpi-rl">—</div>
+          <div class="kpi-label">RL Events</div>
+        </div>
+        <div class="kpi c-red">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-alert-triangle"/></svg></div>
+          <div class="kpi-val" id="kpi-anomalies-count">—</div>
+          <div class="kpi-label">Anomalies Flagged</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-user-circle"/></svg> Character Usage</h3>
+          </div>
+          <div class="card-body" id="char-bars"><div class="loader-wrap"><div class="spinner"></div> Loading…</div></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-book"/></svg> Topic Distribution</h3>
+          </div>
+          <div class="card-body" id="topic-bars"><div class="loader-wrap"><div class="spinner"></div> Loading…</div></div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-clock"/></svg> Recent Activity</h3>
+          </div>
+          <div class="tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th>Time</th><th>User</th><th>Character</th><th>Question</th><th>Conf</th></tr></thead>
+              <tbody id="recent-tbody"><tr><td colspan="5"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-server"/></svg> System Status</h3>
+          </div>
+          <div class="card-body" id="system-status-mini"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ ANALYTICS ═══ -->
+    <div class="page" id="page-analytics">
+      <div class="card">
+        <div class="card-header">
+          <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-calendar"/></svg> Daily Message Volume (Last 14 Days)</h3>
+        </div>
+        <div class="card-body" id="daily-chart"><div class="loader-wrap"><div class="spinner"></div></div></div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-clock"/></svg> Hourly Activity</h3>
+          </div>
+          <div class="card-body" id="hourly-chart"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-trophy"/></svg> Top Users</h3>
+          </div>
+          <div class="tbl-wrap">
+            <table class="tbl">
+              <thead><tr><th>#</th><th>Username</th><th>Messages</th><th>Chars</th><th>Conf.</th></tr></thead>
+              <tbody id="top-users-tbody"><tr><td colspan="5"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ USERS ═══ -->
+    <div class="page" id="page-users">
+      <div class="card">
+        <div class="filter-row">
+          <input type="text" id="user-search" placeholder="Search username, email, name…">
+          <select id="user-expertise-filter">
+            <option value="all">All Expertise Levels</option>
+            <option value="child">Child</option>
+            <option value="student">Student</option>
+            <option value="researcher">Researcher</option>
+            <option value="tourist">Tourist</option>
+          </select>
+          <button class="filter-btn" onclick="filterUsers()">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><use href="#i-search"/></svg>
+            Search
+          </button>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>User</th><th>Email</th><th>Expertise</th><th>Messages</th><th>Sessions</th><th>Joined</th><th>Last Login</th></tr></thead>
+            <tbody id="users-tbody"><tr><td colspan="7"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <span id="users-info">— records</span>
+          <div class="page-btns" id="users-pages"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ CHATS ═══ -->
+    <div class="page" id="page-chats">
+      <div class="card">
+        <div class="filter-row">
+          <input type="text" id="chat-search" placeholder="Search questions &amp; answers…">
+          <select id="chat-char-filter">
+            <option value="all">All Characters</option>
+            <option value="king">King</option>
+            <option value="nilame">Nilame</option>
+            <option value="dutch">Dutch Captain</option>
+            <option value="citizen">Historian</option>
+          </select>
+          <button class="filter-btn" onclick="loadChats(1)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><use href="#i-search"/></svg>
+            Search
+          </button>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Time</th><th>User</th><th>Character</th><th>Question</th><th>Answer</th><th>Topic</th><th>Conf.</th></tr></thead>
+            <tbody id="chats-tbody"><tr><td colspan="7"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <span id="chats-info">— records</span>
+          <div class="page-btns" id="chats-pages"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ FEEDBACK ═══ -->
+    <div class="page" id="page-feedback">
+      <div class="kpi-grid">
+        <div class="kpi c-gold">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-star"/></svg></div>
+          <div class="kpi-val" id="fb-total">—</div><div class="kpi-label">Total Ratings</div>
+        </div>
+        <div class="kpi c-green">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-trophy"/></svg></div>
+          <div class="kpi-val" id="fb-avg">—</div><div class="kpi-label">Avg Rating</div>
+        </div>
+        <div class="kpi c-blue">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg></div>
+          <div class="kpi-val" id="fb-rl">—</div><div class="kpi-label">RL Events</div>
+        </div>
+        <div class="kpi c-purple">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-zap"/></svg></div>
+          <div class="kpi-val" id="fb-eps">—</div><div class="kpi-label">Epsilon (RL)</div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-star"/></svg> Star Distribution</h3></div>
+          <div class="card-body" id="star-bars"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-user-circle"/></svg> Rating by Character</h3></div>
+          <div class="card-body" id="char-rating-bars"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-book"/></svg> Recent Ratings</h3></div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Time</th><th>User</th><th>Character</th><th>Topic</th><th>Rating</th><th>Reward</th></tr></thead>
+            <tbody id="ratings-tbody"><tr><td colspan="6"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ NLP SCORES ═══ (FIXED: proper .page div with id="page-nlp") -->
+    <div class="page" id="page-nlp">
+
+      <!-- Explanation card -->
+      <div class="nlp-explain-card">
+        <h3>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-info"/></svg>
+          How reference answers are obtained
+        </h3>
+        
+        <div class="nlp-metric-grid">
+          <div class="nlp-metric-info">
+            <div class="mi-label" style="color:var(--blue)">BLEU-1</div>
+            <div class="mi-desc">Unigram precision — word overlap with reference</div>
+            <div class="mi-thres">Good: &gt;0.30 · Excellent: &gt;0.50</div>
+          </div>
+          <div class="nlp-metric-info">
+            <div class="mi-label" style="color:var(--purple)">BLEU-2</div>
+            <div class="mi-desc">Bigram precision — phrase order accuracy</div>
+            <div class="mi-thres">Good: &gt;0.15 · Excellent: &gt;0.30</div>
+          </div>
+          <div class="nlp-metric-info">
+            <div class="mi-label" style="color:#db2777">ROUGE-1</div>
+            <div class="mi-desc">Unigram F1 — balances recall &amp; precision</div>
+            <div class="mi-thres">Good: &gt;0.50 · Excellent: &gt;0.70</div>
+          </div>
+          <div class="nlp-metric-info">
+            <div class="mi-label" style="color:var(--amber)">ROUGE-L</div>
+            <div class="mi-desc">LCS F1 — fluency and word order</div>
+            <div class="mi-thres">Good: &gt;0.40 · Excellent: &gt;0.60</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KPI row -->
+      <div class="kpi-grid" id="nlp-kpi-grid">
+        <div class="kpi c-blue">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-search"/></svg></div>
+          <div class="kpi-val" id="nlp-total-scored">—</div>
+          <div class="kpi-label">Queries Scored</div>
+        </div>
+        <div class="kpi c-purple">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-target"/></svg></div>
+          <div class="kpi-val" id="nlp-coverage">—</div>
+          <div class="kpi-label">Coverage %</div>
+        </div>
+        <div class="kpi c-blue">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg></div>
+          <div class="kpi-val" id="nlp-bleu1">—</div>
+          <div class="kpi-label">Avg BLEU-1</div>
+          <div class="kpi-sub" id="nlp-bleu1-grade">—</div>
+        </div>
+        <div class="kpi c-purple">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg></div>
+          <div class="kpi-val" id="nlp-bleu2">—</div>
+          <div class="kpi-label">Avg BLEU-2</div>
+          <div class="kpi-sub" id="nlp-bleu2-grade">—</div>
+        </div>
+        <div class="kpi c-pink">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg></div>
+          <div class="kpi-val" id="nlp-rouge1">—</div>
+          <div class="kpi-label">Avg ROUGE-1</div>
+          <div class="kpi-sub" id="nlp-rouge1-grade">—</div>
+        </div>
+        <div class="kpi c-amber">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg></div>
+          <div class="kpi-val" id="nlp-rougel">—</div>
+          <div class="kpi-label">Avg ROUGE-L</div>
+          <div class="kpi-sub" id="nlp-rougel-grade">—</div>
+        </div>
+      </div>
+
+      <!-- By character + By topic -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-user-circle"/></svg> By Character</h3>
+          </div>
+          <div class="card-body" id="nlp-char-breakdown">
+            <div class="loader-wrap"><div class="spinner"></div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-book"/></svg> By Topic</h3>
+          </div>
+          <div class="card-body" id="nlp-topic-breakdown">
+            <div class="loader-wrap"><div class="spinner"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trend chart -->
+      <div class="card">
+        <div class="card-header">
+          <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-trending-up"/></svg> Score Trend (Last 20 Scored Queries)</h3>
+        </div>
+        <div class="card-body">
+          <div class="nlp-trend-wrap" id="nlp-trend-chart">
+            <div class="loader-wrap"><div class="spinner"></div></div>
+          </div>
+          <div style="display:flex;gap:20px;margin-top:12px">
+            <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-2)">
+              <span style="width:12px;height:12px;background:var(--blue);border-radius:2px;display:inline-block"></span> BLEU-1
+            </span>
+            <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-2)">
+              <span style="width:12px;height:12px;background:#db2777;border-radius:2px;display:inline-block"></span> ROUGE-1
+            </span>
+            <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-2)">
+              <span style="width:12px;height:12px;background:var(--amber);border-radius:2px;display:inline-block"></span> ROUGE-L
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent scored queries table -->
+      <div class="card">
+        <div class="card-header">
+          <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-clock"/></svg> Recent Scored Queries</h3>
+        </div>
+        <div class="tbl-wrap">
+          <table class="nlp-recent-tbl">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Character</th>
+                <th>Query</th>
+                <th style="text-align:center;color:var(--blue)">BLEU-1</th>
+                <th style="text-align:center;color:var(--purple)">BLEU-2</th>
+                <th style="text-align:center;color:#db2777">ROUGE-1</th>
+                <th style="text-align:center;color:var(--amber)">ROUGE-L</th>
+                <th>Reference Preview</th>
+              </tr>
+            </thead>
+            <tbody id="nlp-recent-tbody">
+              <tr><td colspan="8"><div class="loader-wrap"><div class="spinner"></div></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- /page-nlp -->
+
+    <!-- ═══ METRICS ═══ -->
+    <div class="page" id="page-metrics">
+      <div class="grid-3" id="rag-kpis"><div class="loader-wrap"><div class="spinner"></div></div></div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-database"/></svg> Retrieval Score Distribution</h3></div>
+          <div class="card-body" id="score-dist-bars"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-zap"/></svg> Query Time by Character</h3></div>
+          <div class="card-body" id="qtime-bars"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-trending-up"/></svg> Training Log (Last 20 Steps)</h3></div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Step</th><th>Epoch</th><th>Loss</th></tr></thead>
+            <tbody id="training-tbody">
+              <tr><td colspan="3"><div class="empty"><div class="ei"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><use href="#i-trending-up"/></svg></div><p>No fine-tuning data yet</p></div></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ ANOMALIES ═══ -->
+    <div class="page" id="page-anomalies">
+      <div class="grid-3" id="anomaly-kpis"><div class="loader-wrap"><div class="spinner"></div></div></div>
+      <div class="card">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-alert-triangle"/></svg> Flagged Misconceptions</h3></div>
+        <div class="filter-row">
+          <select id="anomaly-sev-filter" onchange="renderAnomalies()">
+            <option value="all">All Severities</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Time</th><th>User</th><th>Question</th><th>Type</th><th>Severity</th></tr></thead>
+            <tbody id="anomaly-tbody"><tr><td colspan="5"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ CHARACTERS ═══ -->
+    <div class="page" id="page-characters">
+      <div id="char-cards" class="grid-2"><div class="loader-wrap"><div class="spinner"></div></div></div>
+    </div>
+
+    <!-- ═══ API REFERENCE ═══ -->
+    <div class="page" id="page-api">
+      <div class="card" style="margin-bottom:20px">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-shield"/></svg> Authentication</h3></div>
+        <div class="card-body">
+          <p style="font-size:13px;color:var(--text-2);margin-bottom:12px">
+            All protected endpoints require <code style="background:var(--bg);padding:2px 6px;border-radius:4px;font-family:'DM Mono',monospace">Authorization: Bearer &lt;token&gt;</code>.
+            Obtain a token from <code style="background:var(--bg);padding:2px 6px;border-radius:4px;font-family:'DM Mono',monospace">POST /auth/login</code>.
+          </p>
+        </div>
+      </div>
+      <div class="card" style="margin-bottom:20px">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-message"/></svg> Chat Endpoints</h3></div>
+        <div class="card-body">
+          <div class="ep-list">
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/chat</div><div class="ep-desc">Chat with one character (RAG pipeline)</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/chat/all</div><div class="ep-desc">Ask all 4 characters simultaneously</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/chat/multi</div><div class="ep-desc">Ask a custom subset of characters</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/ask</div><div class="ep-desc">Ask all characters — question + reply from each</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/ask/{character_id}</div><div class="ep-desc">Ask one specific character by ID</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/ask/compare</div><div class="ep-desc">Side-by-side multi-character comparison</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/user/chat</div><div class="ep-desc">Authenticated chat — history saved to user account</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="card" style="margin-bottom:20px">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-lock"/></svg> Auth Endpoints</h3></div>
+        <div class="card-body">
+          <div class="ep-list">
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/auth/register</div><div class="ep-desc">Register a new user account</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/auth/login</div><div class="ep-desc">Login and receive a session token</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/auth/logout</div><div class="ep-desc">Invalidate the current session token</div></div></div>
+            <div class="ep"><span class="ep-method GET">GET</span><div><div class="ep-path">/auth/me</div><div class="ep-desc">Get the authenticated user's profile</div></div></div>
+            <div class="ep"><span class="ep-method PUT">PUT</span><div><div class="ep-path">/auth/profile</div><div class="ep-desc">Update user profile fields</div></div></div>
+            <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/auth/change-password</div><div class="ep-desc">Change account password</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-book"/></svg> History Endpoints</h3></div>
+          <div class="card-body">
+            <div class="ep-list">
+              <div class="ep"><span class="ep-method GET">GET</span><div><div class="ep-path">/history</div><div class="ep-desc">Paginated, filterable chat history</div></div></div>
+              <div class="ep"><span class="ep-method GET">GET</span><div><div class="ep-path">/history/sessions</div><div class="ep-desc">List all unique sessions</div></div></div>
+              <div class="ep"><span class="ep-method GET">GET</span><div><div class="ep-path">/history/stats</div><div class="ep-desc">Aggregate statistics per user</div></div></div>
+              <div class="ep"><span class="ep-method GET">GET</span><div><div class="ep-path">/history/export</div><div class="ep-desc">Export full history as JSON</div></div></div>
+              <div class="ep"><span class="ep-method DELETE">DELETE</span><div><div class="ep-path">/history/session/{id}</div><div class="ep-desc">Delete a single session</div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-activity"/></svg> AI Feature Endpoints</h3></div>
+          <div class="card-body">
+            <div class="ep-list">
+              <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/quiz/generate</div><div class="ep-desc">VR quiz question generator</div></div></div>
+              <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/anomaly/check</div><div class="ep-desc">Detect historical misconceptions</div></div></div>
+              <div class="ep"><span class="ep-method GET">GET</span><div><div class="ep-path">/folklore/all</div><div class="ep-desc">All legends and folklore entries</div></div></div>
+              <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/causal/chain</div><div class="ep-desc">Causal chain reasoning</div></div></div>
+              <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/sensitivity/analyze</div><div class="ep-desc">Cultural sensitivity analysis</div></div></div>
+              <div class="ep"><span class="ep-method POST">POST</span><div><div class="ep-path">/predict/topics</div><div class="ep-desc">Predict next likely topics</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══ SYSTEM ═══ -->
+    <div class="page" id="page-system">
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-server"/></svg> Component Health</h3></div>
+          <div class="card-body" id="health-rows"><div class="loader-wrap"><div class="spinner"></div></div></div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-link"/></svg> Connection Settings</h3></div>
+          <div class="card-body">
+            <div class="status-row">
+              <span class="sl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-link"/></svg> API Base URL</span>
+              <span class="sv"><code style="font-family:'DM Mono',monospace;font-size:12px;background:var(--bg);padding:2px 8px;border-radius:4px" id="api-url-display">http://localhost:5000</code></span>
+            </div>
+            <div class="status-row">
+              <span class="sl"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-server"/></svg> Port</span>
+              <span class="sv mono" id="port-display">5000</span>
+            </div>
+            <div style="margin-top:16px">
+              <label style="font-size:13px;font-weight:500;color:var(--text-2);display:block;margin-bottom:6px">Change API Base URL</label>
+              <div style="display:flex;gap:8px">
+                <input type="text" id="api-url-input" value="http://localhost:5000"
+                  style="flex:1;padding:8px 12px;border:1.5px solid var(--border);border-radius:8px;font-family:'DM Mono',monospace;font-size:13px;color:var(--text);background:var(--bg);outline:none">
+                <button onclick="updateApiUrl()" style="padding:8px 14px;background:var(--gold);color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600;font-size:13px">Apply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header"><h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-info"/></svg> System Information</h3></div>
+        <div class="tbl-wrap">
+          <table class="tbl">
+            <thead><tr><th>Property</th><th>Value</th></tr></thead>
+            <tbody id="sysinfo-tbody"><tr><td colspan="2"><div class="loader-wrap"><div class="spinner"></div></div></td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+</div><!-- /main -->
+
+<div id="toast">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><use href="#i-check-circle"/></svg>
+  <span id="toast-msg">Done</span>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════
+   STATE
+═══════════════════════════════════════════════*/
+let API_BASE   = localStorage.getItem('api_base') || 'http://localhost:5000';
+let adminToken = localStorage.getItem('admin_token') || '';
+let currentPage = 'overview';
+let _data = {};
+let _allUsers = [];
+let _anomalyData = [];
+let _chatPage = 1;
+
+const PAGE_META = {
+  overview:   ['Overview',          'Dashboard summary'],
+  analytics:  ['Analytics',         'Usage patterns and trends'],
+  users:      ['Users',             'Registered accounts management'],
+  chats:      ['Chat Logs',         'Full conversation history'],
+  feedback:   ['Feedback & RL',     'User ratings and reinforcement learning'],
+  nlp:        ['NLP Scores',        'BLEU / ROUGE evaluation metrics'],
+  metrics:    ['RAG Metrics',       'Retrieval and generation performance'],
+  anomalies:  ['Anomaly Detection', 'Historical misconceptions flagged'],
+  characters: ['Characters',        'AI character profiles'],
+  api:        ['API Reference',     'Endpoint documentation'],
+  system:     ['System Status',     'Health and configuration'],
+};
+
+const CHAR_COLORS = { king: '#3b82f6', nilame: '#a855f7', dutch: '#f97316', citizen: '#22c55e' };
+
+/* ─── helpers ─────────────────────────────────*/
+function toast(msg, dur = 2800) {
+  document.getElementById('toast-msg').textContent = msg;
+  const t = document.getElementById('toast');
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), dur);
+}
+function fmt(n) {
+  if (n === undefined || n === null || n === '—') return '—';
+  if (typeof n === 'number') return n.toLocaleString();
+  return n;
+}
+function fmtDate(s) { return s ? s.slice(0, 16).replace('T', ' ') : '—'; }
+function esc(s)     { return (s || '').replace(/"/g, '&quot;').replace(/</g, '&lt;'); }
+
+function confBar(v) {
+  const pct = Math.round((v || 0) * 100);
+  const filled = Math.round(pct / 20);
+  let segs = '';
+  for (let i = 0; i < 5; i++) segs += `<span class="conf-seg ${i < filled ? 'filled' : ''}"></span>`;
+  return `<div class="conf-bar">${segs}<span class="conf-val">${pct}%</span></div>`;
+}
+function stars(r) {
+  const n = Math.round(r || 0);
+  return '★'.repeat(n) + '☆'.repeat(5 - n);
+}
+function charBadge(c) {
+  const map = { king: 'King', nilame: 'Nilame', dutch: 'Dutch Captain', citizen: 'Historian' };
+  return `<span class="badge ${c}">${map[c] || c}</span>`;
+}
+function sevBadge(s) { return `<span class="badge ${s}">${s}</span>`; }
+
+function emptySvg(id) {
+  return `<div class="ei"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><use href="#${id}"/></svg></div>`;
+}
+
+function scoreGrade(val, good, excellent) {
+  if (val >= excellent) return { label: 'Excellent', cls: 'excellent' };
+  if (val >= good)      return { label: 'Good',      cls: 'good' };
+  return                       { label: 'Poor',      cls: 'poor' };
+}
+
+function renderBars(containerId, data, palette, maxW = 180, showPct = false) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  if (!data || !Object.keys(data).length) {
+    el.innerHTML = `<div class="empty">${emptySvg('i-bar-chart')}<p>No data yet</p></div>`;
+    return;
+  }
+  const max   = Math.max(...Object.values(data), 1);
+  const total = Object.values(data).reduce((a, b) => a + b, 0);
+  el.innerHTML = Object.entries(data)
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, v], i) => {
+      const pct   = Math.round((v / max) * 100);
+      const color = Array.isArray(palette) ? palette[i % palette.length] : (palette[k] || '#B8860B');
+      const label = showPct ? `${Math.round(v / total * 100)}%` : v;
+      return `<div class="bar-row">
+        <span class="bar-label" style="width:${maxW}px">${k}</span>
+        <div class="bar-track"><div class="bar-fill" style="background:${color}" data-pct="${pct}"></div></div>
+        <span class="bar-val">${label}</span>
+      </div>`;
+    }).join('');
+  requestAnimationFrame(() => {
+    el.querySelectorAll('.bar-fill').forEach(b => { b.style.width = b.dataset.pct + '%'; });
+  });
+}
+
+/* ─── AUTH ──────────────────────────────────────*/
+async function doLogin() {
+  const u   = document.getElementById('login-u').value.trim();
+  const p   = document.getElementById('login-p').value;
+  const err = document.getElementById('login-error');
+  const msg = document.getElementById('login-error-msg');
+  err.style.display = 'none';
+  if (!u || !p) { msg.textContent = 'Please enter both username and password.'; err.style.display = 'flex'; return; }
+  try {
+    const res = await fetch(`${API_BASE}/api/admin/login`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: u, password: p })
+    });
+    const d = await res.json().catch(() => ({}));
+    if (d.success && d.token) {
+      adminToken = d.token;
+      localStorage.setItem('admin_token', adminToken);
+      document.getElementById('login-screen').style.display = 'none';
+      document.getElementById('sidebar-user').textContent   = u;
+      document.getElementById('sidebar-avatar').textContent = u[0].toUpperCase();
+      loadAll();
+    } else {
+      msg.textContent = d.error || 'Invalid credentials.';
+      err.style.display = 'flex';
+    }
+  } catch (e) {
+    if (u === 'admin' && p === 'admin123') {
+      adminToken = 'local_admin';
+      localStorage.setItem('admin_token', adminToken);
+      document.getElementById('login-screen').style.display = 'none';
+      document.getElementById('sidebar-user').textContent   = 'admin';
+      document.getElementById('sidebar-avatar').textContent = 'A';
+      toast('API unreachable — using local credentials.');
+      loadAll();
+    } else {
+      msg.textContent = `Cannot reach API at ${API_BASE}. Use admin / admin123 to log in locally.`;
+      err.style.display = 'flex';
+    }
+  }
+}
+
+function doLogout() {
+  if (adminToken && adminToken !== 'local_admin') {
+    fetch(`${API_BASE}/api/admin/logout`, { method: 'POST', headers: { 'Authorization': `Bearer ${adminToken}` } }).catch(() => {});
+  }
+  adminToken = '';
+  localStorage.removeItem('admin_token');
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('login-p').value = '';
+}
+
+/* ─── NAVIGATION ────────────────────────────────*/
+function navigate(page) {
+  currentPage = page;
+  document.querySelectorAll('.nav-item[data-page]').forEach(n => n.classList.toggle('active', n.dataset.page === page));
+  document.querySelectorAll('.page').forEach(p => p.classList.toggle('active', p.id === `page-${page}`));
+  const [title, sub] = PAGE_META[page] || [page, ''];
+  document.getElementById('page-title').textContent = title;
+  document.getElementById('page-sub').textContent   = sub;
+  // Lazy-load NLP if navigating to it after initial load
+  if (page === 'nlp' && adminToken) loadNlpScores();
+}
+
+/* ─── API ────────────────────────────────────────*/
+function authHeaders() {
+  return { 'Content-Type': 'application/json', 'Authorization': `Bearer ${adminToken}` };
+}
+async function apiFetch(path, opts = {}) {
+  const res  = await fetch(`${API_BASE}${path}`, { headers: authHeaders(), ...opts });
+  const json = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(json.error || `HTTP ${res.status}`), { status: res.status });
+  return json;
+}
+function showErr(id, msg) {
+  const el = document.getElementById(id);
+  if (el) el.innerHTML = `<div class="empty" style="color:var(--red)">${emptySvg('i-alert-circle')}<p>${msg}</p></div>`;
+}
+
+/* ─── LOAD ALL ──────────────────────────────────*/
+async function loadAll() {
+  updateTimestamp();
+  await Promise.allSettled([
+    loadOverview(), loadAnalytics(), loadUsers(), loadChats(1),
+    loadFeedback(), loadMetrics(), loadAnomalies(), loadCharacters(), loadSystem(),
+    loadNlpScores()
+  ]);
+}
+
+/* ─── OVERVIEW ──────────────────────────────────*/
+async function loadOverview() {
+  let d;
+  try { d = await apiFetch('/api/admin/overview'); }
+  catch (e) { ['recent-tbody','system-status-mini','char-bars','topic-bars'].forEach(id => showErr(id, e.message)); return; }
+  _data.overview = d;
+  const s = d.stats || {};
+
+  document.getElementById('kpi-users').textContent      = fmt(s.total_users);
+  document.getElementById('kpi-sessions').textContent   = `${fmt(s.active_sessions)} active sessions`;
+  document.getElementById('kpi-messages').textContent   = fmt(s.total_messages);
+  document.getElementById('kpi-queries').textContent    = `${fmt(s.total_queries)} total queries`;
+  document.getElementById('kpi-rating').textContent     = (s.avg_rating || 0).toFixed(1);
+  document.getElementById('kpi-ratings').textContent    = `${fmt(s.total_ratings)} ratings`;
+  document.getElementById('kpi-confidence').textContent = `${(s.avg_confidence_pct || 0).toFixed(1)}%`;
+  document.getElementById('kpi-rl').textContent         = fmt(s.rl_events);
+
+  renderBars('char-bars',  d.character_distribution, CHAR_COLORS, 80);
+  renderBars('topic-bars', d.topic_distribution,
+    ['#B8860B','#D4A017','#e5b924','#f0cc52','#f5db7d','#f7e49e','#faefbb','#fdf8d7'], 80);
+
+  const tbody = document.getElementById('recent-tbody');
+  const rows  = (d.recent_activity || []).slice(0, 10);
+  if (!rows.length) {
+    tbody.innerHTML = `<tr><td colspan="5"><div class="empty">${emptySvg('i-message')}<p>No activity yet</p></div></td></tr>`;
+  } else {
+    tbody.innerHTML = rows.map(r => `
+      <tr>
+        <td>${fmtDate(r.timestamp)}</td>
+        <td><strong>${r.username || '—'}</strong></td>
+        <td>${charBadge(r.character_id)}</td>
+        <td title="${esc(r.question)}">${(r.question||'').slice(0,52)}${(r.question||'').length>52?'…':''}</td>
+        <td>${confBar(r.confidence)}</td>
+      </tr>`).join('');
+  }
+
+  const st = d.system_status || {};
+  const statusRows = [
+    ['Model',        st.model_loaded ? 'green' : 'red',   st.model_loaded  ? 'Loaded'  : 'Offline'],
+    ['Vector DB',    st.vector_db    ? 'green' : 'red',   st.vector_db     ? 'Ready'   : 'Offline'],
+    ['Auth',         st.auth         ? 'green' : 'amber', st.auth          ? 'Active'  : 'Offline'],
+    ['Chat History', st.history      ? 'green' : 'amber', st.history       ? 'Active'  : 'Offline'],
+    ['RL Epsilon',   'blue', (st.rl_epsilon || 0).toFixed(4)],
+    ['Q-States',     'blue', fmt(st.rl_q_states)],
+  ];
+  document.getElementById('system-status-mini').innerHTML = statusRows.map(([l, c, v]) => `
+    <div class="status-row">
+      <span class="sl"><span class="dot ${c}"></span>${l}</span>
+      <span class="sv" style="color:var(--${c==='blue'?'blue':c==='green'?'green':'red'})">${v}</span>
+    </div>`).join('');
+
+  const online = st.model_loaded;
+  document.getElementById('model-badge').innerHTML = `
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-${online?'check-circle':'alert-circle'}"/></svg>
+    Model ${online?'Online':'Offline'}`;
+  document.getElementById('model-badge').className = `tb-badge ${online?'green':'amber'}`;
+}
+
+/* ─── ANALYTICS ─────────────────────────────────*/
+async function loadAnalytics() {
+  let d;
+  try { d = await apiFetch('/api/admin/analytics'); }
+  catch (e) { ['daily-chart','hourly-chart','top-users-tbody'].forEach(id => showErr(id, e.message)); return; }
+  _data.analytics = d;
+
+  const daily = d.daily_volume || {};
+  const dEl   = document.getElementById('daily-chart');
+  if (!Object.keys(daily).length) {
+    dEl.innerHTML = `<div class="empty">${emptySvg('i-calendar')}<p>No daily data yet</p></div>`;
+  } else {
+    const max = Math.max(...Object.values(daily), 1);
+    dEl.innerHTML = `<div style="display:flex;align-items:flex-end;gap:4px;height:160px;padding-bottom:4px">` +
+      Object.entries(daily).map(([date, count]) => {
+        const h = Math.round((count / max) * 120);
+        return `<div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1">
+          <span style="font-size:11px;color:var(--text-2);font-family:'DM Mono',monospace">${count}</span>
+          <div style="width:100%;height:${h}px;background:var(--gold);border-radius:4px 4px 0 0;opacity:.85;min-height:3px"></div>
+          <span style="font-size:10px;color:var(--text-3)">${date.slice(5)}</span>
+        </div>`;
+      }).join('') + `</div>`;
+  }
+
+  const hourly = d.hourly_activity || {};
+  const hEl    = document.getElementById('hourly-chart');
+  if (!Object.keys(hourly).length) {
+    hEl.innerHTML = `<div class="empty">${emptySvg('i-clock')}<p>No hourly data yet</p></div>`;
+  } else {
+    const maxH = Math.max(...Object.values(hourly), 1);
+    hEl.innerHTML = `<div style="display:flex;align-items:flex-end;gap:2px;height:100px">` +
+      Object.entries(hourly).filter((_, i) => i % 2 === 0).map(([h, count]) => {
+        const hh = Math.round((count / maxH) * 80);
+        return `<div style="display:flex;flex-direction:column;align-items:center;gap:2px;flex:1">
+          <div style="width:100%;height:${hh}px;background:#3b82f6;border-radius:3px 3px 0 0;opacity:.75;min-height:2px"></div>
+          <span style="font-size:9px;color:var(--text-3)">${h}</span>
+        </div>`;
+      }).join('') + `</div>`;
+  }
+
+  const topTbody = document.getElementById('top-users-tbody');
+  const users    = d.top_users || [];
+  topTbody.innerHTML = users.length
+    ? users.slice(0, 10).map((u, i) => `
+        <tr>
+          <td><strong>#${i+1}</strong></td>
+          <td><strong>${u.username}</strong></td>
+          <td class="mono">${fmt(u.message_count)}</td>
+          <td class="mono">${u.unique_chars || '—'}</td>
+          <td>${confBar(u.avg_confidence)}</td>
+        </tr>`).join('')
+    : `<tr><td colspan="5"><div class="empty">${emptySvg('i-users')}<p>No users yet</p></div></td></tr>`;
+}
+
+/* ─── USERS ─────────────────────────────────────*/
+async function loadUsers() {
+  let d;
+  try { d = await apiFetch('/api/admin/users'); }
+  catch (e) { showErr('users-tbody', e.message); return; }
+  _allUsers = d.users || [];
+  renderUsers(_allUsers);
+}
+function renderUsers(users) {
+  const tbody = document.getElementById('users-tbody');
+  document.getElementById('users-info').textContent = `${users.length} user${users.length!==1?'s':''}`;
+  if (!users.length) {
+    tbody.innerHTML = `<tr><td colspan="7"><div class="empty">${emptySvg('i-users')}<p>No users found</p></div></td></tr>`;
+    return;
+  }
+  tbody.innerHTML = users.map(u => `
+    <tr>
+      <td>
+        <div style="display:flex;align-items:center;gap:8px">
+          <div style="width:28px;height:28px;background:var(--gold-bg);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gold);font-size:12px;flex-shrink:0">
+            ${(u.username||'?')[0].toUpperCase()}
+          </div>
+          <strong>${u.username}</strong>
+        </div>
+      </td>
+      <td>${u.email||'—'}</td>
+      <td><span class="badge ok">${u.expertise_level||'tourist'}</span></td>
+      <td class="mono">${fmt(u.message_count||0)}</td>
+      <td class="mono">${fmt(u.total_sessions||0)}</td>
+      <td>${fmtDate(u.created_at)}</td>
+      <td>${fmtDate(u.last_login)}</td>
+    </tr>`).join('');
+}
+function filterUsers() {
+  const q   = document.getElementById('user-search').value.toLowerCase();
+  const exp = document.getElementById('user-expertise-filter').value;
+  let f = _allUsers;
+  if (q)           f = f.filter(u => (u.username||'').includes(q)||(u.email||'').includes(q)||(u.full_name||'').includes(q));
+  if (exp!=='all') f = f.filter(u => u.expertise_level === exp);
+  renderUsers(f);
+}
+
+/* ─── CHATS ─────────────────────────────────────*/
+async function loadChats(page = 1) {
+  _chatPage  = page;
+  const q    = (document.getElementById('chat-search')?.value||'').trim();
+  const char = document.getElementById('chat-char-filter')?.value||'all';
+  let url    = `/api/admin/chats?page=${page}`;
+  if (q)            url += `&q=${encodeURIComponent(q)}`;
+  if (char!=='all') url += `&char=${char}`;
+  let d;
+  try { d = await apiFetch(url); }
+  catch (e) { showErr('chats-tbody', e.message); return; }
+
+  document.getElementById('chats-info').textContent = `${fmt(d.total)} message${d.total!==1?'s':''}`;
+  const tbody = document.getElementById('chats-tbody');
+  const msgs  = d.messages || [];
+  if (!msgs.length) {
+    tbody.innerHTML = `<tr><td colspan="7"><div class="empty">${emptySvg('i-message')}<p>No messages found</p></div></td></tr>`;
+  } else {
+    tbody.innerHTML = msgs.map(m => `
+      <tr>
+        <td>${fmtDate(m.timestamp)}</td>
+        <td><strong>${m.username||'—'}</strong></td>
+        <td>${charBadge(m.character_id)}</td>
+        <td title="${esc(m.question)}">${(m.question||'').slice(0,55)}${(m.question||'').length>55?'…':''}</td>
+        <td title="${esc(m.answer)}" style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${(m.answer||'').slice(0,60)}…</td>
+        <td><span class="badge ok">${m.topic||'general'}</span></td>
+        <td>${confBar(m.confidence)}</td>
+      </tr>`).join('');
+  }
+  renderPages('chats-pages', page, d.total_pages||1, loadChats);
+}
+
+function renderPages(containerId, current, total, fn) {
+  const el = document.getElementById(containerId);
+  if (!el) return;
+  let html = '';
+  if (current>1) html += `<button class="page-btn" onclick="${fn.name}(${current-1})">‹</button>`;
+  const start = Math.max(1, current-2), end = Math.min(total, current+2);
+  for (let i=start; i<=end; i++)
+    html += `<button class="page-btn ${i===current?'active':''}" onclick="${fn.name}(${i})">${i}</button>`;
+  if (current<total) html += `<button class="page-btn" onclick="${fn.name}(${current+1})">›</button>`;
+  el.innerHTML = html;
+}
+
+/* ─── NLP SCORES ──────────────────────────────── */
+async function loadNlpScores() {
+  let r;
+  try {
+    r = await apiFetch('/api/admin/nlp-scores');
+  } catch (e) {
+    // API not available — show graceful empty state on all sections
+    const noDataHtml = `<div class="empty">${emptySvg('i-activity')}<p>${e.message}</p></div>`;
+    ['nlp-char-breakdown','nlp-topic-breakdown'].forEach(id => showErr(id, e.message));
+    document.getElementById('nlp-trend-chart').innerHTML = noDataHtml;
+    document.getElementById('nlp-recent-tbody').innerHTML =
+      `<tr><td colspan="8"><div class="empty">${emptySvg('i-activity')}<p>${e.message}</p></div></td></tr>`;
+    return;
+  }
+
+  if (!r || !r.success) return;
+
+  /* ── KPI cards ── */
+  document.getElementById('nlp-total-scored').textContent = fmt(r.total_scored || 0);
+  document.getElementById('nlp-coverage').textContent     = `${(r.coverage_pct || 0).toFixed(1)}%`;
+
+  const metrics = [
+    { id: 'nlp-bleu1',  gradeId: 'nlp-bleu1-grade',  val: r.avg_bleu_1  || 0, good: 0.30, exc: 0.50 },
+    { id: 'nlp-bleu2',  gradeId: 'nlp-bleu2-grade',  val: r.avg_bleu_2  || 0, good: 0.15, exc: 0.30 },
+    { id: 'nlp-rouge1', gradeId: 'nlp-rouge1-grade', val: r.avg_rouge_1 || 0, good: 0.50, exc: 0.70 },
+    { id: 'nlp-rougel', gradeId: 'nlp-rougel-grade', val: r.avg_rouge_l || 0, good: 0.40, exc: 0.60 },
+  ];
+  metrics.forEach(({ id, gradeId, val, good, exc }) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = val.toFixed(3);
+    const g = scoreGrade(val, good, exc);
+    el.style.color = g.cls === 'excellent' ? 'var(--green)' : g.cls === 'good' ? 'var(--amber)' : 'var(--red)';
+    const ge = document.getElementById(gradeId);
+    if (ge) ge.textContent = g.label;
+  });
+
+  /* ── By Character ── */
+  const charEl = document.getElementById('nlp-char-breakdown');
+  const byChar = r.by_character || {};
+  if (!Object.keys(byChar).length) {
+    charEl.innerHTML = `<div class="empty">${emptySvg('i-user-circle')}<p>No scored queries yet</p></div>`;
+  } else {
+    charEl.innerHTML = `
+      <div style="display:grid;grid-template-columns:110px 55px 80px 80px 80px;gap:6px;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid var(--border)">
+        <span style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em">Character</span>
+        <span style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em">Count</span>
+        <span style="font-size:11px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.06em">BLEU-1</span>
+        <span style="font-size:11px;font-weight:600;color:#db2777;text-transform:uppercase;letter-spacing:.06em">ROUGE-1</span>
+        <span style="font-size:11px;font-weight:600;color:var(--amber);text-transform:uppercase;letter-spacing:.06em">ROUGE-L</span>
+      </div>` +
+      Object.entries(byChar).map(([c, s]) => {
+        const g1 = scoreGrade(s.bleu_1  ||0, 0.30, 0.50);
+        const g2 = scoreGrade(s.rouge_1 ||0, 0.50, 0.70);
+        const g3 = scoreGrade(s.rouge_l ||0, 0.40, 0.60);
+        return `<div class="nlp-char-row">
+          <span class="nlp-char-name" style="color:${CHAR_COLORS[c]||'var(--text)'}">${c}</span>
+          <span class="nlp-char-cnt">${s.count||0}</span>
+          <span class="nlp-score-badge ${g1.cls}">${(s.bleu_1||0).toFixed(3)}</span>
+          <span class="nlp-score-badge ${g2.cls}">${(s.rouge_1||0).toFixed(3)}</span>
+          <span class="nlp-score-badge ${g3.cls}">${(s.rouge_l||0).toFixed(3)}</span>
+        </div>`;
+      }).join('');
+  }
+
+  /* ── By Topic ── */
+  const topicEl = document.getElementById('nlp-topic-breakdown');
+  const byTopic = r.by_topic || {};
+  if (!Object.keys(byTopic).length) {
+    topicEl.innerHTML = `<div class="empty">${emptySvg('i-book')}<p>No topic data yet</p></div>`;
+  } else {
+    topicEl.innerHTML = `
+      <div style="display:grid;grid-template-columns:110px 40px 80px 80px;gap:6px;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid var(--border)">
+        <span style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em">Topic</span>
+        <span style="font-size:11px;font-weight:600;color:var(--text-3);text-transform:uppercase;letter-spacing:.06em">N</span>
+        <span style="font-size:11px;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.06em">BLEU-1</span>
+        <span style="font-size:11px;font-weight:600;color:#db2777;text-transform:uppercase;letter-spacing:.06em">ROUGE-1</span>
+      </div>` +
+      Object.entries(byTopic)
+        .sort((a,b) => b[1].count - a[1].count)
+        .slice(0, 10)
+        .map(([t, s]) => {
+          const g1 = scoreGrade(s.bleu_1 ||0, 0.30, 0.50);
+          const g2 = scoreGrade(s.rouge_1||0, 0.50, 0.70);
+          return `<div class="nlp-topic-row">
+            <span style="color:var(--text-2)">${t}</span>
+            <span style="color:var(--text-3)">${s.count||0}</span>
+            <span class="nlp-score-badge ${g1.cls}">${(s.bleu_1||0).toFixed(3)}</span>
+            <span class="nlp-score-badge ${g2.cls}">${(s.rouge_1||0).toFixed(3)}</span>
+          </div>`;
+        }).join('');
+  }
+
+  /* ── Trend chart ── */
+  const trend    = r.score_trend || [];
+  const trendEl  = document.getElementById('nlp-trend-chart');
+  if (!trend.length) {
+    trendEl.innerHTML = `<div class="empty" style="margin:auto">${emptySvg('i-trending-up')}<p>No trend data yet</p></div>`;
+  } else {
+    const maxV = Math.max(...trend.flatMap(t => [t.bleu_1||0, t.rouge_1||0, t.rouge_l||0]), 0.01);
+    trendEl.innerHTML = trend.map((t, i) => `
+      <div class="nlp-bar-group" title="Query ${i+1}&#10;BLEU-1: ${(t.bleu_1||0).toFixed(3)}&#10;ROUGE-1: ${(t.rouge_1||0).toFixed(3)}&#10;ROUGE-L: ${(t.rouge_l||0).toFixed(3)}">
+        <div class="nlp-bar-stack">
+          <div class="nlp-bar-seg" style="background:var(--blue);height:${((t.bleu_1||0)/maxV)*100}%"></div>
+          <div class="nlp-bar-seg" style="background:#db2777;height:${((t.rouge_1||0)/maxV)*100}%"></div>
+          <div class="nlp-bar-seg" style="background:var(--amber);height:${((t.rouge_l||0)/maxV)*100}%"></div>
+        </div>
+      </div>`).join('');
+  }
+
+  /* ── Recent scored queries table ── */
+  const tbody = document.getElementById('nlp-recent-tbody');
+  const scores = r.recent_scores || [];
+  if (!scores.length) {
+    tbody.innerHTML = `<tr><td colspan="8"><div class="empty">${emptySvg('i-activity')}<p>No scored queries yet. Start chatting to generate NLP metrics!</p></div></td></tr>`;
+  } else {
+    tbody.innerHTML = scores.map(s => {
+      const g1 = scoreGrade(s.bleu_1 ||0, 0.30, 0.50);
+      const g2 = scoreGrade(s.bleu_2 ||0, 0.15, 0.30);
+      const g3 = scoreGrade(s.rouge_1||0, 0.50, 0.70);
+      const g4 = scoreGrade(s.rouge_l||0, 0.40, 0.60);
+      return `<tr>
+        <td style="white-space:nowrap">${fmtDate(s.timestamp)}</td>
+        <td>${charBadge(s.character_id)}</td>
+        <td style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="${esc(s.query)}">${(s.query||'').slice(0,50)}${(s.query||'').length>50?'…':''}</td>
+        <td style="text-align:center"><span class="nlp-score-badge ${g1.cls}">${(s.bleu_1||0).toFixed(3)}</span></td>
+        <td style="text-align:center"><span class="nlp-score-badge ${g2.cls}">${(s.bleu_2||0).toFixed(3)}</span></td>
+        <td style="text-align:center"><span class="nlp-score-badge ${g3.cls}">${(s.rouge_1||0).toFixed(3)}</span></td>
+        <td style="text-align:center"><span class="nlp-score-badge ${g4.cls}">${(s.rouge_l||0).toFixed(3)}</span></td>
+        <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-3);font-size:12px" title="${esc(s.reference_preview)}">${(s.reference_preview||'—').slice(0,60)}${(s.reference_preview||'').length>60?'…':''}</td>
+      </tr>`;
+    }).join('');
+  }
+}
+
+/* ─── FEEDBACK ──────────────────────────────────*/
+async function loadFeedback() {
+  let d;
+  try { d = await apiFetch('/api/admin/feedback'); }
+  catch (e) { ['star-bars','char-rating-bars','ratings-tbody'].forEach(id => showErr(id, e.message)); return; }
+
+  const s = d.summary || {};
+  document.getElementById('fb-total').textContent = fmt(s.total_ratings);
+  document.getElementById('fb-avg').textContent   = `${(s.avg_rating||0).toFixed(1)}`;
+  document.getElementById('fb-rl').textContent    = fmt(s.rl_events);
+  document.getElementById('fb-eps').textContent   = (s.epsilon||0).toFixed(4);
+
+  const sh   = d.star_histogram || {};
+  const maxS = Math.max(...Object.values(sh), 1);
+  document.getElementById('star-bars').innerHTML = [5,4,3,2,1].map(n => {
+    const v = sh[n]||0, pct = Math.round((v/maxS)*100);
+    return `<div class="bar-row">
+      <span class="bar-label" style="width:60px">${'★'.repeat(n)}</span>
+      <div class="bar-track"><div class="bar-fill" style="background:#f59e0b" data-pct="${pct}"></div></div>
+      <span class="bar-val">${v}</span>
+    </div>`;
+  }).join('');
+  requestAnimationFrame(() => document.querySelectorAll('#star-bars .bar-fill').forEach(b => { b.style.width = b.dataset.pct+'%'; }));
+
+  const bc = d.by_character || {};
+  document.getElementById('char-rating-bars').innerHTML = Object.entries(bc).map(([k,v]) => {
+    const pct = Math.round(((v.avg||0)/5)*100);
+    return `<div class="bar-row">
+      <span class="bar-label" style="width:80px">${k}</span>
+      <div class="bar-track"><div class="bar-fill" style="background:${CHAR_COLORS[k]||'#888'}" data-pct="${pct}"></div></div>
+      <span class="bar-val">${(v.avg||0).toFixed(1)}</span>
+    </div>`;
+  }).join('') || `<div class="empty">${emptySvg('i-star')}<p>No character ratings yet</p></div>`;
+  requestAnimationFrame(() => document.querySelectorAll('#char-rating-bars .bar-fill').forEach(b => { b.style.width = b.dataset.pct+'%'; }));
+
+  const tbody   = document.getElementById('ratings-tbody');
+  const ratings = d.ratings || [];
+  tbody.innerHTML = ratings.length
+    ? ratings.slice(0,50).map(r => `
+        <tr>
+          <td>${fmtDate(r.timestamp)}</td>
+          <td><strong>${r.user_id||'—'}</strong></td>
+          <td>${charBadge(r.character)}</td>
+          <td><span class="badge ok">${r.topic||'general'}</span></td>
+          <td><span class="stars">${stars(r.rating)}</span></td>
+          <td class="mono">${((r.rating-3)/2).toFixed(2)}</td>
+        </tr>`).join('')
+    : `<tr><td colspan="6"><div class="empty">${emptySvg('i-star')}<p>No ratings yet</p></div></td></tr>`;
+}
+
+/* ─── METRICS ───────────────────────────────────*/
+async function loadMetrics() {
+  let d;
+  try { d = await apiFetch('/api/admin/metrics'); }
+  catch (e) { ['rag-kpis','score-dist-bars','qtime-bars','training-tbody'].forEach(id => showErr(id, e.message)); return; }
+
+  const rag = d.rag || {};
+  document.getElementById('rag-kpis').innerHTML = `
+    <div class="kpi c-blue">
+      <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-search"/></svg></div>
+      <div class="kpi-val">${fmt(rag.total_queries)}</div><div class="kpi-label">RAG Queries</div>
+    </div>
+    <div class="kpi c-green">
+      <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-target"/></svg></div>
+      <div class="kpi-val">${((rag.avg_similarity||0)*100).toFixed(1)}%</div><div class="kpi-label">Avg Similarity</div>
+    </div>
+    <div class="kpi c-amber">
+      <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-zap"/></svg></div>
+      <div class="kpi-val">${(rag.avg_retrieval_time_s||0).toFixed(3)}s</div><div class="kpi-label">Avg Retrieval Time</div>
+    </div>`;
+
+  renderBars('score-dist-bars', rag.score_distribution, ['#ef4444','#f97316','#eab308','#22c55e','#3b82f6'], 80);
+
+  const qt    = (d.query_times||{}).by_character || {};
+  const maxQt = Math.max(...Object.values(qt).map(v => v.avg||0), 0.001);
+  document.getElementById('qtime-bars').innerHTML = Object.entries(qt).map(([k,v]) => {
+    const pct = Math.round(((v.avg||0)/maxQt)*100);
+    return `<div class="bar-row">
+      <span class="bar-label" style="width:80px">${k}</span>
+      <div class="bar-track"><div class="bar-fill" style="background:${CHAR_COLORS[k]||'#888'}" data-pct="${pct}"></div></div>
+      <span class="bar-val">${(v.avg||0).toFixed(2)}s</span>
+    </div>`;
+  }).join('') || `<div class="empty">${emptySvg('i-zap')}<p>No query timing data yet</p></div>`;
+  requestAnimationFrame(() => document.querySelectorAll('#qtime-bars .bar-fill').forEach(b => { b.style.width = b.dataset.pct+'%'; }));
+
+  const tbody = document.getElementById('training-tbody');
+  const training = d.training || [];
+  tbody.innerHTML = training.length
+    ? training.map(t => `<tr><td class="mono"><strong>${t.step}</strong></td><td class="mono">${(t.epoch||0).toFixed(2)}</td><td class="mono">${(t.loss||0).toFixed(6)}</td></tr>`).join('')
+    : `<tr><td colspan="3"><div class="empty">${emptySvg('i-trending-up')}<p>No fine-tuning data yet</p></div></td></tr>`;
+}
+
+/* ─── ANOMALIES ─────────────────────────────────*/
+async function loadAnomalies() {
+  let d;
+  try { d = await apiFetch('/api/admin/anomalies'); }
+  catch (e) { ['anomaly-kpis','anomaly-tbody'].forEach(id => showErr(id, e.message)); return; }
+
+  _anomalyData = d.flagged || [];
+  const total  = d.total_flagged ?? _anomalyData.length;
+  document.getElementById('anomaly-badge').textContent       = total;
+  document.getElementById('kpi-anomalies-count').textContent = total;
+
+  const types = d.by_type || {};
+  document.getElementById('anomaly-kpis').innerHTML = Object.keys(types).length
+    ? Object.entries(types).map(([k,v]) => `
+        <div class="kpi c-red">
+          <div class="kpi-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-alert-triangle"/></svg></div>
+          <div class="kpi-val">${v}</div><div class="kpi-label">${k.replace(/_/g,' ')}</div>
+        </div>`).join('')
+    : `<div style="grid-column:1/-1"><div class="empty">${emptySvg('i-check-circle')}<p>No misconceptions detected</p></div></div>`;
+
+  renderAnomalies();
+}
+function renderAnomalies() {
+  const sev      = document.getElementById('anomaly-sev-filter')?.value||'all';
+  const filtered = sev==='all' ? _anomalyData : _anomalyData.filter(a => a.severity===sev);
+  const tbody    = document.getElementById('anomaly-tbody');
+  tbody.innerHTML = filtered.length
+    ? filtered.map(a => `
+        <tr>
+          <td>${fmtDate(a.timestamp)}</td>
+          <td><strong>${a.username||'—'}</strong></td>
+          <td title="${esc(a.question)}">${(a.question||'').slice(0,55)}…</td>
+          <td><span class="badge warn">${(a.misconception_id||'').replace(/_/g,' ')}</span></td>
+          <td>${sevBadge(a.severity)}</td>
+        </tr>`).join('')
+    : `<tr><td colspan="5"><div class="empty">${emptySvg('i-check-circle')}<p>No misconceptions found${sev!=='all'?` with severity "${sev}"`:'.'}</p></div></td></tr>`;
+}
+
+/* ─── CHARACTERS ────────────────────────────────*/
+async function loadCharacters() {
+  let d;
+  try { d = await apiFetch('/api/characters'); }
+  catch (e) { showErr('char-cards', e.message); return; }
+
+  const chars    = d.data || {};
+  const overview = (_data.overview?.character_distribution) || {};
+  document.getElementById('char-cards').innerHTML = Object.entries(chars).map(([id,c]) => `
+    <div class="card" style="margin-bottom:0">
+      <div class="card-header">
+        <h3><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-user-circle"/></svg>${c.name}</h3>
+        <span class="badge ${id}" style="font-size:12px">${fmt(overview[id]||0)} queries</span>
+      </div>
+      <div class="card-body">
+        <div class="status-row"><span class="sl">Title</span><span class="sv" style="color:var(--gold)">${c.title}</span></div>
+        <div class="status-row"><span class="sl">Personality</span><span class="sv">${c.personality}</span></div>
+        <div class="status-row"><span class="sl">Speaking Style</span><span class="sv" style="font-style:italic;color:var(--text-2)">${c.speaking_style||'—'}</span></div>
+        <div class="status-row">
+          <span class="sl">Expertise</span>
+          <span class="sv" style="display:flex;flex-wrap:wrap;gap:4px;justify-content:flex-end">
+            ${(c.expertise||[]).map(e => `<span class="badge ok" style="font-size:11px">${e}</span>`).join('')}
+          </span>
+        </div>
+        <div style="margin-top:12px;padding:10px;background:var(--bg);border-radius:8px;font-size:12px;color:var(--text-2);font-style:italic;border-left:3px solid var(--gold)">
+          "${(c.greeting||'').slice(0,120)}…"
+        </div>
+      </div>
+    </div>`).join('');
+}
+
+/* ─── SYSTEM ────────────────────────────────────*/
+async function loadSystem() {
+  let health;
+  try { health = await apiFetch('/health'); }
+  catch (e) { ['health-rows','sysinfo-tbody'].forEach(id => showErr(id, `Cannot reach Flask API: ${e.message}`)); return; }
+
+  const overviewSt = _data.overview?.system_status || {};
+  const rows = [
+    ['Flask Status',    health.status==='healthy'?'Healthy':health.status, health.status==='healthy'?'green':'amber'],
+    ['Model Loaded',    health.model_loaded?'Yes':'No',   health.model_loaded?'green':'red'],
+    ['Base Model',      health.base_model||'—',           'blue'],
+    ['Adapter Repo',    health.adapter_repo||'—',         'blue'],
+    ['Device',          health.device||'cpu',             'amber'],
+    ['Vector DB',       overviewSt.vector_db?'Ready':'Offline',   overviewSt.vector_db?'green':'red'],
+    ['Auth Manager',    overviewSt.auth?'Active':'Offline',       overviewSt.auth?'green':'red'],
+    ['History Manager', overviewSt.history?'Active':'Offline',    overviewSt.history?'green':'red'],
+    ['RL Epsilon',      (overviewSt.rl_epsilon||0).toFixed(4), 'blue'],
+    ['RL Q-States',     fmt(overviewSt.rl_q_states||0),        'blue'],
+    ['Characters',      Object.keys(health.characters||{}).join(', ')||'—', 'blue'],
+    ['Last Health Check', fmtDate(health.timestamp), 'amber'],
+  ];
+  document.getElementById('health-rows').innerHTML = rows.map(([l,c,v]) => `
+    <div class="status-row">
+      <span class="sl">${l}</span>
+      <span class="sv" style="color:var(--${c==='blue'?'blue':c==='green'?'green':'red'})">${v}</span>
+    </div>`).join('');
+  document.getElementById('sysinfo-tbody').innerHTML = rows.map(([l,v]) =>
+    `<tr><td><strong>${l}</strong></td><td class="mono">${v}</td></tr>`).join('');
+  document.getElementById('api-url-display').textContent = API_BASE;
+  document.getElementById('port-display').textContent    = API_BASE.split(':').pop();
+  document.getElementById('api-url-input').value         = API_BASE;
+}
+
+/* ─── UTILS ─────────────────────────────────────*/
+function updateApiUrl() {
+  const v = document.getElementById('api-url-input').value.trim().replace(/\/$/, '');
+  if (!v) return;
+  API_BASE = v;
+  localStorage.setItem('api_base', API_BASE);
+  document.getElementById('api-url-display').textContent = API_BASE;
+  document.getElementById('port-display').textContent    = API_BASE.split(':').pop();
+  toast('API URL updated — reloading data…');
+  loadAll();
+}
+function updateTimestamp() {
+  const n = new Date();
+  document.getElementById('timestamp-badge').innerHTML = `
+    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><use href="#i-clock"/></svg>
+    Updated ${n.getHours().toString().padStart(2,'0')}:${n.getMinutes().toString().padStart(2,'0')}`;
+}
+
+/* ─── EVENT LISTENERS ───────────────────────────*/
+document.getElementById('login-btn').addEventListener('click', doLogin);
+document.getElementById('login-p').addEventListener('keydown', e => { if (e.key==='Enter') doLogin(); });
+document.getElementById('login-u').addEventListener('keydown', e => { if (e.key==='Enter') doLogin(); });
+document.getElementById('logout-btn').addEventListener('click', doLogout);
+document.getElementById('refresh-btn').addEventListener('click', () => { loadAll(); toast('Refreshing data…'); });
+document.getElementById('menu-toggle').addEventListener('click', () => {
+  document.getElementById('sidebar').classList.toggle('open');
+});
+document.querySelectorAll('.nav-item[data-page]').forEach(item => {
+  item.addEventListener('click', () => {
+    navigate(item.dataset.page);
+    document.getElementById('sidebar').classList.remove('open');
+  });
+});
+
+// Restore session
+if (adminToken) {
+  document.getElementById('login-screen').style.display = 'none';
+  loadAll();
+}
+
+// Auto-refresh every 60 s
+setInterval(() => { if (adminToken) loadAll(); }, 60_000);
+</script>
+</body>
+</html>

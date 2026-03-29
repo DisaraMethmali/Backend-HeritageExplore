@@ -1,0 +1,764 @@
+{
+  "user_1": {
+    "created": "2026-02-26T21:46:47.820702",
+    "known_facts": {
+      "colonial": [
+        "What was Dutch rule like in Ceylon?",
+        "patrol did gold pot play during the Portuguese and Dutch periods."
+      ],
+      "general": [
+        "Sporting gold disc",
+        "What is the importance of world",
+        "Who was the Collector of Revenue that compiled the 1614 tombo?",
+        "Golf",
+        "One is the importance of God.",
+        "What is gold?",
+        "what is  gold ",
+        "A conversation about Sri Lanka.",
+        "what is srivardhanapura? ",
+        "What is esala perahra?"
+      ],
+      "festival": [
+        "What is the Esala Perahera festival?",
+        "What traditional performances appear in the Esala Perahera procession?"
+      ],
+      "temple": [
+        "What is the importance of tooth relic?",
+        " sacred relic is kept in the Temple of the Tooth",
+        " brought the Sacred Tooth Relic to Sri Lanka?",
+        "wjo brought the Sacred Tooth Relic to Sri Lanka?",
+        "who brought the Sacred Tooth Relic to Sri Lanka?",
+        "During  century was the Tooth Relic brought to Sri Lanka?",
+        "Sacred relic kept in the Temple of the Tooth",
+        " Where is the Sacred Tooth Relic kept today?",
+        "What festival is associated with the Temple of the Tooth Relic?",
+        "Tell me about the Sacred Tooth Relic"
+      ],
+      "king": [
+        "Who was the last Indian ruler to possess the Tooth Relic",
+        "Who the last Indian ruler to possess the Tooth Relic",
+        "Who last Indian ruler to possess the Tooth Relic",
+        "Welcome to the sacred heart of Lanka. Look around you, traveler, at these stone ",
+        "Who was the last Sinhalese king?",
+        "How many caskets did King parakrama VI create",
+        "Who is the last sinhalese king?",
+        "king first kept the Tooth Relic in Anuradhapura?",
+        "kingdom made the Temple of the Tooth Relic famous?"
+      ],
+      "kingdom": [
+        "Why did Kandy remain independent?",
+        "when did the tooth arrive kandy permanantly"
+      ],
+      "fort": [
+        "What activities can tourists do in Galle Fort?",
+        "What famous lighthouse is located in Galle Fort",
+        "What type of shops and cafes are found inside the fort?",
+        "What cultures influenced the buildings inside the fort?",
+        "How does tourism impact the preservation of Galle Fort?",
+        "Does colonial power later expanded Galle Fort?",
+        "Does  Galle Fort important during colonial times?",
+        "Why is Galle Fort considered a UNESCO World Heritage Site?",
+        "What makes Galle Fort unique compared to other forts",
+        "Why is Galle Fort a popular tourist destination?"
+      ]
+    },
+    "character_interactions": {
+      "king": 163,
+      "nilame": 39,
+      "dutch": 22,
+      "citizen": 46
+    },
+    "last_topic": "festival",
+    "narrative_thread": [
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:23:50.507094"
+      },
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:23:52.401907"
+      },
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:23:53.727938"
+      },
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:23:55.480481"
+      },
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:23:56.734677"
+      },
+      {
+        "topic": "general",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:26:28.668681"
+      },
+      {
+        "topic": "general",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:34:30.043608"
+      },
+      {
+        "topic": "festival",
+        "character": "king",
+        "timestamp": "2026-03-10T10:34:34.091098"
+      },
+      {
+        "topic": "festival",
+        "character": "king",
+        "timestamp": "2026-03-10T10:40:25.857722"
+      },
+      {
+        "topic": "general",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:41:08.731815"
+      },
+      {
+        "topic": "festival",
+        "character": "king",
+        "timestamp": "2026-03-10T10:42:53.796520"
+      },
+      {
+        "topic": "general",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:43:13.915927"
+      },
+      {
+        "topic": "kingdom",
+        "character": "king",
+        "timestamp": "2026-03-10T10:45:25.543714"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:45:33.054860"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:45:51.655110"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:46:00.199978"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:46:07.534961"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:46:14.461600"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:46:35.989150"
+      },
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:46:53.402349"
+      },
+      {
+        "topic": "king",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:48:17.538294"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:49:15.122494"
+      },
+      {
+        "topic": "temple",
+        "character": "nilame",
+        "timestamp": "2026-03-10T10:51:05.649672"
+      },
+      {
+        "topic": "festival",
+        "character": "nilame",
+        "timestamp": "2026-03-10T11:00:32.469371"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-10T11:05:39.317848"
+      },
+      {
+        "topic": "festival",
+        "character": "nilame",
+        "timestamp": "2026-03-10T11:20:42.410149"
+      },
+      {
+        "topic": "festival",
+        "character": "king",
+        "timestamp": "2026-03-10T12:24:07.111798"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-10T13:07:07.215719"
+      },
+      {
+        "topic": "festival",
+        "character": "nilame",
+        "timestamp": "2026-03-10T13:07:19.799271"
+      },
+      {
+        "topic": "festival",
+        "character": "nilame",
+        "timestamp": "2026-03-14T13:00:48.851394"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772362669260": {
+    "created": "2026-03-01T16:29:14.565764",
+    "known_facts": {
+      "general": [
+        "hello hello",
+        "hi"
+      ]
+    },
+    "character_interactions": {
+      "king": 2
+    },
+    "last_topic": "general",
+    "narrative_thread": [
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-01T16:29:14.565803"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-01T16:29:23.131610"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772363598220": {
+    "created": "2026-03-01T16:44:07.439718",
+    "known_facts": {
+      "general": [
+        "hi"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "general",
+    "narrative_thread": [
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-01T16:44:07.440446"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772378630413": {
+    "created": "2026-03-01T20:54:23.255624",
+    "known_facts": {
+      "temple": [
+        "what is temple of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 2
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-01T20:54:23.255646"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-01T20:55:15.569642"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772380771516": {
+    "created": "2026-03-01T21:35:20.216765",
+    "known_facts": {
+      "temple": [
+        "What is temple of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-01T21:35:20.216799"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772381710593": {
+    "created": "2026-03-01T21:45:50.896530",
+    "known_facts": {
+      "temple": [
+        "What is the importance of temple of tooth",
+        "what is the importance of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 2
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-01T21:45:50.896560"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-01T21:46:11.276741"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772641522341": {
+    "created": "2026-03-04T22:05:21.487718",
+    "known_facts": {
+      "temple": [
+        "What surrounds the Sri Dalada Maligawa temple?",
+        "How did the Tooth Relic survive destruction attempts?",
+        "what are the surroundingd in the temple of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 3
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-04T22:05:21.488718"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-04T22:05:47.333037"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-04T22:12:13.976503"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772646796046": {
+    "created": "2026-03-04T23:33:41.290586",
+    "known_facts": {
+      "temple": [
+        "what are the surroundingd in the temple of tooth relic",
+        "what is dalada morning",
+        "what is temple of 2-3923"
+      ],
+      "king": [
+        "Who s the last Indian ruler to possess the Tooth Relic"
+      ],
+      "general": [
+        "How tooth displayed?",
+        "What is eslaa perahara",
+        "what is esla perahara"
+      ]
+    },
+    "character_interactions": {
+      "king": 7
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-04T23:35:48.578894"
+      },
+      {
+        "topic": "king",
+        "character": "king",
+        "timestamp": "2026-03-04T23:35:49.384212"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-04T23:36:36.446209"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-04T23:40:02.493227"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-04T23:41:37.540165"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-04T23:45:07.547790"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-04T23:46:42.347038"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772648810292": {
+    "created": "2026-03-04T23:57:45.224560",
+    "known_facts": {
+      "kingdom": [
+        "Why did Kandy remain independent?"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "kingdom",
+    "narrative_thread": [
+      {
+        "topic": "kingdom",
+        "character": "king",
+        "timestamp": "2026-03-04T23:59:52.295734"
+      }
+    ],
+    "established_context": {}
+  },
+  "Disara": {
+    "created": "2026-03-05T23:55:48.854623",
+    "known_facts": {
+      "general": [
+        "who\n",
+        "what fronts two story inner shin\n",
+        "what fronts two story inner shine\n",
+        "what was rebuild after the 1998",
+        "give information acooring to above question\n",
+        "What began immediately after the 1998 bombing?",
+        "Who built the golden canopy and fence?"
+      ],
+      "temple": [
+        "what was rebuild after the 1998 in tooth relic\n",
+        "what was rebuild after the 1998 bomb in tooth relic",
+        "Tell me about the Sacred Tooth Relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 11
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-05T23:56:07.134037"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-05T23:57:16.739677"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-05T23:59:23.249907"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:03:58.928290"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:07:05.051505"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:07:54.566227"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-06T00:10:28.324534"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-06T00:13:12.096765"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:17:01.663300"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:30:38.529185"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-07T12:10:26.237059"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772735343530": {
+    "created": "2026-03-06T00:00:17.302410",
+    "known_facts": {
+      "general": [
+        "what fronts two story inner shine"
+      ]
+    },
+    "character_interactions": {
+      "king": 2
+    },
+    "last_topic": "general",
+    "narrative_thread": [
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:01:09.849983"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:23:18.176876"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772736966456": {
+    "created": "2026-03-06T00:29:30.292179",
+    "known_facts": {
+      "general": [
+        "Who built the golden canopy and fence?"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "general",
+    "narrative_thread": [
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-06T00:29:30.292179"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772868206238": {
+    "created": "2026-03-07T12:55:38.476375",
+    "known_facts": {
+      "temple": [
+        "what is temple of tooth"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-07T12:55:38.476375"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772875946929": {
+    "created": "2026-03-07T15:07:06.336466",
+    "known_facts": {
+      "temple": [
+        "what is the importance of temple of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-07T15:07:06.336466"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1772888403802": {
+    "created": "2026-03-07T18:34:42.337659",
+    "known_facts": {
+      "temple": [
+        "what is the temple of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 1
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-07T18:34:42.337659"
+      }
+    ],
+    "established_context": {}
+  },
+  "king_user_1": {
+    "created": "2026-03-09T12:32:24.808587",
+    "known_facts": {
+      "temple": [
+        "What is Temple of Truth?",
+        "Who retrieved the tooth from Buddha's temple?"
+      ],
+      "general": [
+        "Who would've killed it?",
+        "Who retrieved the tooth from Buddha's funeral?",
+        "Who retrieved the truth from Buddha's funeral?",
+        "Where was the tooth enriched in Kalinga?"
+      ],
+      "colonial": [
+        "Do people with you, Portuguese, destroy the truth, elect?"
+      ]
+    },
+    "character_interactions": {
+      "king": 7
+    },
+    "last_topic": "general",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-09T12:33:14.966457"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-09T23:14:44.657393"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-09T23:17:33.755384"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-09T23:43:44.237134"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-09T23:46:57.322623"
+      },
+      {
+        "topic": "colonial",
+        "character": "king",
+        "timestamp": "2026-03-09T23:50:43.546477"
+      },
+      {
+        "topic": "general",
+        "character": "king",
+        "timestamp": "2026-03-09T23:54:49.706039"
+      }
+    ],
+    "established_context": {}
+  },
+  "explore": {
+    "created": "2026-03-09T19:35:39.513210",
+    "known_facts": {},
+    "character_interactions": {},
+    "last_topic": null,
+    "narrative_thread": [],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1773065135542": {
+    "created": "2026-03-09T19:36:06.382105",
+    "known_facts": {
+      "temple": [
+        "what is the importance of tooth relic"
+      ],
+      "fort": [
+        "what is the important of galle port"
+      ]
+    },
+    "character_interactions": {
+      "king": 1,
+      "dutch": 1
+    },
+    "last_topic": "fort",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-09T19:36:06.382105"
+      },
+      {
+        "topic": "fort",
+        "character": "dutch",
+        "timestamp": "2026-03-09T19:36:24.143178"
+      }
+    ],
+    "established_context": {}
+  },
+  "e74236ae-49af-4f40-b179-1558a19d90b9_1773120638094": {
+    "created": "2026-03-10T11:01:29.725675",
+    "known_facts": {
+      "temple": [
+        "what is the temple of tooth relic",
+        "what us temple of tooth relic"
+      ]
+    },
+    "character_interactions": {
+      "king": 2
+    },
+    "last_topic": "temple",
+    "narrative_thread": [
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-10T11:01:29.725675"
+      },
+      {
+        "topic": "temple",
+        "character": "king",
+        "timestamp": "2026-03-10T11:03:47.159607"
+      }
+    ],
+    "established_context": {}
+  }
+}

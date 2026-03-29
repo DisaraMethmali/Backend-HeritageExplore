@@ -1,0 +1,57 @@
+{
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "adapter_repo": "disaramethmali/AISYSTEM",
+  "local_adapter_path": "./lora_adapter",
+
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "max_length": 512,
+
+  "num_train_epochs": 3,
+  "per_device_train_batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "learning_rate": 3e-4,
+  "warmup_steps": 100,
+  "logging_steps": 10,
+  "save_steps": 100,
+
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "top_k_retrieval": 5,
+  "similarity_threshold": 0.3,
+
+  "rl_learning_rate": 0.01,
+  "rl_gamma": 0.95,
+  "exploration_rate": 0.2,
+  "min_exploration": 0.05,
+  "exploration_decay": 0.995,
+
+  "max_new_tokens": 2000,
+  "temperature": 0.8,
+  "top_p": 0.9,
+  "repetition_penalty": 1.2,
+
+  "memory_size": 200,
+  "feedback_file": "feedback.json",
+  "profiles_file": "profiles.json",
+  "metrics_file": "metrics.json",
+  "max_retries": 3,
+  "download_timeout": 300,
+  "users_file": "users.json",
+  "chat_history_file": "chat_history.json",
+  "sessions_file": "auth_sessions.json",
+  "max_history_per_user": 500,
+
+  "ngrok_authtoken": "3AcKFazyEQTRlDuHj49OCvFYrrF_4Mypm4tmDZJahiYTBeHrN",
+
+  "admin_username": "admin",
+  "admin_password": "admin123",
+  "secret_key": "your-secret-key-change-this",
+
+  "flask_port_start": 5000,
+  "flask_port_end": 5020,
+  "gradio_port": 7860,
+
+  "model_cache_dir": "./model_cache",
+  "lora_output_dir": "./lora_output"
+}

@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "session_id": "user_1",
+    "subject": "galle fort",
+    "claim": "",
+    "source": "personal knowledge",
+    "verification": {
+      "status": "UNVERIFIED",
+      "confidence": 0.5,
+      "explanation": "Cannot verify this specific claim \u2014 may be accurate local knowledge.",
+      "known_facts": {
+        "established": "1588 (Portuguese), expanded 1663-1669 (Dutch)",
+        "bastions": "14",
+        "area": "36 hectares",
+        "unesco": "1988"
+      }
+    },
+    "timestamp": "2026-02-26T23:04:03.610666"
+  },
+  {
+    "id": 2,
+    "session_id": "user_1",
+    "subject": "sri vijaya rajasinha",
+    "claim": "",
+    "source": "personal knowledge",
+    "verification": {
+      "status": "UNVERIFIED",
+      "confidence": 0.5,
+      "explanation": "Cannot verify this specific claim \u2014 may be accurate local knowledge.",
+      "known_facts": {
+        "reign": "1739-1747",
+        "origin": "Nayak dynasty, South India",
+        "capital": "Kandy",
+        "significance": "Last king before British conquest"
+      }
+    },
+    "timestamp": "2026-02-26T23:04:28.320778"
+  }
+]
