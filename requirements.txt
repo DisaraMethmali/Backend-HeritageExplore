@@ -11,3 +11,4 @@ plotly>=5.0.0
 flask>=3.0.0
 flask-cors>=4.0.0
 datasets>=2.14.0
+reportlab>=4.0.0
