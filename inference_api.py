@@ -6143,130 +6143,130 @@ def create_flask_api(chatbot: MultiCharacterChatbot) -> Flask:
             **stats,
             "timestamp": datetime.now().isoformat()
         })
-    @app.route("/report/user", methods=["GET"])
-    def report_user():
-        """
-        GET /report/user?location=all|temple|galle
-        Authorization: Bearer <token>   OR   ?token=<token>
-        """
-        # Resolve token from header or query param
-        auth_header = request.headers.get("Authorization", "")
-        if auth_header.startswith("Bearer "):
-            token = auth_header[7:].strip()
-        else:
-            token = request.args.get("token", "").strip()
+    # @app.route("/report/user", methods=["GET"])
+    # def report_user():
+    #     """
+    #     GET /report/user?location=all|temple|galle
+    #     Authorization: Bearer <token>   OR   ?token=<token>
+    #     """
+    #     # Resolve token from header or query param
+    #     auth_header = request.headers.get("Authorization", "")
+    #     if auth_header.startswith("Bearer "):
+    #         token = auth_header[7:].strip()
+    #     else:
+    #         token = request.args.get("token", "").strip()
 
-        if not token or not chatbot.auth:
-            return jsonify({
-                "error": "Unauthorized — please log in first.",
-                "how_to": (
-                    "1. POST /auth/login with your username & password to get a token. "
-                    "2. Use that token here: "
-                    "   Authorization: Bearer <token>  OR  ?token=<token>"
-                )
-            }), 401
+    #     if not token or not chatbot.auth:
+    #         return jsonify({
+    #             "error": "Unauthorized — please log in first.",
+    #             "how_to": (
+    #                 "1. POST /auth/login with your username & password to get a token. "
+    #                 "2. Use that token here: "
+    #                 "   Authorization: Bearer <token>  OR  ?token=<token>"
+    #             )
+    #         }), 401
 
-        session_info = chatbot.auth.verify_token(token)
-        if not session_info:
-            return jsonify({
-                "error": "Unauthorized — invalid or expired token.",
-                "how_toshared_token_state.change(fn=lambda t: t, inputs=[shared_token_state], outputs=[rpt_token])": "POST /auth/login to get a fresh token."
-            }), 401
+    #     session_info = chatbot.auth.verify_token(token)
+    #     if not session_info:
+    #         return jsonify({
+    #             "error": "Unauthorized — invalid or expired token.",
+    #             "how_toshared_token_state.change(fn=lambda t: t, inputs=[shared_token_state], outputs=[rpt_token])": "POST /auth/login to get a fresh token."
+    #         }), 401
 
-        username  = session_info["username"]
-        user_data = chatbot.auth.get_user_profile(username) or {}
-        full_name = user_data.get("full_name") or username
-        expertise = user_data.get("expertise_level", "tourist")
+    #     username  = session_info["username"]
+    #     user_data = chatbot.auth.get_user_profile(username) or {}
+    #     full_name = user_data.get("full_name") or username
+    #     expertise = user_data.get("expertise_level", "tourist")
 
-        if not chatbot.history_mgr:
-            return jsonify({"error": "History manager not available"}), 503
+    #     if not chatbot.history_mgr:
+    #         return jsonify({"error": "History manager not available"}), 503
 
-        all_records     = chatbot.history_mgr.export_history(username)
-        location_filter = request.args.get("location", "all").lower()
+    #     all_records     = chatbot.history_mgr.export_history(username)
+    #     location_filter = request.args.get("location", "all").lower()
 
-        if location_filter == "temple":
-            records  = [r for r in all_records if _classify_message(r) == "temple"]
-            filename = f"temple_report_{username}.pdf"
-        elif location_filter == "galle":
-            records  = [r for r in all_records if _classify_message(r) == "galle"]
-            filename = f"galle_report_{username}.pdf"
-        else:
-            records  = all_records
-            filename = f"full_report_{username}.pdf"
+    #     if location_filter == "temple":
+    #         records  = [r for r in all_records if _classify_message(r) == "temple"]
+    #         filename = f"temple_report_{username}.pdf"
+    #     elif location_filter == "galle":
+    #         records  = [r for r in all_records if _classify_message(r) == "galle"]
+    #         filename = f"galle_report_{username}.pdf"
+    #     else:
+    #         records  = all_records
+    #         filename = f"full_report_{username}.pdf"
 
-        if not records:
-            return jsonify({
-                "error":    "No chat history found for your account.",
-                "username": username,
-                "hint": (
-                    "Start chatting with the historical characters first, "
-                    "then come back to generate your report."
-                )
-            }), 404
+    #     if not records:
+    #         return jsonify({
+    #             "error":    "No chat history found for your account.",
+    #             "username": username,
+    #             "hint": (
+    #                 "Start chatting with the historical characters first, "
+    #                 "then come back to generate your report."
+    #             )
+    #         }), 404
 
-        try:
-            from flask import send_file as _send_file
-            pdf_bytes = generate_user_report(
-                username, full_name, records, expertise,
-                knowledge_base_path="data.json"
-            )
-            return _send_file(
-                _report_io.BytesIO(pdf_bytes),
-                mimetype="application/pdf",
-                as_attachment=True,
-                download_name=filename,
-            )
-        except Exception as e:
-            return jsonify({"success": False, "error": str(e)}), 500
+    #     try:
+    #         from flask import send_file as _send_file
+    #         pdf_bytes = generate_user_report(
+    #             username, full_name, records, expertise,
+    #             knowledge_base_path="data.json"
+    #         )
+    #         return _send_file(
+    #             _report_io.BytesIO(pdf_bytes),
+    #             mimetype="application/pdf",
+    #             as_attachment=True,
+    #             download_name=filename,
+    #         )
+    #     except Exception as e:
+    #         return jsonify({"success": False, "error": str(e)}), 500
 
-    @app.route("/report/preview", methods=["GET"])
-    def report_preview():
-        """
-        GET /report/preview
-        Authorization: Bearer <token>   OR   ?token=<token>
-        Returns a JSON summary of topics that will appear in the report.
-        """
-        auth_header = request.headers.get("Authorization", "")
-        if auth_header.startswith("Bearer "):
-            token = auth_header[7:].strip()
-        else:
-            token = request.args.get("token", "").strip()
+    # @app.route("/report/preview", methods=["GET"])
+    # def report_preview():
+    #     """
+    #     GET /report/preview
+    #     Authorization: Bearer <token>   OR   ?token=<token>
+    #     Returns a JSON summary of topics that will appear in the report.
+    #     """
+    #     auth_header = request.headers.get("Authorization", "")
+    #     if auth_header.startswith("Bearer "):
+    #         token = auth_header[7:].strip()
+    #     else:
+    #         token = request.args.get("token", "").strip()
 
-        if not token or not chatbot.auth:
-            return jsonify({
-                "error":  "Unauthorized — please log in first.",
-                "how_to": "Authorization: Bearer <token>  or  ?token=<token>"
-            }), 401
+    #     if not token or not chatbot.auth:
+    #         return jsonify({
+    #             "error":  "Unauthorized — please log in first.",
+    #             "how_to": "Authorization: Bearer <token>  or  ?token=<token>"
+    #         }), 401
 
-        session_info = chatbot.auth.verify_token(token)
-        if not session_info:
-            return jsonify({
-                "error":  "Unauthorized — invalid or expired token.",
-                "how_to": "POST /auth/login to get a fresh token."
-            }), 401
+    #     session_info = chatbot.auth.verify_token(token)
+    #     if not session_info:
+    #         return jsonify({
+    #             "error":  "Unauthorized — invalid or expired token.",
+    #             "how_to": "POST /auth/login to get a fresh token."
+    #         }), 401
 
-        username = session_info["username"]
+    #     username = session_info["username"]
 
-        if not chatbot.history_mgr:
-            return jsonify({"error": "History manager not available"}), 503
+    #     if not chatbot.history_mgr:
+    #         return jsonify({"error": "History manager not available"}), 503
 
-        records      = chatbot.history_mgr.export_history(username)
-        topic_groups = defaultdict(int)
-        for r in records:
-            topic_groups[(r.get("topic") or "general").lower()] += 1
+    #     records      = chatbot.history_mgr.export_history(username)
+    #     topic_groups = defaultdict(int)
+    #     for r in records:
+    #         topic_groups[(r.get("topic") or "general").lower()] += 1
 
-        return jsonify({
-            "success":         True,
-            "username":        username,
-            "topics_explored": dict(topic_groups),
-            "total_messages":  len(records),
-            "download_urls": {
-                "full":   f"/report/user?location=all&token={token}",
-                "temple": f"/report/user?location=temple&token={token}",
-                "galle":  f"/report/user?location=galle&token={token}",
-            },
-            "timestamp": datetime.utcnow().isoformat(),
-        })
+    #     return jsonify({
+    #         "success":         True,
+    #         "username":        username,
+    #         "topics_explored": dict(topic_groups),
+    #         "total_messages":  len(records),
+    #         "download_urls": {
+    #             "full":   f"/report/user?location=all&token={token}",
+    #             "temple": f"/report/user?location=temple&token={token}",
+    #             "galle":  f"/report/user?location=galle&token={token}",
+    #         },
+    #         "timestamp": datetime.utcnow().isoformat(),
+    #     })
     
     return app
 
@@ -6338,6 +6338,9 @@ if __name__ == "__main__":
     print("\n[4/4] Launching services")
 
     flask_app = create_flask_api(chatbot)
+
+    from rag_report_generator import register_report_route
+    register_report_route(flask_app, chatbot, knowledge_base_path="data.json")
 
     import socket
 
