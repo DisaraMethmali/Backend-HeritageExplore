@@ -4,6 +4,8 @@ Features: RAG + RL + LoRA Fine-tuning + Metrics + Visualizations + REST API + 4 
 FIXED: Gradio chat history format + Network timeout handling
 """
 
+import utils.transport
+import utils.session
 import os
 import json
 import time
